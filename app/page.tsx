@@ -45,7 +45,7 @@ export default function Home() {
           <h1 className="text-balance bg-gradient-to-r from-cyan-300 via-sky-200 to-violet-300 bg-clip-text text-4xl font-black tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
             We don&apos;t just design interfaces.
             <span className="block text-slate-300/90">
-              We architect cognitive experiences.
+              We architect cognitive experiences...
             </span>
           </h1>
 

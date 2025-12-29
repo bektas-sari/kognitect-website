@@ -1,9 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Arka plan için ekstra ayar (Opsiyonel ama garanti olsun) */
+@layer theme {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+/* Glassmorphism Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+}
+
 body {
-  background-color: #050505;
+  background-color: black;
   color: white;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }

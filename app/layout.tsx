@@ -1,13 +1,13 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css"; // <--- İŞTE BU SATIR YOKSA TASARIM ÇALIŞMAZ!
+import "./globals.css";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KOGNITECT",
-  description: "Perception is Engineered.",
+  title: "Kognitect | Perception Engineering",
+  description: "Converting human behavior into measurable digital products using AI & Neuroscience.",
 };
 
 export default function RootLayout({
@@ -16,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={`${inter.className} bg-black text-white antialiased`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

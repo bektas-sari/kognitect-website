@@ -85,10 +85,16 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden z-50 p-2 text-white"
+            className="md:hidden z-50 p-3 text-white bg-white/5 rounded-full border border-white/10 backdrop-blur-md active:scale-95 transition-all"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle Menu"
           >
-            {isMobileMenuOpen ? <X /> : <Menu />}
+            {/* İkon boyutunu w-8 h-8 (32px) yaptık, buton da p-3 ile büyüdü */}
+            {isMobileMenuOpen ? (
+              <X className="w-8 h-8" />
+            ) : (
+              <Menu className="w-8 h-8" />
+            )}
           </button>
         </div>
       </motion.header>

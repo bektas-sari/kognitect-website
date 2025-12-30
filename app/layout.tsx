@@ -6,8 +6,8 @@ import Navbar from "../components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kognitect | Perception Engineering",
-  description: "Converting human behavior into measurable digital products using AI & Neuroscience.",
+  title: "Kognitect | Perception Architect",
+  description: "Constructing rational digital ecosystems based on Neuroscience & AI. Bridging Human Nature and Technology.",
 };
 
 export default function RootLayout({

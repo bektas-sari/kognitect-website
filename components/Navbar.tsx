@@ -7,9 +7,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight, Terminal } from 'lucide-react';
 
 const navItems = [
-    { name: 'The Science', href: '#philosophy' },  // Philosophy -> The Science
-    { name: 'Arsenal', href: '#technologies' },    // Technologies -> Arsenal
-    { name: 'Blueprints', href: '#products' },     // Products -> Blueprints
+    { name: 'The Science', href: '#methodology' }, 
+    { name: 'Arsenal', href: '#technologies' },    
+    { name: 'Blueprints', href: '#products' },     
 ];
 
 const Navbar = () => {
@@ -24,6 +24,36 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // YENİ EKLENEN FONKSİYON: Pürüzsüz Kaydırma (Smooth Scroll)
+    const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+        // Eğer link bir ID ise (# ile başlıyorsa)
+        if (href.startsWith('#')) {
+            e.preventDefault(); // Varsayılan zıplamayı engelle
+            const targetId = href.substring(1);
+            const elem = document.getElementById(targetId);
+            if (elem) {
+                const headerOffset = 100; // Header yüksekliği kadar pay bırak
+                const elementPosition = elem.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+            setIsMobileMenuOpen(false); // Mobil menüyü kapat
+        }
+        // Eğer Logo ise (en başa dön)
+        else if (href === '/') {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            setIsMobileMenuOpen(false);
+        }
+    };
+
     return (
         <>
             <motion.header
@@ -36,19 +66,19 @@ const Navbar = () => {
                     } flex items-center`}
             >
                 <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
-                    {/* LOGO */}
+                    {/* LOGO - Boyut Güncellendi ve Tıklama Özelliği Eklendi */}
                     <Link
                         href="/"
                         className="relative z-50 hover:opacity-80 transition-opacity"
-                        onClick={() => setIsMobileMenuOpen(false)}
+                        onClick={(e) => handleScrollTo(e, '/')}
                     >
-                         {/* Eğer logonuzun içinde beyaz yazı varsa aynen kalabilir, yoksa text ekleyebiliriz */}
                         <Image
                             src="/logo-white.png"
                             alt="Kognitect | Perception Architecture"
                             width={600}
                             height={200}
-                            className="h-8 w-auto md:h-24 object-contain md:scale-125 origin-left"
+                            // GÜNCELLENDİ: h-8 -> h-10 ve md:h-24 -> md:h-32 (Daha büyük)
+                            className="h-10 w-auto md:h-32 object-contain md:scale-125 origin-left"
                             priority
                             unoptimized
                         />
@@ -60,6 +90,7 @@ const Navbar = () => {
                             <Link
                                 key={item.name}
                                 href={item.href}
+                                onClick={(e) => handleScrollTo(e, item.href)} // Scroll fonksiyonu bağlandı
                                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-widest relative group"
                             >
                                 {item.name}
@@ -69,6 +100,7 @@ const Navbar = () => {
                         
                         <Link
                             href="#contact"
+                            onClick={(e) => handleScrollTo(e, '#contact')}
                             className="group flex items-center gap-2 px-6 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-sm font-bold hover:bg-blue-600 hover:border-blue-500 transition-all duration-300"
                         >
                             <Terminal className="w-4 h-4 text-blue-400 group-hover:text-white transition-colors" />
@@ -87,7 +119,7 @@ const Navbar = () => {
                         ) : (
                             <Menu className="w-5 h-5" />
                         )}
-                    </button>   
+                    </button>
                 </div>
             </motion.header>
 
@@ -105,16 +137,16 @@ const Navbar = () => {
                                 <Link
                                     key={item.name}
                                     href={item.href}
+                                    onClick={(e) => handleScrollTo(e, item.href)} // Scroll fonksiyonu bağlandı
                                     className="text-4xl font-bold text-gray-500 hover:text-white transition-colors font-mono tracking-tighter"
-                                    onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                             <Link
                                 href="#contact"
+                                onClick={(e) => handleScrollTo(e, '#contact')}
                                 className="mt-8 flex items-center gap-3 text-xl font-bold text-blue-400"
-                                onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 <Terminal className="w-6 h-6" />
                                 Initialize Protocol

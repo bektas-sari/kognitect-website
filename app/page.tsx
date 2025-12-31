@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ConsultForm from '@/components/ConsultForm';
 import {
   Network,
   Brain,
@@ -544,19 +545,17 @@ const ContactSection = () => {
          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
            <div className="inline-block p-4 rounded-full bg-blue-600/10 mb-6"><Zap className="w-8 h-8 text-blue-500" /></div>
            <h2 className="text-4xl font-bold mb-6">Start Building with Science.</h2>
-           <p className="text-gray-400 mb-12 text-lg">Ready to construct a rational, high-performance digital ecosystem? <br/>Stop guessing. Consult the architect.</p>
-           <form action="https://formspree.io/f/mqazqozk" method="POST" className="space-y-4 text-left max-w-lg mx-auto">
-             <div><label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-1">Name</label><input type="text" name="name" id="name" required className="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all placeholder:text-gray-600" placeholder="Dr. Bektaş Sarı" /></div>
-             <div><label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-1">Email</label><input type="email" name="email" id="email" required className="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all placeholder:text-gray-600" placeholder="info@kognitect.com" /></div>
-             <div><label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-1">Project Brief</label><textarea name="message" id="message" rows={4} required className="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all placeholder:text-gray-600" placeholder="Describe the structural problem or the vision..." /></div>
-             <button type="submit" className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02] shadow-lg shadow-blue-900/20"><Send className="w-4 h-4" /> Initialize Protocol</button>
-           </form>
+           <p className="text-gray-400 mb-12 text-lg">
+             Ready to construct a rational, high-performance digital ecosystem? <br/>
+             Stop guessing. Consult the architect.
+           </p>
+           {/* Yeni bileşeni burada çağırıyoruz */}
+           <ConsultForm />
          </motion.div>
       </div>
     </section>
   )
 }
-
 const Footer = () => {
   return (
     <footer className="py-12 px-6 border-t border-white/5 bg-black text-sm">

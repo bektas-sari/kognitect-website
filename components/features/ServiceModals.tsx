@@ -100,11 +100,11 @@ const BellCurveAnimation = () => {
                 </defs>
             </svg>
             {/* Labels */}
-            <div className="absolute bottom-6 left-0 right-0 flex justify-between px-8 text-[9px] font-mono text-cyan-600/50">
+            <div className="absolute bottom-6 left-0 right-0 flex justify-between px-8 text-[9px] font-bold text-cyan-600/50">
                 <span>-3σ</span><span>-1σ</span><span>μ</span><span>+1σ</span><span>+3σ</span>
             </div>
             <motion.div
-                className="absolute top-6 right-6 text-[10px] font-mono text-cyan-400"
+                className="absolute top-6 right-6 text-[10px] font-bold text-cyan-400"
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }}
             >
                 p &lt; 0.05 ✓
@@ -190,10 +190,10 @@ const HeatmapAnimation = () => {
             />
 
             <motion.div
-                className="absolute bottom-4 right-6 text-[10px] font-mono text-cyan-500/70"
+                className="absolute bottom-4 right-6 text-[10px] font-bold text-cyan-500/70"
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}
             >
-                Eye-tracking: Active
+                Göz İzleme: Aktif
             </motion.div>
         </div>
     );
@@ -243,7 +243,7 @@ const FunnelAnimation = () => {
                     <div className="flex items-center justify-between w-full px-3">
                         <span className="text-[10px] font-mono text-cyan-300/80 uppercase tracking-wider">{step.label}</span>
                         <motion.span
-                            className="text-[11px] font-mono text-white/70 font-medium"
+                            className="text-[11px] text-white/70 font-bold"
                             initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                             transition={{ delay: 0.6 + i * 0.25 }}
                         >
@@ -391,10 +391,10 @@ const NeuralNetworkAnimation = () => {
                 {/* Label for root node */}
                 <motion.text
                     x={nodes[0].x} y={nodes[0].y - 5}
-                    textAnchor="middle" fontSize="3" fill="rgba(34,211,238,0.7)" fontFamily="monospace"
+                    textAnchor="middle" fontSize="3.5" fill="rgba(34,211,238,0.7)" fontWeight="bold"
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}
                 >
-                    CORE
+                    FOKUS
                 </motion.text>
             </svg>
         </div>
@@ -454,10 +454,10 @@ const UXScanAnimation = () => {
             ))}
 
             <motion.div
-                className="absolute top-4 right-6 text-[10px] font-mono text-cyan-500/70"
+                className="absolute top-4 right-6 text-[10px] font-bold text-cyan-500/70"
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
             >
-                Scanning...
+                Tarama Hazırlanıyor...
             </motion.div>
         </div>
     );
@@ -492,7 +492,7 @@ const BottleneckAnimation = () => {
                     />
                 ))}
                 {/* Drop-off label */}
-                <motion.text x="78" y="42" fontSize="3.5" fill="rgba(239,68,68,0.7)" fontFamily="monospace"
+                <motion.text x="78" y="42" fontSize="3.5" fill="rgba(239,68,68,0.7)" fontWeight="bold"
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>
                     -67%
                 </motion.text>
@@ -531,12 +531,12 @@ const CognitiveLoadAnimation = () => {
                 {/* Center dot */}
                 <circle cx="50" cy="55" r="2" fill="white" />
                 {/* Labels */}
-                <motion.text x="18" y="78" fontSize="3" fill="rgba(52,211,153,0.6)" fontFamily="monospace"
-                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>LOW</motion.text>
-                <motion.text x="75" y="78" fontSize="3" fill="rgba(239,68,68,0.6)" fontFamily="monospace"
-                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>HIGH</motion.text>
-                <motion.text x="50" y="90" textAnchor="middle" fontSize="3.5" fill="rgba(6,182,212,0.7)" fontFamily="monospace"
-                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>Cognitive Load: 6.2</motion.text>
+                <motion.text x="18" y="78" fontSize="3" fill="rgba(52,211,153,0.6)" fontWeight="bold"
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>DÜŞÜK</motion.text>
+                <motion.text x="75" y="78" fontSize="3" fill="rgba(239,68,68,0.6)" fontWeight="bold"
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>YÜKSEK</motion.text>
+                <motion.text x="50" y="90" textAnchor="middle" fontSize="3.5" fill="rgba(6,182,212,0.7)" fontWeight="bold"
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>Bilişsel Yük Skoru: 6.2</motion.text>
             </svg>
         </div>
     );
@@ -650,35 +650,30 @@ const WorkflowAnimation = () => {
 // ─── 10. Terminal (Python Scriptleri) ────────────────────────────────
 const TerminalAnimation = () => {
     const lines = [
-        { text: '$ python analytics.py', color: 'text-emerald-400', delay: 0.3 },
-        { text: '→ Loading dataset...', color: 'text-gray-500', delay: 0.8 },
-        { text: '→ Processing 12,450 rows', color: 'text-gray-500', delay: 1.4 },
-        { text: '→ Running ML pipeline...', color: 'text-cyan-400', delay: 2.0 },
-        { text: '✓ Model accuracy: 94.7%', color: 'text-emerald-400', delay: 2.8 },
-        { text: '✓ Report exported → /out', color: 'text-emerald-400', delay: 3.4 },
+        { text: 'Veri kümesi yükleniyor...', color: 'text-emerald-400', delay: 0.3 },
+        { text: '12,450 satır işleniyor...', color: 'text-zinc-500', delay: 0.8 },
+        { text: 'ML pipeline aktif ediliyor...', color: 'text-zinc-500', delay: 1.4 },
+        { text: 'Bilişsel modelleme çalışıyor...', color: 'text-white font-medium', delay: 2.0 },
+        { text: 'Model doğruluğu: %94.7', color: 'text-emerald-400 font-bold', delay: 2.8 },
+        { text: 'Analiz raporu oluşturuldu', color: 'text-emerald-400', delay: 3.4 },
     ];
     return (
         <div className="relative w-full h-full flex items-center justify-center p-6">
-            <div className="w-full max-w-[300px] bg-black/50 rounded-lg border border-white/10 overflow-hidden">
-                {/* Terminal header */}
-                <div className="h-7 bg-white/5 border-b border-white/10 flex items-center px-3 gap-1.5">
-                    <div className="w-2 h-2 rounded-full bg-red-500/60" />
-                    <div className="w-2 h-2 rounded-full bg-yellow-500/60" />
-                    <div className="w-2 h-2 rounded-full bg-green-500/60" />
-                    <span className="text-[9px] font-mono text-gray-500 ml-2">terminal</span>
+            <div className="w-full max-w-[300px] bg-[#080a0c] rounded-xl border border-emerald-500/10 overflow-hidden shadow-2xl">
+                {/* Header */}
+                <div className="h-8 bg-white/[0.02] border-b border-white/[0.04] flex items-center px-4 gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/30" />
+                    <span className="text-[9px] font-bold text-zinc-600 uppercase tracking-widest">Bilişsel Analiz</span>
                 </div>
-                {/* Terminal body */}
-                <div className="p-3 space-y-1.5 font-mono text-[11px]">
+                {/* Body */}
+                <div className="p-4 space-y-2 text-[11px]">
                     {lines.map((line, i) => (
                         <motion.div key={i} className={line.color}
-                            initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, x: -4 }} animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: line.delay, duration: 0.3 }}>
                             {line.text}
                         </motion.div>
                     ))}
-                    {/* Blinking cursor */}
-                    <motion.span className="inline-block w-2 h-3 bg-cyan-400"
-                        animate={{ opacity: [1, 0, 1] }} transition={{ duration: 1, repeat: Infinity }} />
                 </div>
             </div>
         </div>
@@ -929,8 +924,8 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                                                             <button
                                                                 onClick={() => setExpandedStep(isExpanded ? null : idx)}
                                                                 className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-200 cursor-pointer text-left ${isExpanded
-                                                                        ? 'bg-cyan-950/30 border border-cyan-800/40'
-                                                                        : 'bg-gray-900/40 border border-gray-800 hover:bg-gray-800/50 hover:border-gray-700'
+                                                                    ? 'bg-cyan-950/30 border border-cyan-800/40'
+                                                                    : 'bg-gray-900/40 border border-gray-800 hover:bg-gray-800/50 hover:border-gray-700'
                                                                     }`}
                                                             >
                                                                 {/* Number Circle */}

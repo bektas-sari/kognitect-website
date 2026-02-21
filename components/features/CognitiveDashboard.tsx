@@ -82,44 +82,36 @@ function TerminalLog() {
     }, [lines]);
 
     return (
-        <div className="rounded-xl bg-[#080a0c] border border-cyan-500/20 overflow-hidden h-full flex flex-col">
+        <div className="rounded-xl bg-[#080a0c] border border-emerald-500/10 overflow-hidden h-full flex flex-col">
             {/* Header */}
-            <div className="flex items-center gap-2 px-3 py-2 border-b border-white/[0.06] bg-white/[0.02] shrink-0">
-                <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
+            <div className="flex items-center gap-2 px-3 py-2 border-b border-white/[0.04] bg-white/[0.01] shrink-0">
+                <div className="flex gap-1">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/40" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/20" />
                 </div>
-                <Terminal className="w-3 h-3 text-gray-600 ml-2" />
-                <span className="text-[10px] text-gray-600 font-mono">kognitect-scan</span>
+                <span className="text-[10px] text-zinc-500 font-medium uppercase tracking-wider ml-2">Analiz Akışı</span>
             </div>
 
             {/* Lines */}
-            <div ref={scrollRef} className="flex-1 p-3 overflow-y-auto space-y-1 min-h-0 scrollbar-thin">
+            <div ref={scrollRef} className="flex-1 p-3 overflow-y-auto space-y-2 min-h-0 scrollbar-thin">
                 <AnimatePresence>
                     {lines.map((line, idx) => (
                         <motion.p
                             key={`${idx}-${line.slice(0, 10)}`}
-                            initial={{ opacity: 0, x: -8 }}
+                            initial={{ opacity: 0, x: -4 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.3 }}
-                            className={`text-[11px] font-mono leading-relaxed ${line.includes('WARNING') || line.includes('friction')
-                                ? 'text-amber-400/90'
+                            className={`text-[11px] leading-relaxed ${line.includes('WARNING') || line.includes('friction')
+                                ? 'text-amber-400/80 font-medium'
                                 : line.includes('✓') || line.includes('tamamlandı')
-                                    ? 'text-emerald-400/90'
-                                    : 'text-cyan-300/70'
+                                    ? 'text-emerald-400/90 font-medium'
+                                    : 'text-zinc-400'
                                 }`}
                         >
-                            {line}
+                            {line.startsWith('> ') ? line.substring(2) : line}
                         </motion.p>
                     ))}
                 </AnimatePresence>
-                {/* Blinking cursor */}
-                <motion.span
-                    className="inline-block w-1.5 h-3 bg-cyan-400/80 rounded-sm"
-                    animate={{ opacity: [1, 0] }}
-                    transition={{ duration: 0.6, repeat: Infinity }}
-                />
             </div>
         </div>
     );
@@ -141,8 +133,8 @@ function MockupWithHeatmap() {
                     <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
                     <div className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
                 </div>
-                <div className="flex-1 mx-3 h-5 rounded bg-white/[0.04] flex items-center px-2">
-                    <span className="text-[9px] text-gray-600 font-mono">https://client-website.com</span>
+                <div className="flex-1 mx-3 h-5 rounded bg-white/[0.04] flex items-center px-3">
+                    <span className="text-[9px] text-zinc-500">client-interface.ai</span>
                 </div>
             </div>
 
@@ -230,7 +222,7 @@ function MockupWithHeatmap() {
                                 }}
                             >
                                 <p className="text-[10px] font-mono text-gray-400">{spot.label}</p>
-                                <p className="text-xs font-bold font-mono" style={{ color: spot.color }}>
+                                <p className="text-xs font-bold" style={{ color: spot.color }}>
                                     Attention: %{score}
                                 </p>
                             </motion.div>
@@ -279,9 +271,9 @@ export default function CognitiveDashboard() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-5">
-                        <Scan className="w-4 h-4 text-cyan-400" />
-                        <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase">Bilişsel Muayene</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-5">
+                        <Scan className="w-4 h-4 text-emerald-400" />
+                        <span className="text-xs tracking-widest text-emerald-400 uppercase font-bold">Bilişsel Muayene</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
                         Canlı Analiz <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">Simülasyonu</span>
@@ -313,11 +305,11 @@ export default function CognitiveDashboard() {
                                 animate={{ opacity: [1, 0.3, 1] }}
                                 transition={{ duration: 2, repeat: Infinity }}
                             />
-                            <span className="text-[11px] font-mono text-gray-500 tracking-wider uppercase">Kognitect Cognitive Engine</span>
+                            <span className="text-[11px] text-zinc-600">Cognitive Hub Intelligence</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <span className="text-[11px] font-mono text-gray-600">Skor: <span className="text-cyan-400 font-bold">{avgScore}/100</span></span>
-                            <span className="text-[11px] font-mono text-gray-700">●  SİMÜLASYON</span>
+                            <span className="text-[11px] text-zinc-600">Skor: <span className="text-emerald-400 font-bold">{avgScore}/100</span></span>
+                            <span className="text-[11px] text-zinc-700 font-bold">SIMULATION</span>
                         </div>
                     </div>
 
@@ -338,7 +330,7 @@ export default function CognitiveDashboard() {
                                             <PolarGrid stroke="rgba(78,205,196,0.1)" />
                                             <PolarAngleAxis
                                                 dataKey="axis"
-                                                tick={{ fill: 'rgba(255,255,255,0.5)', fontSize: 11, fontFamily: 'ui-monospace, monospace' }}
+                                                tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 10, fontWeight: 500 }}
                                             />
                                             <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
                                             <Radar

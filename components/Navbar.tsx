@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Terminal, Globe } from 'lucide-react';
+import { Menu, X, ArrowRight, Sparkles, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
@@ -101,7 +101,7 @@ const Navbar = () => {
                         {/* Language Toggle */}
                         <button
                             onClick={toggleLocale}
-                            className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-mono text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                            className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                         >
                             <Globe className="w-3.5 h-3.5" />
                             {nav.langToggle}
@@ -115,7 +115,7 @@ const Navbar = () => {
                             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = `${accent.primary}33`; e.currentTarget.style.borderColor = `${accent.primary}4D`; }}
                             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
                         >
-                            <Terminal className="w-4 h-4 group-hover:text-white transition-colors" style={{ color: accent.primary }} />
+                            <Sparkles className="w-4 h-4 group-hover:text-emerald-400 transition-colors" style={{ color: accent.primary }} />
                             {nav.cta}
                         </Link>
                     </nav>
@@ -146,7 +146,7 @@ const Navbar = () => {
                                     key={item.name}
                                     href={item.href}
                                     onClick={(e) => handleScrollTo(e, item.href)}
-                                    className="text-4xl font-bold text-gray-500 hover:text-white transition-colors font-mono tracking-tighter"
+                                    className="text-4xl font-bold text-gray-500 hover:text-white transition-colors tracking-tighter"
                                 >
                                     {item.name}
                                 </Link>
@@ -155,7 +155,7 @@ const Navbar = () => {
                             {/* Mobile Language Toggle */}
                             <button
                                 onClick={toggleLocale}
-                                className="flex items-center gap-2 text-xl font-mono text-gray-500 transition-colors"
+                                className="flex items-center gap-2 text-xl font-medium text-gray-500 transition-colors"
                                 style={{ '--hover-color': accent.primary } as React.CSSProperties}
                             >
                                 <Globe className="w-5 h-5" />
@@ -168,7 +168,7 @@ const Navbar = () => {
                                 className="mt-8 flex items-center gap-3 text-xl font-bold"
                                 style={{ color: accent.primary }}
                             >
-                                <Terminal className="w-6 h-6" />
+                                <Sparkles className="w-6 h-6" />
                                 {nav.mobileCta}
                                 <ArrowRight className="w-5 h-5" />
                             </Link>

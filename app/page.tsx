@@ -567,27 +567,6 @@ const ProductsSection = () => {
   );
 };
 
-// 7. CONTACT & FOOTER
-const ContactSection = () => {
-  const { t, accent } = useLanguage();
-  const contact = t.contact;
-
-  return (
-    <section id="contact" className="py-24 px-6 bg-[#050505] border-t border-white/5">
-      <div className="max-w-3xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <div className="inline-block p-4 rounded-full mb-6" style={{ backgroundColor: `${accent.primary}1A` }}><Zap className="w-8 h-8" style={{ color: accent.primary }} /></div>
-          <h2 className="text-4xl font-bold mb-6">{contact.title}</h2>
-          <p className="text-gray-400 mb-12 text-lg">
-            {contact.subtitle} <br />
-            {contact.subtitleLine2}
-          </p>
-          <ConsultForm />
-        </motion.div>
-      </div>
-    </section>
-  )
-}
 
 
 
@@ -597,8 +576,8 @@ export default function Home() {
       <MetaHead pageKey="home" />
       <HeroSection />
       <CognitiveRadar />
-      <PhilosophySection />
       <Services />
+      <PhilosophySection />
       <CognitiveDashboard />
 
       {/* 4. PROCESS SECTION (New Timeline) */}
@@ -609,7 +588,6 @@ export default function Home() {
 
       {/* 6. CASE STUDIES (Formerly Products) */}
       <CaseStudiesSection />
-      <ContactSection />
     </main>
   );
 }

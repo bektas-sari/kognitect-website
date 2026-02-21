@@ -10,11 +10,15 @@
                 "href": "#technologies"
             },
             {
+                "name": "Services",
+                "href": "#services"
+            },
+            {
                 "name": "Projects",
                 "href": "#case-studies"
             },
             {
-                "name": "About",
+                "name": "Perception Architect",
                 "href": "/about"
             }
         ],
@@ -1083,7 +1087,7 @@
     },
     "consultForm": {
         "successTitle": "Protocol Initiated.",
-        "successMessage": "The Architect will contact you shortly.",
+        "successMessage": "We will contact you as soon as possible",
         "nameLabel": "Full Name",
         "namePlaceholder": "e.g., Jane Doe",
         "emailLabel": "Email",
@@ -1122,8 +1126,12 @@
         },
         "connection": {
             "title": "Connection",
-            "legal": "Privacy Policy • Terms of Use"
+            "legal": "Privacy Policy • Terms of Use",
+            "directContact": "Direct Contact",
+            "projectPrompt": "Have a project?"
         },
+        "manifesto": "Data over intuition. We are here to rebuild your digital ecosystem with cognitive architecture.",
+        "startAnalysis": "Start Analysis",
         "copyright": "© 2024 Kognitect. All rights reserved."
     },
     "seo": {
@@ -1151,7 +1159,7 @@
         "location": "COORDINATES",
         "locationValue": "41.0082° N, 28.9784° E",
         "successTitle": "Transmission Received.",
-        "successMessage": "The Architect will decode your signal shortly.",
+        "successMessage": "We will contact you as soon as possible",
         "formTitle": "initiate_new_protocol()",
         "formTrigger": "awaiting_user_input...",
         "nameLabel": "IDENTITY",
@@ -1168,7 +1176,12 @@
         "submitButton": "EXECUTE_PROTOCOL",
         "submitting": "ENCRYPTING...",
         "errorMessage": "Connection terminated. Retry or use secure channel info@kognitect.com.",
-        "freeConsultationNote": "initial_consultation = free_of_charge"
+        "freeConsultationNote": "initial_consultation = free_of_charge",
+        "websiteLabel": "EXISTING PRODUCT / WEBSITE",
+        "websitePlaceholder": "e.g., https://yourcompany.com",
+        "briefLabel": "PROJECT BRIEF / FILE LINK",
+        "briefPlaceholder": "Paste the link to the file you want us to review",
+        "optionalLabel": "(Optional)"
     },
     "about": {
         "hero": {

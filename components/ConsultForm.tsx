@@ -1,15 +1,17 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import { Send, CheckCircle, ChevronDown } from 'lucide-react';
+import { Send, CheckCircle, ChevronDown, Loader2 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ConsultForm() {
-  const [state, handleSubmit] = useForm("mpwzeovj");
   const { t, accent } = useLanguage();
   const form = t.consultForm;
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   const toggleCategory = (cat: string) => {
@@ -20,20 +22,74 @@ export default function ConsultForm() {
     );
   };
 
-  if (state.succeeded) {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    // Add selected categories to data
+    data.expertise = selectedCategories.join(', ');
+
+    try {
+      const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "mpwzeovj";
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      // Ensure at least 1s of "loading" for better UX even if it's instant
+      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSuccess(true);
+        const formElement = e.target as HTMLFormElement;
+        formElement.reset();
+        setSelectedCategories([]);
+      } else {
+        setIsSubmitting(false);
+        setErrorMessage("İletim sırasında bir hata oluştu. Lütfen tekrar deneyin.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setIsSubmitting(false);
+      setErrorMessage("Bağlantı hatası. Lütfen internet bağlantınızı kontrol edin.");
+    }
+  };
+
+  if (isSuccess) {
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="text-center py-20 px-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl space-y-6"
+        className="text-center py-20 px-8 rounded-3xl bg-zinc-900/50 border border-emerald-500/20 backdrop-blur-xl space-y-6 relative overflow-hidden"
       >
-        <div className="w-20 h-20 mx-auto rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent pointer-events-none" />
+        <div className="w-20 h-20 mx-auto rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 relative z-10">
           <CheckCircle className="w-10 h-10 text-emerald-500" />
         </div>
-        <div>
-          <h3 className="text-3xl font-bold text-white mb-2">{form.successTitle}</h3>
-          <p className="text-zinc-400">{form.successMessage}</p>
+        <div className="relative z-10">
+          <h3 className="text-3xl font-bold text-white mb-4">{form.successTitle}</h3>
+          <p className="text-zinc-400 max-w-md mx-auto leading-relaxed">
+            {form.successMessage}
+          </p>
         </div>
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          onClick={() => setIsSuccess(false)}
+          className="relative z-10 text-emerald-400 text-sm font-mono border-b border-emerald-500/30 pb-0.5 hover:text-emerald-300 transition-colors"
+        >
+          Yeni Bir Analiz Başlat
+        </motion.button>
       </motion.div>
     );
   }
@@ -47,6 +103,12 @@ export default function ConsultForm() {
         onSubmit={handleSubmit}
         className="relative bg-zinc-950/40 border border-zinc-800/50 backdrop-blur-xl p-8 md:p-12 rounded-xl shadow-2xl space-y-10"
       >
+        {errorMessage && (
+          <div className="bg-red-500/10 border border-red-500/20 text-red-400 p-4 rounded-xl text-sm font-mono flex items-center gap-3">
+            <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            {errorMessage}
+          </div>
+        )}
         {/* Section 1: Personal & Corporate Info (Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-3 flex flex-col items-start">
@@ -61,7 +123,6 @@ export default function ConsultForm() {
               className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
               placeholder={form.namePlaceholder}
             />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
 
           <div className="space-y-3 flex flex-col items-start">
@@ -76,7 +137,6 @@ export default function ConsultForm() {
               className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
               placeholder={form.emailPlaceholder}
             />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
 
           <div className="space-y-3 flex flex-col items-start">
@@ -167,17 +227,21 @@ export default function ConsultForm() {
             className="w-full px-8 py-6 rounded-xl bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 resize-none min-h-[160px]"
             placeholder={form.messagePlaceholder}
           />
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
 
         {/* Section 4: Submission CTA */}
         <div className="pt-4">
           <button
             type="submit"
-            disabled={state.submitting}
-            className="w-full py-6 rounded-lg bg-emerald-500 text-zinc-950 font-black text-sm uppercase tracking-[0.3em] flex items-center justify-center gap-4 hover:brightness-110 active:scale-[0.98] transition-all disabled:opacity-50 shadow-2xl shadow-emerald-500/20"
+            disabled={isSubmitting}
+            className={`w-full py-6 rounded-lg bg-emerald-500 text-zinc-950 font-black text-sm uppercase tracking-[0.3em] flex items-center justify-center gap-4 hover:brightness-110 active:scale-[0.98] transition-all disabled:cursor-not-allowed shadow-2xl shadow-emerald-500/20 ${isSubmitting ? 'opacity-70' : ''}`}
           >
-            {state.submitting ? form.submitting : (
+            {isSubmitting ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" />
+                <span>Analiz Ediliyor...</span>
+              </>
+            ) : (
               <>
                 {form.submitButton}
                 <Send className="w-5 h-5 ml-1" />

@@ -2,103 +2,88 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Terminal, Cpu, Globe } from 'lucide-react';
-import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import MetaHead from '@/components/MetaHead';
-import ProtocolForm from '@/components/ProtocolForm';
+import ConsultForm from '@/components/ConsultForm';
 
 export default function ContactPage() {
     const { t, accent } = useLanguage();
-    const p = t.protocol;
 
     return (
-        <main className="min-h-screen bg-[#050505] text-white pt-24 pb-12 px-4 md:px-8 flex flex-col items-center justify-center">
+        <main className="min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 md:px-12">
             <MetaHead pageKey="contact" />
 
-            <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4 h-full min-h-[800px]">
+            <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-                {/* LEFT COLUMN: Terminal / Info */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="relative bg-black border border-white/10 rounded-3xl p-8 md:p-12 flex flex-col justify-between overflow-hidden group"
-                >
-                    {/* Animated Background (Network/Globe hint) */}
-                    <div className="absolute inset-0 opacity-20 pointer-events-none">
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px]" />
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[100px] animate-pulse" />
-
-                        {/* Rotating ring */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-white/5 rounded-full animate-[spin_20s_linear_infinite]" />
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border border-dashed border-white/10 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
-                    </div>
-
-                    <div className="relative z-10">
-                        {/* Terminal Header */}
-                        <div className="flex items-center gap-3 mb-12">
-                            <div className="w-3 h-3 rounded-full bg-red-500" />
-                            <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                            <div className="w-3 h-3 rounded-full bg-green-500" />
-                            <div className="ml-4 px-3 py-1 rounded bg-white/5 text-xs font-mono text-gray-500 border border-white/5">
-                                bash --protocol-init
-                            </div>
-                        </div>
-
-                        <div className="space-y-2 mb-8">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-green-500/30 bg-green-500/10 text-green-400 text-xs font-mono tracking-widest uppercase animate-pulse">
-                                <span className="w-2 h-2 rounded-full bg-green-500" />
-                                System Online
-                            </div>
-                            <h1 className="text-4xl md:text-6xl font-bold font-mono tracking-tighter loading-none">
-                                {p.title.split(' ').map((word: string, i: number) => (
-                                    <span key={i} className="block">{word}</span>
-                                ))}
+                    {/* LEFT COLUMN: Brand & Info */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="space-y-12"
+                    >
+                        <div className="space-y-6">
+                            <motion.div
+                                initial={{ opacity: 0, width: 0 }}
+                                animate={{ opacity: 1, width: '3rem' }}
+                                className="h-[2px] bg-emerald-500"
+                            />
+                            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]">
+                                {t.philosophy.title}
                             </h1>
-                        </div>
-
-                        <p className="font-mono text-gray-400 text-lg border-l-2 border-white/20 pl-4 py-2 mb-12">
-                            &gt; {p.encrypted} <span className="animate-blink">_</span>
-                        </p>
-                    </div>
-
-                    <div className="relative z-10 space-y-8">
-                        <div>
-                            <p className="text-xs font-bold text-gray-600 uppercase tracking-widest mb-2 flex items-center gap-2">
-                                <Mail className="w-4 h-4" /> {p.emailLabel}
-                            </p>
-                            <a href="mailto:info@kognitect.com" className="text-xl md:text-2xl font-mono text-white hover:text-cyan-400 transition-colors">
-                                info@kognitect.com
-                            </a>
-                        </div>
-
-                        <div>
-                            <p className="text-xs font-bold text-gray-600 uppercase tracking-widest mb-2 flex items-center gap-2">
-                                <Globe className="w-4 h-4" /> {p.location}
-                            </p>
-                            <p className="text-xl md:text-2xl font-mono text-white">
-                                {p.locationValue}
+                            <p className="text-zinc-400 text-xl leading-relaxed max-w-lg">
+                                {t.manifesto}
                             </p>
                         </div>
-                    </div>
 
-                    {/* Corner decoration */}
-                    <div className="absolute bottom-6 right-6">
-                        <Cpu className="w-12 h-12 text-white/5" />
-                    </div>
-                </motion.div>
+                        <div className="space-y-8">
+                            <div className="group">
+                                <p className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-4">
+                                    {t.footer.connection.directContact}
+                                </p>
+                                <a href="mailto:info@kognitect.com" className="text-3xl md:text-4xl font-medium text-white hover:text-emerald-400 transition-colors duration-300">
+                                    info@kognitect.com
+                                </a>
+                            </div>
 
-                {/* RIGHT COLUMN: Protocol Form */}
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="h-full"
-                >
-                    <ProtocolForm />
-                </motion.div>
+                            <div className="space-y-4 pt-4">
+                                <p className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-4">
+                                    Lokasyon
+                                </p>
+                                <div className="space-y-2 text-xl text-zinc-300">
+                                    <p>İstanbul Office</p>
+                                    <p className="text-zinc-500 text-sm">Levent, Beşiktaş</p>
+                                </div>
+                                <div className="space-y-2 pt-4 text-xl text-zinc-300">
+                                    <p>İzmir Lab</p>
+                                    <p className="text-zinc-500 text-sm">Urla, Teknopark</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        {/* Social Links */}
+                        <div className="flex gap-6 pt-8 border-t border-zinc-900">
+                            <a href="https://linkedin.com/in/bektas-sari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">LinkedIn</a>
+                            <a href="https://instagram.com/dr.bektassari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">Instagram</a>
+                            <a href="https://github.com/bektas-sari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">GitHub</a>
+                        </div>
+                    </motion.div>
+
+                    {/* RIGHT COLUMN: Form */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="relative"
+                    >
+                        <div className="absolute -inset-4 bg-emerald-500/5 blur-3xl rounded-full opacity-50 pointer-events-none" />
+                        <div className="relative z-10">
+                            <ConsultForm />
+                        </div>
+                    </motion.div>
+
+                </div>
             </div>
         </main>
     );

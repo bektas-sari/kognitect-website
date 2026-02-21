@@ -110,10 +110,10 @@ function HeatmapTab({ accent }: { accent: { primary: string; secondary: string }
                                     className="absolute left-1/2 -translate-x-1/2 -top-2 -translate-y-full z-30 pointer-events-none"
                                 >
                                     <div className="px-4 py-3 rounded-xl bg-[#101214]/95 backdrop-blur-xl border border-white/[0.12] shadow-2xl whitespace-nowrap">
-                                        <p className="text-xs font-mono text-gray-400 mb-1">{zone.label}</p>
+                                        <p className="text-xs text-zinc-500 mb-1">{zone.label}</p>
                                         <div className="flex items-center gap-2">
                                             <Activity className="w-3.5 h-3.5" style={{ color: zone.color }} />
-                                            <span className="text-sm font-bold font-mono" style={{ color: zone.color }}>
+                                            <span className="text-sm font-bold" style={{ color: zone.color }}>
                                                 Attention Score: %{zone.score}
                                             </span>
                                         </div>
@@ -172,7 +172,7 @@ function MetricsTab({ accent }: { accent: { primary: string; secondary: string }
                         <PolarGrid stroke="rgba(255,255,255,0.08)" />
                         <PolarAngleAxis
                             dataKey="axis"
-                            tick={{ fill: 'rgba(255,255,255,0.6)', fontSize: 12, fontFamily: 'monospace' }}
+                            tick={{ fill: 'rgba(255,255,255,0.6)', fontSize: 11, fontWeight: 500 }}
                         />
                         <PolarRadiusAxis
                             angle={90}
@@ -205,7 +205,7 @@ function MetricsTab({ accent }: { accent: { primary: string; secondary: string }
                         className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-center"
                     >
                         <p className="text-[10px] text-gray-500 uppercase tracking-wider font-mono mb-1">{item.axis}</p>
-                        <p className="text-xl font-black font-mono" style={{ color: item.value >= 85 ? '#22C55E' : item.value >= 70 ? accent.primary : accent.secondary }}>
+                        <p className="text-xl font-bold" style={{ color: item.value >= 85 ? '#22C55E' : item.value >= 70 ? accent.primary : accent.secondary }}>
                             {item.value}
                         </p>
                     </motion.div>
@@ -278,13 +278,10 @@ function InsightsTab({ accent }: { accent: { primary: string; secondary: string 
     };
 
     return (
-        <div className="font-mono text-sm rounded-2xl bg-[#0a0c0e] border border-white/[0.06] overflow-hidden">
-            {/* Terminal header */}
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
-                <div className="w-3 h-3 rounded-full bg-red-500/70" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
-                <div className="w-3 h-3 rounded-full bg-green-500/70" />
-                <span className="ml-3 text-xs text-gray-600">kognitect-ai — bilişsel analiz v2.4</span>
+        <div className="text-sm rounded-2xl bg-[#0a0c0e] border border-white/[0.06] overflow-hidden">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.04] bg-white/[0.01]">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/40" />
+                <span className="ml-2 text-[10px] text-zinc-500 font-bold uppercase tracking-widest">Bilişsel Analiz Raporu</span>
             </div>
 
             {/* Terminal body */}
@@ -293,12 +290,10 @@ function InsightsTab({ accent }: { accent: { primary: string; secondary: string 
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="text-xs text-gray-600 mb-4"
+                    className="text-[11px] text-zinc-600 mb-6 border-l-2 border-emerald-500/20 pl-4 py-1"
                 >
-                    ═══════════════════════════════════════<br />
-                    &nbsp; KOGNITECT BİLİŞSEL TARAMA RAPORU<br />
-                    &nbsp; Tarih: {new Date().toLocaleDateString('tr-TR')}<br />
-                    ═══════════════════════════════════════
+                    Yapısal Bilişsel Tarama Sonuçları — v2.4.0-clarity<br />
+                    Tarih: {new Date().toLocaleDateString('tr-TR')}
                 </motion.div>
 
                 {/* Completed lines */}
@@ -320,12 +315,6 @@ function InsightsTab({ accent }: { accent: { primary: string; secondary: string 
                         {iconForType(AI_LINES[visibleLines].type)}
                         <span>
                             {currentText}
-                            <motion.span
-                                animate={{ opacity: [1, 0] }}
-                                transition={{ duration: 0.5, repeat: Infinity }}
-                                className="inline-block w-2 h-4 ml-0.5 align-middle"
-                                style={{ backgroundColor: accent.primary }}
-                            />
                         </span>
                     </div>
                 )}

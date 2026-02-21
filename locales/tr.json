@@ -1,0 +1,1311 @@
+{
+    "navbar": {
+        "items": [
+            {
+                "name": "Metod",
+                "href": "#methodology"
+            },
+            {
+                "name": "Teknoloji",
+                "href": "#technologies"
+            },
+            {
+                "name": "Projeler",
+                "href": "#case-studies"
+            },
+            {
+                "name": "Liderlik",
+                "href": "/about"
+            }
+        ],
+        "cta": "Projeyi Analiz Et",
+        "mobileCta": "Protokolü Başlat",
+        "langToggle": "ENG"
+    },
+    "hero": {
+        "badge": "SEZGİLERLE DEĞİL, VERİLERLE",
+        "titleLine1": "Fikirlerinizi, <span class=\"text-cyan-400\">Bilimsel Verilerle</span>",
+        "titleLine2": "Çalışan Ölçülebilir Dijital Ürünlere Dönüştürüyoruz.",
+        "subtitle": "Dijital ürünleri, insan zihni ve davranış modelleriyle uyumlu tasarlayan teknoloji laboratuvarı.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Mimara Danış",
+        "ctaSecondary": "Teknolojiyi İncele"
+    },
+    "radar": {
+        "badge": "Performans Metrikleri",
+        "title": "Tahmin Etmiyoruz.",
+        "titleHighlight": "Zihni Ölçüyoruz.",
+        "description": "Ürününüzü 5 temel bilişsel sütuna göre muayene edip optimize ediyoruz.",
+        "quote": "Beyin reddediyorsa güzel bir arayüzün hiçbir anlamı yoktur.",
+        "metrics": [
+            {
+                "label": "Marka Hafızası",
+                "value": 95,
+                "desc": "Alışkanlık oluşturan tasarımla sağlanan uzun vadeli kullanıcı sadakati."
+            },
+            {
+                "label": "Bilişsel Yük",
+                "value": 90,
+                "desc": "Sıfır belirsizlik. Beyin arayüzü anında anlar."
+            },
+            {
+                "label": "Gezinme Akışı",
+                "value": 85,
+                "desc": "Göreve ulaşma süresinin kısaltılması. Sürtünmesiz bilişsel yollar."
+            },
+            {
+                "label": "Karar Tetikleyicisi",
+                "value": 100,
+                "desc": "Tutarlılık yoluyla oluşturulan psikolojik güvenlik ve eylem tetikleyicileri."
+            },
+            {
+                "label": "Görsel Belirginlik",
+                "value": 90,
+                "desc": "Dikkat çekicilik haritası ile dikkat yönetimi."
+            }
+        ]
+    },
+    "philosophy": {
+        "badge": "Metodolojimiz",
+        "title": "Algı Mimarisi Katmanları",
+        "subtitle": "Sistemin nasıl çalıştığını görmek için katmanları inceleyin.",
+        "protocolActive": "Protokol Aktif",
+        "problemLabel": "Problem",
+        "scienceLabel": "Bilimsel Yaklaşım",
+        "startScan": "Taramayı Başlat",
+        "topics": [
+            {
+                "id": "static",
+                "title": "Bilişsel Temel",
+                "subtitle": "Temel Mimari",
+                "description": "{{d}}Görsel estetik (UI){{/d}}, dijital bir ürünün sadece vitrinidir; {{h}}zihnin reddettiği bir yapıyı{{/h}} hiçbir tasarım kurtaramaz. Eğer sistemin taşıyıcı kolonları insan algısına ve {{h}}'Bilişsel Yük' sınırlarına{{/h}} göre inşa edilmemişse, o ürün kullanıcının ilk karmaşık karar anında çökmeye mahkumdur.",
+                "technical": "Her ekranın 'Bilişsel Statik Yük'ünü hesaplıyoruz. Hick Yasası ve Çalışma Belleği limitlerini kullanarak bilgi sütunlarını beynin beklediği yere yerleştiriyor, kullanıcı navigasyonu sırasında sıfır yapısal çöküş sağlıyoruz.",
+                "metrics": [
+                    {
+                        "label": "Stabilite",
+                        "value": "99.9%",
+                        "trend": "up"
+                    },
+                    {
+                        "label": "Yük Kapasitesi",
+                        "value": "Optimize",
+                        "trend": "up"
+                    }
+                ]
+            },
+            {
+                "id": "noise",
+                "title": "Gürültü İptali",
+                "subtitle": "Sinyal İşleme",
+                "description": "Dijital ekosistem, kullanıcının dikkatini parçalayan uyarıcılarla doludur. Aşırı bilgi ve agresif görsel rekabet, beyinde {{w}}'Algısal Körlük'{{/w}} (Inattentional Blindness) yaratır. Kullanıcı, bilişsel sınırlarını aşan arayüzler içinde asıl mesajı filtreler ve yok sayar.",
+                "technical": "{{w}}Sinyal Algılama Teorisi'ni{{/w}} (Signal Detection Theory) merkeze alarak arayüzdeki sinyal-gürültü oranını (SNR) maksimize ediyoruz. Bilişsel gürültüyü izole ediyor, markanızın temel değer önerisini beynin en hızlı işleyeceği saf bir frekansa ve görsel {{w}}belirginliğe (Saliency){{/w}} dönüştürüyoruz.",
+                "metrics": [
+                    {
+                        "label": "Netlik",
+                        "value": "Yüksek",
+                        "trend": "up"
+                    },
+                    {
+                        "label": "Dikkat Dağınıklığı",
+                        "value": "0%",
+                        "trend": "down"
+                    }
+                ]
+            },
+            {
+                "id": "lock",
+                "title": "Biyolojik Çilingir",
+                "subtitle": "Evrimsel Uyum",
+                "description": "İnsan beyni, yüz binlerce yıllık evrimi boyunca enerjiyi korumak üzere programlanmıştır. Kullanıcıyı düşünmeye zorlayan, sezgisel olmayan her arayüz, zihinde bir {{w}}'evrimsel uyumsuzluk'{{/w}} yaratır. Beyin, gereksiz efor harcadığı sistemi hızla terk eder.",
+                "technical": "Evrimsel Psikoloji ilkelerini dijital ürünlere entegre ediyoruz. Karar mimarisini {{w}}'En Az Direnç Yolu'na{{/w}} (Path of Least Resistance) göre tasarlayarak, kullanıcının kortizol (stres) seviyesini artıran mikro-sürtünmeleri ortadan kaldırıyor; teknolojiyi insan doğasına biyolojik bir uyumla kilitliyoruz.",
+                "metrics": [
+                    {
+                        "label": "Sürtünme",
+                        "value": "Minimal",
+                        "trend": "down"
+                    },
+                    {
+                        "label": "Akış Durumu",
+                        "value": "Aktif",
+                        "trend": "up"
+                    }
+                ]
+            },
+            {
+                "id": "bridge",
+                "title": "Davranışsal Katalizör",
+                "subtitle": "Stratejik Geçiş",
+                "description": "İş dünyasındaki en büyük uçurum, soyut fikirler ile teknik icraat arasındadır. Çoğu dijital proje, stratejinin yazılıma dönüşme evresinde bilimsel dayanaktan kopar ve ölçülemeyen, vizyondan uzak yığınlara dönüşür.",
+                "technical": "Davranış bilimini kodla birleştirerek bu boşluğu kapatıyoruz. Subjektif 'daha göz alıcı olsun' talebini milisaniyelik {{w}}Isı Haritası (Heatmap){{/w}} verilerine; 'kullanıcı dostu olsun' beklentisini ise {{w}}Görev Tamamlama Süresi (Time-on-Task){{/w}} metriklerine çevirerek fikirleri ölçülebilir mühendislik çıktılarına dönüştürüyoruz.",
+                "metrics": [
+                    {
+                        "label": "Risk",
+                        "value": "Azaltıldı",
+                        "trend": "down"
+                    },
+                    {
+                        "label": "ROI",
+                        "value": "Maksimize",
+                        "trend": "up"
+                    }
+                ]
+            }
+        ]
+    },
+    "services": {
+        "badge": "Hizmetlerimiz",
+        "heading": "Teknolojiyi Kâra",
+        "headingHighlight": "Dönüştürüyoruz.",
+        "subtitle": "Fikir aşamasından otomasyon altyapısına kadar, işletmenizi bilimsel yöntemlerle geleceğe taşıyoruz.",
+        "cta": "KEŞFET",
+        "items": [
+            {
+                "id": "perception",
+                "title": "Algı Mimarlığı",
+                "subtitle": "Perception Architecture",
+                "description": "Fikir aşamasındaki projeleri bilimsel validasyon (PhD derinliği) ve nöro-tasarım ilkeleriyle kârlı markalara dönüştürüyoruz.",
+                "features": [
+                    "Bilimsel Validasyon",
+                    "Nöro-Tasarım",
+                    "Marka Stratejisi",
+                    "Kârlılık Analizi"
+                ],
+                "href": "/hizmetler/algi-mimarligi"
+            },
+            {
+                "id": "audit",
+                "title": "Bilişsel Muayene",
+                "subtitle": "Cognitive Audit",
+                "description": "Mevcut dijital ürünlerinizin (web/mobil) bilişsel ve teknik röntgenini çekerek, kullanıcı kaybına neden olan darboğazları teşhis ediyor ve aydınlanma sağlıyoruz.",
+                "features": [
+                    "UX Röntgen",
+                    "Darboğaz Teşhisi",
+                    "Bilişsel Yük Analizi",
+                    "Dönüşüm Optimizasyonu"
+                ],
+                "href": "/hizmetler/bilissel-muayene"
+            },
+            {
+                "id": "engineering",
+                "title": "Akıllı Otomasyon",
+                "subtitle": "Intelligent Engineering",
+                "description": "n8n iş akışları ve özel Python scriptleri ile operasyonel maliyetinizi azaltan, teknolojik olarak işletmenizi geleceğe taşıyan sistemler kuruyoruz.",
+                "features": [
+                    "n8n Otomasyon",
+                    "Python Scriptleri",
+                    "Maliyet Optimizasyonu",
+                    "Sistem Entegrasyonu"
+                ],
+                "href": "/hizmetler/akilli-otomasyon"
+            }
+        ],
+        "modals": [
+            {
+                "id": "bilimsel-validasyon",
+                "title": "Bilimsel Validasyon",
+                "subtitle": "RESEARCH & DATA SCIENCE",
+                "description": "Her kararımız {{h}}PhD düzeyinde araştırma{{/h}} ve veri bilimi ile desteklenir. Tahminleri elimine ediyor, ürün stratejinizi {{h}}İstatistiksel Güven Aralığı{{/h}} içinde doğruluyoruz. A/B testleri, kohort analizleri ve deneysel tasarım ile her pikselin arkasında bilimsel bir gerekçe olmasını sağlıyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Hipotez inşası ve pazar uyumu çerçevelemesi",
+                        "output": "HİPOTEZ MATRİSİ",
+                        "description": "Fikrinizi yapılandırılmış bir bilimsel hipoteze dönüştürüyoruz. Pazar büyüklüğü, hedef kitle dinamikleri ve rekabet yoğunluğu parametreleri üzerinden çok boyutlu bir hipotez matrisi oluşturuyoruz."
+                    },
+                    {
+                        "step": "Nörobilişsel hedef kitle profillemesi",
+                        "output": "KOGNİTİF PROFİL",
+                        "description": "Hedef kitlenizin karar verme mekanizmalarını nörobilişsel çerçevede analiz ediyoruz. Bilişsel önyargılar, dikkat eşikleri ve motivasyon tetikleyicileri üzerinden derinlemesine profil çıkarıyoruz."
+                    },
+                    {
+                        "step": "Davranışsal A/B test senaryolarının simülasyonu",
+                        "output": "SİMÜLASYON RAPORU",
+                        "description": "Gerçek kullanıcı davranışlarını simüle eden A/B test senaryoları tasarlıyoruz. Her varyant için dönüşüm, tıklama ve etkileşim metriklerini istatistiksel olarak modelliyoruz."
+                    },
+                    {
+                        "step": "İstatistiksel güven aralığı hesaplaması ve onay",
+                        "output": "VARYANS ANALİZİ",
+                        "description": "Toplanan verileri ANOVA ve regresyon analizleriyle değerlendiriyoruz. %95 güven aralığında anlamlı sonuçlara ulaşana kadar iterasyonları sürdürüyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "noro-tasarim",
+                "title": "Nöro-Tasarım",
+                "subtitle": "NEURO-DESIGN ENGINEERING",
+                "description": "Arayüzleri beynin doğal işleyişine göre tasarlıyoruz. {{h}}Bilişsel Yük{{/h}} eşiklerini göz takip verileri ve {{h}}Isı Haritası{{/h}} analizleriyle ölçüyor, {{h}}Dikkat Çekicilik{{/h}} haritaları ile kullanıcının görsel yolculuğunu mikrosaniye hassasiyetinde yönlendiriyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Görsel hiyerarşi ve foveal algı tespiti",
+                        "output": "FOVEAL HARİTASI",
+                        "description": "Foveal (merkezi görüş) ve periferal (çevresel görüş) alanlarını haritalandırıyoruz. Kullanıcının ilk bakışta neyi gördüğünü ve görsel hiyerarşinin beyin tarafından nasıl işlendiğini tespit ediyoruz."
+                    },
+                    {
+                        "step": "Saccadic göz hareketleri ve odak simülasyonu",
+                        "output": "DİKKAT ODAĞI RAPORU",
+                        "description": "Saccadic (hızlı göz atlama) hareketlerini simüle ederek kullanıcının ekrandaki doğal tarama yolunu analiz ediyoruz. Odak noktaları, fiksasyon süreleri ve geçiş paternlerini görselleştiriyoruz."
+                    },
+                    {
+                        "step": "Bilişsel yük (Cognitive Load) ve sürtünme analizi",
+                        "output": "BİLİŞSEL SKOR",
+                        "description": "Her arayüz elementinin beyin üzerindeki bilişsel yükü ölçüyoruz. Miller Yasası (7±2) ve Hick Yasası çerçevesinde sürtünme noktalarını tespit ediyor, zihinsel aşırı yüklenme risklerini puanlıyoruz."
+                    },
+                    {
+                        "step": "Gestalt prensiplerine göre arayüz optimizasyonu",
+                        "output": "ARAYÜZ MİMARİSİ",
+                        "description": "Yakınlık, benzerlik, süreklilik ve kapalılık gibi Gestalt algı prensiplerine göre arayüzü yeniden yapılandırıyoruz. Beynin doğal gruplama mekanizmalarıyla uyumlu bir görsel mimari oluşturuyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "karlilik-analizi",
+                "title": "Kârlılık Analizi",
+                "subtitle": "ROI & CONVERSION SCIENCE",
+                "description": "Tasarımı bir maliyet merkezi değil, kâr motoru olarak konumlandırıyoruz. Her optimizasyonun {{h}}Yatırım Getirisi (ROI){{/h}} hesaplanır. {{h}}Dönüşüm Oranı{{/h}} metriklerini huninin her katmanında izleyerek, tasarım kararlarını doğrudan gelir artışına bağlıyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Dönüşüm hunisi (Funnel) kayıp noktalarının tespiti",
+                        "output": "DROP-OFF ANALİZİ",
+                        "description": "Farkındalıktan satın almaya kadar her huni aşamasını detaylı olarak inceliyoruz. Kullanıcıların hangi adımda ve neden terk ettiğini istatistiksel olarak belirliyoruz."
+                    },
+                    {
+                        "step": "Mikro-sürtünmelerin maliyet/kâr rasyosuna çevrilmesi",
+                        "output": "MALİYET RASYOSU",
+                        "description": "Her sürtünme noktasının finansal etkisini hesaplıyoruz. Bir butonun yanlış konumu veya bir formun fazla alanının kaç müşteri kaybına ve ne kadar gelir kaybına mal olduğunu rakamlarla ortaya koyuyoruz."
+                    },
+                    {
+                        "step": "Görev tamamlama süresi (Time-on-task) minimizasyonu",
+                        "output": "ZAMAN BÜTÇESİ",
+                        "description": "Kullanıcının hedef görevini tamamlaması için harcadığı süreyi ölçüyor ve minimize ediyoruz. Her saniyenin dönüşüm oranına etkisini modelleyerek optimal akış süresini belirliyoruz."
+                    },
+                    {
+                        "step": "ROI odaklı yeniden yapılandırma ve metrik projeksiyonu",
+                        "output": "ROI PROJEKSİYONU",
+                        "description": "Tüm optimizasyonların 3, 6 ve 12 aylık ROI projeksiyonlarını çıkarıyoruz. Yatırım-getiri eğrisini modelliyor, her iyileştirmenin beklenen kâr artışını somut rakamlarla sunuyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "marka-stratejisi",
+                "title": "Marka Stratejisi",
+                "subtitle": "BRAND ARCHITECTURE",
+                "description": "Markanızı rastgele renkler ve logolardan ibaret olmaktan çıkarıyoruz. {{h}}Algısal Tutarlılık{{/h}} ilkesiyle her temas noktasında aynı bilişsel imzayı bırakan bir {{h}}Marka Mimarisi{{/h}} inşa ediyoruz. Nöral ağ düzeyinde birbirine bağlı, ölçülebilir bir marka ekosistemi yaratıyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Algısal körlük ve rakip gürültü analizi",
+                        "output": "GÜRÜLTÜ RAPORU",
+                        "description": "Sektörünüzdeki görsel ve mesaj gürültüsünü haritalandırıyoruz. Rakiplerinizin kullandığı renk, tipografi ve mesaj kalıplarını analiz ederek algısal körlük yaratan tekrarları tespit ediyoruz."
+                    },
+                    {
+                        "step": "Nörolojik arketip eşleştirmesi ve konumlandırma",
+                        "output": "ARKETİP MODELİ",
+                        "description": "Jung arketipleri ve nörolojik karar verme modelleri üzerinden markanızın beyin tarafından hangi kategoriyle ilişkilendirileceğini belirliyoruz. Bilinçaltı çağrışım haritası oluşturuyoruz."
+                    },
+                    {
+                        "step": "Marka hafızası (Brand Recall) ağının inşası",
+                        "output": "NÖRAL AĞ HARİTASI",
+                        "description": "Nöral kodlama prensiplerine göre markanızın hafızada kalıcı izler bırakmasını sağlayan çağrışım ağı inşa ediyoruz. Görsel, işitsel ve duygusal tetikleyicileri entegre bir ağ yapısında birleştiriyoruz."
+                    },
+                    {
+                        "step": "Zihinsel görünürlük ve ayrışma stratejisinin teslimi",
+                        "output": "KONUMLANDIRMA ÇIKTISI",
+                        "description": "Tüm analizlerin sonucunda, markanızın rakip gürültüsünden ayrışmasını sağlayan kapsamlı bir konumlandırma stratejisi sunuyoruz. Renk, tipografi, ses tonu ve görsel dil bileşenlerini içeren uygulama kılavuzu teslim ediyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "ux-rontgen",
+                "title": "UX Röntgen",
+                "subtitle": "INTERFACE DIAGNOSTICS",
+                "description": "Dijital ürününüzün her ekranını {{h}}Bilişsel Erişilebilirlik{{/h}} ve {{h}}Göz Takip Simülasyonu{{/h}} ile tarıyoruz. Kullanıcının bilinçaltında nerede takıldığını, hangi elementleri görmezden geldiğini ve dikkat dağılımını mikrosaniye hassasiyetinde tespit ediyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Mevcut ürünün davranışsal veri toplaması",
+                        "output": "DAVRANIŞSAL VERİ SETİ",
+                        "description": "Mevcut dijital ürününüzü gerçek kullanıcı davranışlarıyla analiz ediyoruz. Tıklama haritaları, kaydırma derinlikleri ve oturum kayıtlarından oluşan kapsamlı bir davranışsal veri seti oluşturuyoruz."
+                    },
+                    {
+                        "step": "Isı haritası ve bakış takibi analizi",
+                        "output": "ISI HARİTASI RAPORU",
+                        "description": "AI destekli göz takip simülasyonuyla her ekranın ısı haritasını çıkarıyoruz. Kullanıcıların nereye baktığını, neyi atladığını ve dikkat yoğunluğunun nasıl dağıldığını görselleştiriyoruz."
+                    },
+                    {
+                        "step": "Bilişsel yük ve sürtünme raporu",
+                        "output": "SÜRTÜNME ANALİZİ",
+                        "description": "Her arayüz elementinin bilişsel maliyetini ölçüyoruz. Karmaşık formlar, belirsiz navigasyon ve aşırı bilgi yükünün yarattığı sürtünme noktalarını puanlayarak önceliklendiriyoruz."
+                    },
+                    {
+                        "step": "Optimizasyon önerileri ve uygulama",
+                        "output": "OPTİMİZASYON PLANI",
+                        "description": "Tespit edilen sorunlara öncelik sırasına göre çözüm önerileri sunuyoruz. Her öneri etki skoruyla birlikte sunulur ve uygulama sonrası metrik karşılaştırması yapılır."
+                    }
+                ]
+            },
+            {
+                "id": "darbogaz-teshisi",
+                "title": "Darboğaz Teşhisi",
+                "subtitle": "BOTTLENECK ANALYSIS",
+                "description": "Kullanıcı akışındaki {{h}}Sürtünme Noktalarını{{/h}} haritalandırıyoruz. Her adımdaki {{h}}Terk Oranı{{/h}} ve bekleme sürelerini analiz ederek, dönüşüm huninizdeki görünmez darboğazları bilimsel olarak teşhis ediyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Mevcut ürünün davranışsal veri toplaması",
+                        "output": "DAVRANIŞSAL VERİ SETİ",
+                        "description": "Kullanıcı oturumlarını kayıt altına alıyor, funnel aşamalarındaki geçiş oranlarını ve terk noktalarını istatistiksel olarak analiz ediyoruz."
+                    },
+                    {
+                        "step": "Isı haritası ve bakış takibi analizi",
+                        "output": "ISI HARİTASI RAPORU",
+                        "description": "Darboğaz noktalarında kullanıcıların görsel davranışlarını analiz ediyoruz. Hangi elementlerin dikkat çektiğini ve hangilerinin görünmez kaldığını tespit ediyoruz."
+                    },
+                    {
+                        "step": "Bilişsel yük ve sürtünme raporu",
+                        "output": "SÜRTÜNME ANALİZİ",
+                        "description": "Her darboğaz noktasındaki bilişsel yükü ve kullanıcı sürtünmesini ölçüyoruz. Problemi kök nedenine inerek gerçek tıkanma sebeplerini keşfediyoruz."
+                    },
+                    {
+                        "step": "Optimizasyon önerileri ve uygulama",
+                        "output": "OPTİMİZASYON PLANI",
+                        "description": "Darboğazları ortadan kaldıran spesifik çözümler sunuyoruz. Her çözümün beklenen etki skoru ve uygulama önceliği ile birlikte sunulur."
+                    }
+                ]
+            },
+            {
+                "id": "bilissel-yuk-analizi",
+                "title": "Bilişsel Yük Analizi",
+                "subtitle": "COGNITIVE LOAD METRICS",
+                "description": "Her arayüz elementinin beyin üzerindeki {{h}}Bilişsel Yük{{/h}} değerini ölçüyoruz. {{h}}Miller Yasası{{/h}} ve {{h}}Hick Yasası{{/h}} çerçevesinde, kullanıcının karar verme kapasitesini aşmayan, zihinsel olarak hafif tasarımlar üretiyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Mevcut ürünün davranışsal veri toplaması",
+                        "output": "DAVRANIŞSAL VERİ SETİ",
+                        "description": "Arayüzün her ekranını bilişsel karmaşıklık açısından tarıyoruz. Element sayısı, renk çeşitliliği, metin yoğunluğu ve etkileşim karmaşıklığı gibi parametreleri ölçüyoruz."
+                    },
+                    {
+                        "step": "Isı haritası ve bakış takibi analizi",
+                        "output": "ISI HARİTASI RAPORU",
+                        "description": "Bilişsel yükün yüksek olduğu alanlarda kullanıcı bakış paternlerini analiz ediyoruz. Karar noktalarında yaşanan tereddütleri ve gereksiz göz hareketlerini tespit ediyoruz."
+                    },
+                    {
+                        "step": "Bilişsel yük ve sürtünme raporu",
+                        "output": "SÜRTÜNME ANALİZİ",
+                        "description": "Her ekran için bileşik bilişsel yük skoru hesaplıyoruz. Miller ve Hick yasaları çerçevesinde hangi elementlerin zihinsel kapasiteyi aştığını raporluyoruz."
+                    },
+                    {
+                        "step": "Optimizasyon önerileri ve uygulama",
+                        "output": "OPTİMİZASYON PLANI",
+                        "description": "Bilişsel yükü azaltmaya yönelik spesifik tasarım önerileri sunuyoruz. Progressive disclosure, chunking ve visual hierarchy teknikleriyle arayüzü sadeleştiriyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "donusum-optimizasyonu",
+                "title": "Dönüşüm Optimizasyonu",
+                "subtitle": "CONVERSION ENGINEERING",
+                "description": "A/B testleri ve {{h}}Çok Değişkenli Testler{{/h}} ile her tasarım kararının dönüşüm üzerindeki etkisini ölçüyoruz. {{h}}İstatistiksel Anlamlılık{{/h}} eşiğine ulaşana kadar iterasyonları sürdürerek, kanıtlanmış optimizasyonlar sunuyoruz.",
+                "processTitle": "Muayene Süreci",
+                "processSteps": [
+                    {
+                        "step": "Mevcut ürünün davranışsal veri toplaması",
+                        "output": "DAVRANIŞSAL VERİ SETİ",
+                        "description": "Dönüşüm hunisinin her aşamasındaki kullanıcı davranışlarını ve metriklerini topluyoruz. Mevcut dönüşüm oranlarını benchmark olarak belirliyoruz."
+                    },
+                    {
+                        "step": "Isı haritası ve bakış takibi analizi",
+                        "output": "ISI HARİTASI RAPORU",
+                        "description": "CTA butonları, formlar ve kritik dönüşüm noktalarındaki görsel dikkat dağılımını analiz ediyoruz. Kullanıcıların dönüşüm elementlerini fark edip etmediğini değerlendiriyoruz."
+                    },
+                    {
+                        "step": "Bilişsel yük ve sürtünme raporu",
+                        "output": "SÜRTÜNME ANALİZİ",
+                        "description": "Dönüşümü engelleyen sürtünme noktalarını tespit ediyoruz. Form karmaşıklığı, adım sayısı ve güven sinyallerinin eksikliği gibi dönüşüm engellerini raporluyoruz."
+                    },
+                    {
+                        "step": "Optimizasyon önerileri ve uygulama",
+                        "output": "OPTİMİZASYON PLANI",
+                        "description": "A/B test senaryoları ile desteklenen dönüşüm optimizasyonları sunuyoruz. Her önerinin istatistiksel anlamlılık eşiğine ulaşana kadar test edilmesini sağlıyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "n8n-otomasyon",
+                "title": "n8n Otomasyon",
+                "subtitle": "WORKFLOW AUTOMATION",
+                "description": "Tekrarlayan iş süreçlerinizi {{h}}n8n İş Akışları{{/h}} ile otomatize ediyoruz. CRM, e-posta, fatura ve stok yönetimi gibi sistemleri birbirine bağlayarak, insan hatasını sıfıra indiren {{h}}Akıllı Otomasyon Zincirleri{{/h}} kuruyoruz.",
+                "processTitle": "Mühendislik Süreci",
+                "processSteps": [
+                    {
+                        "step": "İş süreçlerinin haritalandırılması",
+                        "output": "SÜREÇ HARİTASI",
+                        "description": "Mevcut iş akışlarınızı uçtan uca analiz ediyoruz. Manuel adımları, tekrarlayan görevleri ve darboğazları tespit ederek kapsamlı bir süreç haritası oluşturuyoruz."
+                    },
+                    {
+                        "step": "Otomasyon fırsatlarının tespiti",
+                        "output": "FIRSAT ANALİZİ",
+                        "description": "Hangi süreçlerin otomasyona uygun olduğunu ROI bazında değerlendiriyoruz. Zaman tasarrufu, hata azaltımı ve maliyet düşüşü potansiyellerini hesaplıyoruz."
+                    },
+                    {
+                        "step": "n8n + Python ile sistem geliştirme",
+                        "output": "OTOMASYON AKIŞI",
+                        "description": "n8n'in görsel iş akışı motorunu Python scriptleriyle güçlendirerek özel otomasyon zincirleri kuruyoruz. API entegrasyonları, veri dönüşümleri ve koşullu mantık yapılarını implement ediyoruz."
+                    },
+                    {
+                        "step": "Test, lansman ve sürekli optimizasyon",
+                        "output": "PERFORMANS RAPORU",
+                        "description": "Otomasyonları kontrollü ortamda test ediyor, canlıya alıyor ve performansını sürekli izliyoruz. Hata oranları, işlem süreleri ve maliyet tasarruflarını raporluyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "python-scriptleri",
+                "title": "Python Scriptleri",
+                "subtitle": "CUSTOM SCRIPTING",
+                "description": "İşletmenize özel {{h}}Python Scriptleri{{/h}} geliştiriyoruz. Veri kazıma, otomatik raporlama, {{h}}API Entegrasyonu{{/h}} ve makine öğrenimi modelleri ile standart araçların yapamadığı özelleştirilmiş çözümler üretiyoruz.",
+                "processTitle": "Mühendislik Süreci",
+                "processSteps": [
+                    {
+                        "step": "İş süreçlerinin haritalandırılması",
+                        "output": "SÜREÇ HARİTASI",
+                        "description": "Script ihtiyaçlarınızı belirlemek için mevcut iş süreçlerinizi analiz ediyoruz. Veri kaynakları, dönüşüm gereksinimleri ve entegrasyon noktalarını haritalandırıyoruz."
+                    },
+                    {
+                        "step": "Otomasyon fırsatlarının tespiti",
+                        "output": "FIRSAT ANALİZİ",
+                        "description": "Python ile çözülebilecek en yüksek etkili otomasyon fırsatlarını belirliyoruz. Veri kazıma, raporlama, ML modelleri ve API entegrasyonu gibi alanlarda potansiyel değerlendirmesi yapıyoruz."
+                    },
+                    {
+                        "step": "n8n + Python ile sistem geliştirme",
+                        "output": "OTOMASYON AKIŞI",
+                        "description": "Özel Python scriptleri geliştiriyor ve n8n iş akışlarıyla entegre ediyoruz. Pandas, NumPy ve scikit-learn gibi kütüphanelerle veri işleme ve analiz pipellineları kuruyoruz."
+                    },
+                    {
+                        "step": "Test, lansman ve sürekli optimizasyon",
+                        "output": "PERFORMANS RAPORU",
+                        "description": "Geliştirilen scriptleri kapsamlı testlerden geçiriyor, production ortamına deploy ediyor ve performansını izliyoruz. Hata yönetimi, loglama ve otomatik uyarı sistemleri kuruyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "maliyet-optimizasyonu",
+                "title": "Maliyet Optimizasyonu",
+                "subtitle": "COST REDUCTION ENGINE",
+                "description": "Operasyonel süreçlerinizdeki {{h}}Maliyet Sızıntılarını{{/h}} tespit ediyoruz. Manuel işlemleri otomasyona çevirerek, {{h}}Operasyonel Verimlilik{{/h}} oranınızı artırıyor ve toplam sahiplik maliyetini minimize ediyoruz.",
+                "processTitle": "Mühendislik Süreci",
+                "processSteps": [
+                    {
+                        "step": "İş süreçlerinin haritalandırılması",
+                        "output": "SÜREÇ HARİTASI",
+                        "description": "Operasyonel maliyetlerinizi süreç bazında ayrıştırıyoruz. Her adımın zaman, insan kaynağı ve yazılım maliyetini hesaplayarak maliyet sızıntı noktalarını tespit ediyoruz."
+                    },
+                    {
+                        "step": "Otomasyon fırsatlarının tespiti",
+                        "output": "FIRSAT ANALİZİ",
+                        "description": "Manuel süreçlerin otomasyon potansiyelini maliyet-fayda analizi ile değerlendiriyoruz. En yüksek tasarruf getirecek süreçleri önceliklendiriyoruz."
+                    },
+                    {
+                        "step": "n8n + Python ile sistem geliştirme",
+                        "output": "OTOMASYON AKIŞI",
+                        "description": "Maliyet optimizasyonu sağlayan otomasyon çözümleri geliştiriyoruz. İnsan müdahalesini minimize eden, hata oranını düşüren ve işlem hızını artıran sistemler kuruyoruz."
+                    },
+                    {
+                        "step": "Test, lansman ve sürekli optimizasyon",
+                        "output": "PERFORMANS RAPORU",
+                        "description": "Otomasyonların maliyet etkisini sürekli izliyoruz. Aylık tasarruf raporları, verimlilik metrikleri ve TCO (Toplam Sahiplik Maliyeti) karşılaştırmaları sunuyoruz."
+                    }
+                ]
+            },
+            {
+                "id": "sistem-entegrasyonu",
+                "title": "Sistem Entegrasyonu",
+                "subtitle": "API & SYSTEM BRIDGE",
+                "description": "Birbirleriyle konuşmayan sistemlerinizi {{h}}API Köprüleri{{/h}} ile birleştiriyoruz. ERP, CRM, ödeme ve lojistik platformlarını tek bir {{h}}Entegre Ekosistem{{/h}} altında buluşturarak, veri silolarını ortadan kaldırıyoruz.",
+                "processTitle": "Mühendislik Süreci",
+                "processSteps": [
+                    {
+                        "step": "İş süreçlerinin haritalandırılması",
+                        "output": "SÜREÇ HARİTASI",
+                        "description": "Mevcut sistemlerinizi ve aralarındaki veri akışlarını haritalandırıyoruz. Veri siloları, manuel veri transferi noktaları ve entegrasyon boşluklarını tespit ediyoruz."
+                    },
+                    {
+                        "step": "Otomasyon fırsatlarının tespiti",
+                        "output": "FIRSAT ANALİZİ",
+                        "description": "Sistemler arası entegrasyon fırsatlarını API uyumluluğu, veri formatları ve güvenlik gereksinimleri açısından değerlendiriyoruz."
+                    },
+                    {
+                        "step": "n8n + Python ile sistem geliştirme",
+                        "output": "OTOMASYON AKIŞI",
+                        "description": "REST API, webhook ve veritabanı köprüleri aracılığıyla sistemlerinizi birbirine bağlıyoruz. Veri senkronizasyonu, format dönüşümü ve hata yönetimi katmanlarını implement ediyoruz."
+                    },
+                    {
+                        "step": "Test, lansman ve sürekli optimizasyon",
+                        "output": "PERFORMANS RAPORU",
+                        "description": "Entegrasyonları uçtan uca test ediyor, veri doğruluğunu kontrol ediyor ve canlıya alıyoruz. API yanıt süreleri, veri tutarlılığı ve sistem uptime metriklerini izliyoruz."
+                    }
+                ]
+            }
+        ]
+    },
+    "process": {
+        "badge": "Kognitect Metodu",
+        "title": "Kaostan",
+        "titleHighlight": "Netliğe.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Bilişsel Tanı",
+                "desc": "Ürünün MR Taraması",
+                "detail": "Tahmin etmiyoruz. Isı haritaları ve davranışsal veri kullanarak beynin tam olarak nerede takıldığını (sürtünme noktaları) buluyoruz."
+            },
+            {
+                "num": "02",
+                "title": "Davranışsal Mimari",
+                "desc": "Blueprint",
+                "detail": "Piksellerden önce karar yollarını tasarlıyoruz. Akış ve netliği sağlamak için kullanıcının zihinsel modelini haritalandırıyoruz."
+            },
+            {
+                "num": "03",
+                "title": "Nöro-Prototipleme",
+                "desc": "Dikkat Çekicilik Optimizasyonu",
+                "detail": "'Dikkat Mühendisliği' uyguluyoruz. Kontrast, hiyerarşi ve düzeni bilimsel olarak gözü yönlendirmek için ayarlıyoruz."
+            },
+            {
+                "num": "04",
+                "title": "Bilişsel Mühendislik",
+                "desc": "İnşa",
+                "detail": "Next.js ve Python ile ekosistemi kodluyoruz. Arka plan mantığının ön yüz psikolojisini desteklemesini sağlıyoruz."
+            },
+            {
+                "num": "05",
+                "title": "Sürekli Optimizasyon",
+                "desc": "Evrim",
+                "detail": "Lansman sadece birinci gün. Ürünü gerçek dünya beyin verileriyle iyileştirmek için Tutundurma ve Hata Oranlarını ölçüyoruz."
+            }
+        ]
+    },
+    "techStack": {
+        "badge": "Çekirdek Teknolojiler",
+        "title": "Kanıtla Güçlendirilmiş.",
+        "subtitle": "Algı mimarimizi güçlendiren motor, modern çatıları bilimsel titizlikle birleştiriyor.",
+        "techs": [
+            {
+                "title": "Bilgisayarlı Görü",
+                "desc": "Bakış Takibi",
+                "details": "OpenCV ve özel YOLO modelleri kullanarak gerçek zamanlı video akışlarında bakış ve dikkati takip ediyoruz. Bu, kullanıcıların tam olarak nereye ve ne kadar süre baktığını anlamamızı sağlar."
+            },
+            {
+                "title": "Python AI Çekirdeği",
+                "desc": "Arka Plan Zekası",
+                "details": "Algoritmalarımızın arkasındaki beyin. Tüm veri işleme, makine öğrenimi model eğitimi ve API orkestrasyonu için Python kullanıyoruz."
+            },
+            {
+                "title": "Davranış Bilimi",
+                "desc": "Evrimsel Psikoloji",
+                "details": "Psikoloji ve nörobilimden titiz bilimsel ilkeler uyguluyoruz. Mesele insanların neyi sevdiklerini söylemeleri değil; beyinlerinin bilinçdışı olarak nasıl tepki verdiğidir."
+            },
+            {
+                "title": "Dikkat Çekicilik Haritası",
+                "desc": "Isı Haritası Üretimi",
+                "details": "İnsan görüşünü simüle eden tahmine dayalı ısı haritaları üretiyoruz. Bu, herhangi bir kullanıcı testi yapılmadan önce arayüzün en 'dikkat çekici' kısımlarını vurgular."
+            },
+            {
+                "title": "Next.js & React",
+                "desc": "Yapısal Çatı",
+                "details": "Web'in en ön cephesinde inşa ediyoruz. Sunucu tarafı render (SSR) ile uygulamalarımızın sağlam, SEO dostu ve yıldırım hızında olmasını garanti ediyoruz."
+            },
+            {
+                "title": "Flutter & Dart",
+                "desc": "Çapraz Platform",
+                "details": "Tek bir kod tabanından hem iOS hem Android'de yerel olarak çalışan kesintisiz, yüksek performanslı mobil uygulamalar geliştiriyoruz."
+            }
+        ]
+    },
+    "caseStudies": {
+        "badge": "Vaka Analizleri",
+        "title": "Laboratuvar Çıktıları",
+        "subtitle": "PhD seviyesindeki araştırmalar ve özgün algı mühendisliği altyapımızla inşa edilen, ölçülebilir dijital çözümler.",
+        "tabs": {
+            "research": "Araştırma Ürünleri",
+            "field": "Saha Uygulamaları"
+        },
+        "items": [
+            {
+                "id": "tiktaktik",
+                "category": "research",
+                "status": "YAPIM AŞAMASINDA",
+                "title": "TikTaktik",
+                "description": "Sosyal Girişim Ekosisteminde Algısal Netlik İnşası",
+                "diagnosis": "TikTaktik; kaotik ve bilinçsiz tüketim alışkanlıklarına ('Dan Dun', 'Haldır Huldur' yaşamlara) karşı, zamana dayalı taktikler ve değerli fikirler üreten vizyoner bir sosyal girişimdir. Ancak bu kadar derin, felsefi ve metaforik bir mesajın standart web arayüzleriyle sunulması, ziyaretçide anında \"Bilişsel Aşırı Yük\" (Cognitive Overload) yaratır. Kullanıcı felsefeyi anlamadan dijital gürültünün içinde kaybolma riski taşır.",
+                "solution": "Kognitect olarak bu felsefeyi bir metin yığını olmaktan çıkarıp, ölçülebilir bir \"Algısal Sahneye\" dönüştürdük. Görsel hiyerarşiyi (Saliency), markanın \"Kaostan Netliğe\" felsefesine uygun olarak baştan tasarladık. Karmaşık beyin fırtınalarını ve manifestoları 'En Az Direnç Yolu' prensibiyle filtreleyerek, ziyaretçinin markanın stratejik ritmiyle sıfır sürtünmeyle (zero-friction) senkronize olmasını sağlayan bir web mimarisi inşa ediyoruz.\nKritik Bir Tasarım Tavsiyesi (Algı Mimarı Gözüyle)",
+                "result": "",
+                "techToolkit": [
+                    "Next.js",
+                    "React",
+                    "Tailwind CSS"
+                ],
+                "visualEvidence": {
+                    "image": "/images/tiktaktik-visual.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "40%",
+                            "title": "Zaman Algısı",
+                            "content": "Kullanıcının zamanı algılayışını değiştiren döngüsel arayüz."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "50%",
+                            "title": "Odaklanma Modu",
+                            "content": "Dikkati dağıtan unsurların gizlendiği derin çalışma alanı."
+                        },
+                        {
+                            "id": 3,
+                            "top": "70%",
+                            "left": "60%",
+                            "title": "İlerleme Takibi",
+                            "content": "Görselleştirilmiş başarı grafikleri ile motivasyon artışı."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "50%",
+                            "left": "50%",
+                            "size": "150px",
+                            "color": "rgba(255, 107, 107, 0.6)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "30%",
+                            "left": "40%",
+                            "size": "100px",
+                            "color": "rgba(255, 200, 50, 0.5)",
+                            "intensity": 0.6
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "20%",
+                            "left": "40%",
+                            "width": "20%",
+                            "height": "20%",
+                            "label": "Odak Bölgesi",
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "10%",
+                            "left": "80%",
+                            "width": "15%",
+                            "height": "80%",
+                            "label": "Navigasyon",
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "kampusyolunda",
+                "category": "research",
+                "status": "YAPIM AŞAMASINDA",
+                "title": "Kampus Yolunda",
+                "description": "Z Kuşağı Karar Mimarisi ve Dopamin Döngüsü",
+                "diagnosis": "Üniversite hazırlık süreci, devasa bir bilgi yığını (Information Overload) ve yüksek kortizol (stres) barındırır. Standart platformlar sıkıcıdır ve genç beyinlerin kısa dikkat sürelerini (attention span) elde tutmayı başaramaz.",
+                "solution": "Python ve Django backend'in işlem gücünü, Next.js ve Supabase ile birleştirerek anında tepki veren bir ekosistem yarattık. Bilgi alma sürecini pasif bir okumadan çıkarıp, oyunlaştırılmış (gamified) bir etkileşime çevirdik. Kullanıcının karar verme sürecini, mikro-ödüllerle nörolojik olarak desteklenen bir yolculuğa dönüştürdük.",
+                "result": "",
+                "techToolkit": [
+                    "Python",
+                    "Django",
+                    "Next.js",
+                    "Supabase"
+                ],
+                "visualEvidence": {
+                    "image": "/images/kampus-yolunda-hero.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "40%",
+                            "left": "30%",
+                            "title": "Foveal Odak Alanı",
+                            "content": "Kullanıcı dikkati bu bölgede %40 daha yoğun."
+                        },
+                        {
+                            "id": 2,
+                            "top": "25%",
+                            "left": "65%",
+                            "title": "Negatif Alan",
+                            "content": "Bilişsel yükü azaltmak için genişletildi."
+                        },
+                        {
+                            "id": 3,
+                            "top": "70%",
+                            "left": "50%",
+                            "title": "CTA Hiyerarşisi",
+                            "content": "Renk kontrastı ile aksiyon süresi < 200ms."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "40%",
+                            "left": "30%",
+                            "size": "140px",
+                            "color": "rgba(255, 100, 0, 0.4)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h2",
+                            "top": "70%",
+                            "left": "50%",
+                            "size": "120px",
+                            "color": "rgba(6, 182, 212, 0.4)",
+                            "intensity": 0.6
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "gorsel-dikkat",
+                "category": "research",
+                "status": "AR-GE ÇEKİRDEĞİ",
+                "title": "Görsel Dikkat Motoru",
+                "description": "Saccadic Göz Hareketlerinin Matematiksel Simülasyonu",
+                "diagnosis": "Dijital dünyada tasarım kararlarının %90'ı \"bence güzel oldu\" gibi subjektif ve ölçülemeyen sezgilere dayanır. Bu durum, piyasaya sürülen ürünlerin kör noktalarda kalmasına neden olur.",
+                "solution": "Python ve OpenCV altyapısı kullanarak insan bakış kalıplarını simüle eden özgün bir yapay zekâ motoru geliştirdik. Arayüzleri kodlamadan önce bu motora sokarak \"Görsel Belirginlik\" (Saliency) ve ısı haritalarını çıkarıyor, kullanıcı dikkatini dağıtımdan önce optimize ediyoruz.",
+                "visualEvidence": {
+                    "image": "/images/visual-attention-analysis.svg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "40%",
+                            "title": "Foveal Konsantrasyon",
+                            "content": "Göz bebeklerinin en uzun süre takılı kaldığı, bilişsel işlemenin en yoğun olduğu primer odak bölgesi."
+                        },
+                        {
+                            "id": 2,
+                            "top": "60%",
+                            "left": "70%",
+                            "title": "Periferal Farkındalık",
+                            "content": "Kullanıcının doğrudan bakmadığı ancak arayüzdeki hareket veya kontrast değişimlerini fark ettiği ikincil alan."
+                        },
+                        {
+                            "id": 3,
+                            "top": "15%",
+                            "left": "85%",
+                            "title": "Bilişsel Kaçış",
+                            "content": "Görsel gürültünün yoğun olduğu ve kullanıcının dikkatinin sistem dışına kaydığı riskli bölge."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "30%",
+                            "left": "40%",
+                            "size": "180px",
+                            "color": "rgba(255, 50, 50, 0.6)",
+                            "intensity": 0.9
+                        },
+                        {
+                            "id": "h2",
+                            "top": "50%",
+                            "left": "35%",
+                            "size": "140px",
+                            "color": "rgba(255, 120, 0, 0.5)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h3",
+                            "top": "70%",
+                            "left": "60%",
+                            "size": "160px",
+                            "color": "rgba(0, 255, 120, 0.4)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "s1",
+                            "type": "rect",
+                            "top": "25%",
+                            "left": "35%",
+                            "width": "15%",
+                            "height": "20%",
+                            "label": "Kritik Eylem Bölgesi",
+                            "color": "#f43f5e"
+                        },
+                        {
+                            "id": "s2",
+                            "type": "rect",
+                            "top": "10%",
+                            "left": "75%",
+                            "width": "20%",
+                            "height": "15%",
+                            "label": "Navigasyon Yükü",
+                            "color": "#3b82f6"
+                        }
+                    ]
+                },
+                "result": "",
+                "techToolkit": [
+                    "Python",
+                    "OpenCV",
+                    "NumPy"
+                ]
+            },
+            {
+                "id": "tumut",
+                "category": "field",
+                "status": "TAMAMLANDI",
+                "title": "Tumut Technology",
+                "description": "Global B2B Ekosisteminde Otorite İnşası",
+                "diagnosis": "Global çip distribütörlüğü gibi ağır endüstrilerde, web arayüzleri genellikle hantal ve güven vermeyen yapılardır. Sayfaya giren bir satın almacı (B2B buyer), milisaniyeler içinde markanın global kapasitesini ve güvenilirliğini (Authority Bias) tartmak zorundadır.",
+                "solution": "Next.js kullanarak sıfır gecikmeli, ultra-hızlı bir kurumsal kimlik inşa ettik. Sektör liderlerinin (Global Industry Leaders) logolarını, zihni yormayan açık renkli ve sürekli akan (scrolling) bir bant tasarımıyla entegre ederek \"Bilişsel Uyum\" sağladık. Karmaşık hizmetleri \"En Az Direnç Yolu\" ile temiz bir veri mimarisine oturttuk.",
+                "result": "",
+                "techToolkit": [
+                    "Next.js",
+                    "React",
+                    "Tailwind CSS"
+                ],
+                "visualEvidence": {
+                    "image": "/images/timut-visual.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "25%",
+                            "title": "Bileşen Filtreleme",
+                            "content": "Sol sidebar'da yer alan detaylı filtreleme sistemi."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "50%",
+                            "title": "Ürün Kartları",
+                            "content": "Net ve yüksek çözünürlüklü ürün görselleri ile güven inşası."
+                        },
+                        {
+                            "id": 3,
+                            "top": "80%",
+                            "left": "75%",
+                            "title": "Hızlı Teklif",
+                            "content": "Her ürün kartında bulunan doğrudan eylem çağrısı."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "50%",
+                            "left": "50%",
+                            "size": "180px",
+                            "color": "rgba(6, 182, 212, 0.4)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h2",
+                            "top": "30%",
+                            "left": "15%",
+                            "size": "120px",
+                            "color": "rgba(255, 100, 100, 0.4)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "15%",
+                            "left": "26%",
+                            "width": "70%",
+                            "height": "80%",
+                            "label": "Ürün Izgarası",
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "25%",
+                            "left": "2%",
+                            "width": "20%",
+                            "height": "60%",
+                            "label": "Filtre Alanı",
+                            "color": "#f59e0b"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "detay-oto",
+                "category": "field",
+                "status": "TAMAMLANDI",
+                "title": "Detay Oto Fren",
+                "description": "Endüstriyel Kataloglarda Sürtünme Minimizasyonu",
+                "diagnosis": "Ağır sanayi ve parça tedarik sektörlerinde alıcılar, istedikleri spesifik koda veya ürüne ulaşırken karmaşık menüler arasında kaybolur (Hick Kanunu ihlali). Bu da doğrudan satış kaybı demektir.",
+                "solution": "Satın alma kararı veren profesyonellerin zihinsel modellerini analiz ederek, navigasyon mimarisini tamamen \"Hız ve Kesinlik\" üzerine kurduk. Bilişsel yükü sıfıra indiren, ziyaretçiyi doğrudan hedef ürüne ve iletişim kanallarına yönlendiren yüksek dönüşümlü (CRO odaklı) bir yapı tasarladık.",
+                "result": "",
+                "techToolkit": [
+                    "Next.js",
+                    "React"
+                ],
+                "visualEvidence": {
+                    "image": "/images/detay-oto-fren.JPG",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "15%",
+                            "left": "15%",
+                            "title": "Kurumsal Kimlik",
+                            "content": "Güven veren koyu tema ve kontrast vurgular."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "65%",
+                            "title": "Dinamiizm Vurgusu",
+                            "content": "Hız ve performansı simgeleyen görsel elementler."
+                        },
+                        {
+                            "id": 3,
+                            "top": "25%",
+                            "left": "85%",
+                            "title": "Hızlı İletişim",
+                            "content": "WhatsApp entegrasyonu ile anlık dönüş hızı."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "25%",
+                            "left": "85%",
+                            "size": "150px",
+                            "color": "rgba(255, 230, 0, 0.4)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "50%",
+                            "left": "65%",
+                            "size": "200px",
+                            "color": "rgba(255, 255, 255, 0.2)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "5%",
+                            "left": "5%",
+                            "width": "90%",
+                            "height": "10%",
+                            "label": "Navigasyon Hiyerarşisi",
+                            "color": "#3b82f6"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "20%",
+                            "left": "50%",
+                            "width": "45%",
+                            "height": "25%",
+                            "label": "Değer Önermesi",
+                            "color": "#10b981"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "medistasyon",
+                "category": "field",
+                "status": "YAPIM AŞAMASINDA",
+                "title": "Medistasyon",
+                "description": "Sağlık Teknolojilerinde Çapraz Platform Güveni",
+                "diagnosis": "Sağlık uygulamalarını kullanan bireyler genellikle endişeli veya acil bir ihtiyaç içindedir (Yüksek Bilişsel Yük). Bu anlarda karşılaşılan en ufak bir arayüz hatası (UI friction), sistemin tamamen terk edilmesine yol açar.",
+                "solution": "Flutter altyapısı kullanarak hem iOS hem de Android cihazlarda kusursuz bir \"Nörolojik Tutarlılık\" sağladık. Renk paletlerinden buton yerleşimlerine kadar her elementi, hastanın kortizol seviyesini artırmayacak sezgisel bir sadelikte ve güven veren bir mobil mimariyle kodladık.",
+                "visualEvidence": {
+                    "image": "/images/medistasyon-ui-dashboard.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "25%",
+                            "left": "50%",
+                            "title": "Minimalist İkonografi",
+                            "content": "Bilişsel yükü azaltan, evrensel sembollerle desteklenmiş sade ve anlaşılır fonksiyon butonları."
+                        },
+                        {
+                            "id": 2,
+                            "top": "55%",
+                            "left": "35%",
+                            "title": "Nöro-Renk Paleti",
+                            "content": "Kortizol seviyesini düşürdüğü bilimsel olarak kanıtlanmış, pastel ve dinlendirici renk tonları."
+                        },
+                        {
+                            "id": 3,
+                            "top": "75%",
+                            "left": "65%",
+                            "title": "Akıcı Navigasyon",
+                            "content": "Kullanıcının uygulama içinde kaybolmasını engelleyen, tek el kullanımına uygun ergonomik yapı."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "25%",
+                            "left": "50%",
+                            "size": "140px",
+                            "color": "rgba(0, 200, 255, 0.4)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "55%",
+                            "left": "35%",
+                            "size": "160px",
+                            "color": "rgba(255, 180, 160, 0.4)",
+                            "intensity": 0.6
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "s1",
+                            "type": "rect",
+                            "top": "15%",
+                            "left": "10%",
+                            "width": "80%",
+                            "height": "20%",
+                            "label": "Bilişsel Odak Alanı",
+                            "color": "#3b82f6"
+                        },
+                        {
+                            "id": "s2",
+                            "type": "circle",
+                            "top": "45%",
+                            "left": "45%",
+                            "r": "40px",
+                            "label": "Etkileşim Merkezi",
+                            "color": "#10b981"
+                        }
+                    ]
+                },
+                "result": "",
+                "techToolkit": [
+                    "Flutter",
+                    "Dart",
+                    "Firebase"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Bilimle İnşa Etmeye Başla.",
+        "subtitle": "Rasyonel, yüksek performanslı bir dijital ekosistem kurmaya hazır mısınız?",
+        "subtitleLine2": "Tahmin etmeyi bırakın. Mimara danışın."
+    },
+    "consultForm": {
+        "successTitle": "Protokol Başlatıldı.",
+        "successMessage": "Mimar en kısa sürede sizinle iletişime geçecek.",
+        "nameLabel": "İsim Soyisim",
+        "namePlaceholder": "Örn: Jane Doe",
+        "emailLabel": "E-posta",
+        "emailPlaceholder": "Örn: merhaba@sirket.com",
+        "companyLabel": "Şirket / Kurum Adı",
+        "companyPlaceholder": "Örn: Acme Corp",
+        "categoryTitle": "Hangi alanda uzmanlığa ihtiyacınız var?",
+        "categories": [
+            "Nöro-Tasarım & UX",
+            "Yapay Zekâ & Yazılım",
+            "Sıfırdan Dijital Ürün",
+            "Stratejik Danışmanlık"
+        ],
+        "messageLabel": "Sisteminizdeki Ana Darboğaz veya Başarı Kriteriniz (KPI) Nedir?",
+        "messagePlaceholder": "Ölçemediğiniz, çözemediğiniz temel sorunu veya ulaşmak istediğiniz vizyonu açıklayın...",
+        "submitButton": "Projeyi Değerlendir",
+        "submitting": "İşleniyor..."
+    },
+    "footer": {
+        "brand": {
+            "slogan": "Yapay Zeka Destekli Mimari Çözümler",
+            "location": "İzmir, Türkiye"
+        },
+        "navigation": {
+            "title": "Navigasyon",
+            "home": "Ana Sayfa",
+            "about": "Hakkımızda",
+            "services": "Hizmetler",
+            "projects": "Vaka Analizleri",
+            "contact": "İletişim"
+        },
+        "connection": {
+            "title": "Bağlantı",
+            "legal": "Gizlilik Politikası • Kullanım Şartları"
+        },
+        "copyright": "© 2024 Kognitect. Tüm hakları saklıdır."
+    },
+    "seo": {
+        "home": {
+            "title": "Kognitect | Yapay Zeka Destekli Mimari",
+            "description": "Yapay zeka ve veri bilimi ile mimari süreçleri optimize ediyoruz."
+        },
+        "about": {
+            "title": "Hakkımızda | Kognitect",
+            "description": "Kognitect vizyonu."
+        },
+        "caseStudies": {
+            "title": "Vaka Analizleri | Kognitect",
+            "description": "Kognitect projeleri."
+        },
+        "contact": {
+            "title": "İletişim | Kognitect",
+            "description": "Bize ulaşın."
+        }
+    },
+    "protocol": {
+        "title": "İLETİŞİM PROTOKOLÜ BAŞLATILDI",
+        "encrypted": "Güvenli bağlantı kuruluyor...",
+        "emailLabel": "GÜVENLİ KANAL",
+        "location": "KOORDİNATLAR",
+        "locationValue": "41.0082° N, 28.9784° E",
+        "successTitle": "İletim Alındı.",
+        "successMessage": "Mimar sinyalinizi en kısa sürede çözecek.",
+        "formTitle": "yeni_protokol_baslat()",
+        "formTrigger": "kullanici_girisi_bekleniyor...",
+        "nameLabel": "KİMLİK",
+        "emailInputLabel": "İLETİŞİM DÜĞÜMÜ",
+        "projectStageLabel": "BÜYÜME EVRESİ",
+        "projectStages": {
+            "startup": "Tohum / Başlangıç (Pre-Seed/Seed)",
+            "scaleup": "Büyüme / Ölçeklenme",
+            "corporate": "Kurumsal / Enterprise",
+            "consulting": "Danışmanlık / Ajans"
+        },
+        "messageLabel": "VERİ PAKETİ",
+        "messagePlaceholder": "Görev parametrelerini tanımlayın...",
+        "submitButton": "PROTOKOLÜ YÜRÜT",
+        "submitting": "ŞİFRELENİYOR...",
+        "errorMessage": "Bağlantı kesildi. Tekrar deneyin veya güvenli kanalı kullanın: info@kognitect.com.",
+        "freeConsultationNote": "ilk_gorusme = ucretsiz"
+    },
+    "about": {
+        "hero": {
+            "badge": "Algı Mimarı & Kurucu",
+            "title": "Dr. Bektaş",
+            "titleHighlight": "Sarı",
+            "description": "10 yılı aşkın dijital strateji deneyimini, <span class=\"text-white font-medium\">akademideki yapay zeka araştırmalarımla</span> birleştiriyorum. Veriyi sadece analiz etmiyor, onu yaşayan dijital ürünlere dönüştürüyorum.",
+            "phd": "PhD",
+            "phdSub": "Advertising & AI",
+            "founder": "Kognitect",
+            "founderSub": "Founder & Lead Architect",
+            "thermalScan": "TERMAL TARAMA AKTİF"
+        },
+        "bento": {
+            "badge": "The Hybrid Mind",
+            "title1": "Bilim + Kod +",
+            "titleHighlight": "Strateji",
+            "items": [
+                {
+                    "id": "science",
+                    "title": "Doktora Derecesi (PhD)",
+                    "subtitle": "Bilimsel Temel",
+                    "text": "Ege Üniversitesi'nde 'Tasarım Aracı Olarak Yapay Zeka' üzerine doktora yaptım. Ürünlerinizi tahminlerle değil, davranış bilimi ve nöro-pazarlama tezleriyle temellendiriyorum."
+                },
+                {
+                    "id": "engineering",
+                    "title": "Full-Stack Mimari",
+                    "subtitle": "Ürün Mühendisliği",
+                    "text": "Teoriyi pratiğe döken bir kurucuyum. Python (AI), Next.js ve Flutter kullanarak; stratejiyi bizzat çalışan, ölçeklenebilir kodlara dönüştürüyorum."
+                },
+                {
+                    "id": "strategy",
+                    "title": "10+ Yıl Dijital Strateji",
+                    "subtitle": "Stratejik Deneyim",
+                    "text": "Çeşitli reklam ajanslarındaki yöneticilik geçmişimle; markaların dijital yaşam döngüsünü, veri odaklı büyüme stratejileriyle yönetiyorum."
+                },
+                {
+                    "id": "vision",
+                    "title": "Bilişsel Tasarım",
+                    "subtitle": "Metodoloji",
+                    "text": "Sadece arayüz çizmiyorum; kullanıcının karar verme süreçlerini (Decision Making) yöneten algısal sistemler kuruyorum."
+                }
+            ]
+        },
+        "timeline": {
+            "badge": "Evrim Şeridi",
+            "title": "Yolculuk",
+            "steps": [
+                {
+                    "id": "strateji",
+                    "era": "2015 — 2025",
+                    "title": "Dijital Strateji & Marka Yönetimi",
+                    "subtitle": "Saha Deneyimi",
+                    "detail": "Çeşitli reklam ajanslarında dijital strateji liderliği. Onlarca markanın dijital dönüşümünü, veri odaklı büyüme planlarıyla yönettim."
+                },
+                {
+                    "id": "akademi",
+                    "era": "2018 — 2023",
+                    "title": "Doktora & Akademik Araştırma",
+                    "subtitle": "Derinleşme — AI & Tasarım",
+                    "detail": "Ege Üniversitesi'nde 'Tasarım Aracı Olarak Yapay Zeka' üzerine doktora tezimi tamamladım. Bilimsel metodolojiyi ürün geliştirmeye entegre ettim."
+                },
+                {
+                    "id": "kognitect",
+                    "era": "2025 — Günümüz",
+                    "title": "Kognitect",
+                    "subtitle": "Algı Mühendisliği & Teknoloji",
+                    "detail": "Dijital strateji deneyimimi, akademik birikimimi ve mühendislik yetkinliğimi tek çatı altında birleştirerek Kognitect'i kurdum."
+                }
+            ]
+        },
+        "toolkit": {
+            "badge": "Enstrümanlar",
+            "title": "Enstrümanlar",
+            "items": [
+                {
+                    "name": "Python",
+                    "desc": "Görsel dikkat simülasyonu ve veri madenciliği için."
+                },
+                {
+                    "name": "OpenCV",
+                    "desc": "Saliency haritaları ve görüntü işleme pipeline'ları."
+                },
+                {
+                    "name": "Next.js",
+                    "desc": "High-performance, SEO-optimized frontend mimarisi."
+                },
+                {
+                    "name": "Flutter",
+                    "desc": "Cross-platform mobil uygulamalar için tek kod tabanı."
+                },
+                {
+                    "name": "Figma",
+                    "desc": "Bilişsel prensiplere dayalı UX/UI prototipleme."
+                },
+                {
+                    "name": "n8n",
+                    "desc": "Düşük kodlu otomasyon akışları ve veri entegrasyonu."
+                },
+                {
+                    "name": "TensorFlow",
+                    "desc": "Dikkat modellemesi ve öngörücü UX analizi."
+                },
+                {
+                    "name": "React",
+                    "desc": "Component-driven, state-of-the-art arayüz geliştirme."
+                }
+            ]
+        },
+        "signature": {
+            "ctaText": "Sıradan bir web sitesi istemiyorsanız, mimarisi <span class=\"text-white font-medium\">zihinle uyumlu</span> bir proje için tanışalım.",
+            "button": "Keşif Görüşmesi Ayarla"
+        }
+    }
+}

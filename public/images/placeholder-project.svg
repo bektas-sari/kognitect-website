@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1A1A1B"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(256, 256, 256, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <rect x="300" y="250" width="200" height="100" rx="10" stroke="rgba(256, 256, 256, 0.1)" stroke-width="2" stroke-dasharray="10 5"/>
+  <text x="400" y="305" fill="rgba(256, 256, 256, 0.2)" font-family="monospace" font-size="12" text-anchor="middle" letter-spacing="0.2em">KOGNITECT_VUE</text>
+</svg>

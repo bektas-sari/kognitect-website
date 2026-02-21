@@ -1,0 +1,60 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#0A0A0B"/>
+  
+  <!-- Technical Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(256, 256, 256, 0.03)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="heat1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(480 240) rotate(90) scale(200 200)">
+      <stop stop-color="#FF3E3E" stop-opacity="0.6"/>
+      <stop offset="0.5" stop-color="#FF7A00" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FFFB00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heat2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 400) rotate(90) scale(150 150)">
+      <stop stop-color="#FF7A00" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFB00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+
+  <!-- UI Mockup (Ghostly) -->
+  <rect x="350" y="100" width="500" height="600" rx="20" stroke="rgba(256, 256, 256, 0.1)" stroke-width="2" fill="rgba(256, 256, 256, 0.02)"/>
+  <rect x="380" y="140" width="440" height="40" rx="4" fill="rgba(256, 256, 256, 0.05)"/>
+  <rect x="380" y="200" width="440" height="150" rx="8" fill="rgba(256, 256, 256, 0.03)"/>
+  <circle cx="600" cy="450" r="40" fill="rgba(6, 182, 212, 0.1)" stroke="rgba(6, 182, 212, 0.3)"/>
+  <rect x="380" y="520" width="210" height="100" rx="8" fill="rgba(256, 256, 256, 0.03)"/>
+  <rect x="610" y="520" width="210" height="100" rx="8" fill="rgba(256, 256, 256, 0.03)"/>
+
+  <!-- Heatmap Overlays -->
+  <circle cx="480" cy="240" r="200" fill="url(#heat1)" style="mix-blend-mode: screen"/>
+  <circle cx="420" cy="400" r="150" fill="url(#heat2)" style="mix-blend-mode: screen"/>
+  
+  <!-- Saccade Lines (Eye tracking paths) -->
+  <path d="M 480 240 L 420 400 L 600 450 L 750 160" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="10 5" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="Infinity"/>
+  </path>
+  <circle cx="480" cy="240" r="4" fill="#06B6D4"/>
+  <circle cx="420" cy="400" r="4" fill="#06B6D4"/>
+  <circle cx="600" cy="450" r="4" fill="#06B6D4"/>
+  <circle cx="750" cy="160" r="4" fill="#06B6D4"/>
+
+  <!-- Data Callouts -->
+  <g opacity="0.8">
+    <text x="50" y="80" fill="#06B6D4" font-family="monospace" font-size="14" font-weight="bold">SCANNING_PROTOCOL: ACTIVE</text>
+    <text x="50" y="110" fill="#FFF" font-family="monospace" font-size="12">SIGNAL_STRENGTH: 98.4%</text>
+    <text x="50" y="130" fill="#FFF" font-family="monospace" font-size="12">COGNITIVE_LOAD_EST: 24ms</text>
+    
+    <text x="900" y="80" fill="#06B6D4" font-family="monospace" font-size="14" font-weight="bold">SALIENCY_MAP_V2.0</text>
+    <text x="900" y="110" fill="#FFF" font-family="monospace" font-size="12">PEAK_ATTENTION: 0.92</text>
+    <rect x="900" y="125" width="200" height="10" fill="rgba(256, 256, 256, 0.1)"/>
+    <rect x="900" y="125" width="184" height="10" fill="#06B6D4"/>
+  </g>
+
+  <!-- Corner Elements -->
+  <path d="M 20 60 L 20 20 L 60 20" stroke="#06B6D4" stroke-width="2"/>
+  <path d="M 1140 20 L 1180 20 L 1180 60" stroke="#06B6D4" stroke-width="2"/>
+  <path d="M 20 740 L 20 780 L 60 780" stroke="#06B6D4" stroke-width="2"/>
+  <path d="M 1140 780 L 1180 780 L 1180 740" stroke="#06B6D4" stroke-width="2"/>
+</svg>

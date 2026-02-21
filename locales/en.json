@@ -1,0 +1,1281 @@
+{
+    "navbar": {
+        "items": [
+            {
+                "name": "Method",
+                "href": "#methodology"
+            },
+            {
+                "name": "Technology",
+                "href": "#technologies"
+            },
+            {
+                "name": "Projects",
+                "href": "#case-studies"
+            },
+            {
+                "name": "About",
+                "href": "/about"
+            }
+        ],
+        "cta": "Consult Architect",
+        "mobileCta": "Start Protocol",
+        "langToggle": "TR"
+    },
+    "hero": {
+        "badge": "DATA OVER INTUITION",
+        "titleLine1": "Transforming Ideas into <span class=\"text-cyan-400\">Digital Reality</span>",
+        "titleLine2": "Powered by Science.",
+        "subtitle": "A technology lab designing digital products aligned with human mind and behavioral models.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Consult Architect",
+        "ctaSecondary": "Explore Tech"
+    },
+    "radar": {
+        "badge": "Performance Metrics",
+        "title": "We Don't Guess.",
+        "titleHighlight": "We Measure the Mind.",
+        "description": "We audit and optimize your product across 5 core cognitive pillars.",
+        "quote": "A beautiful UI means nothing if the brain rejects it.",
+        "metrics": [
+            {
+                "label": "Retention",
+                "value": 95,
+                "desc": "Long-term user loyalty driven by habit-forming design."
+            },
+            {
+                "label": "Cognitive Load",
+                "value": 90,
+                "desc": "Zero ambiguity. The brain understands the interface instantly."
+            },
+            {
+                "label": "Flow",
+                "value": 85,
+                "desc": "Reduced time-to-task. Frictionless cognitive pathways."
+            },
+            {
+                "label": "Trigger",
+                "value": 100,
+                "desc": "Psychological safety and action triggers built through consistency."
+            },
+            {
+                "label": "Saliency",
+                "value": 90,
+                "desc": "Attention management via saliency mapping."
+            }
+        ]
+    },
+    "philosophy": {
+        "badge": "Our Methodology",
+        "title": "Perception Architecture Layers",
+        "subtitle": "Explore the layers to see how the system works.",
+        "protocolActive": "Protocol Active",
+        "problemLabel": "Problem",
+        "scienceLabel": "Scientific Approach",
+        "startScan": "Start Scan",
+        "topics": [
+            {
+                "id": "static",
+                "title": "Cognitive Foundation",
+                "subtitle": "Structural Foundation",
+                "description": "{{d}}Visual aesthetics (UI){{/d}} is merely the storefront of a digital product; no design can save {{h}}a structure the mind rejects{{/h}}. If the system's load-bearing columns are not built according to human perception and {{h}}'Cognitive Load' limits{{/h}}, that product is doomed to collapse at the user's first complex decision.",
+                "technical": "We calculate the 'Cognitive Static Load' of every screen. Using Hick's Law and Working Memory limits, we place information columns where the brain expects them, ensuring zero structural collapse during user navigation.",
+                "metrics": [
+                    {
+                        "label": "Stability",
+                        "value": "99.9%",
+                        "trend": "up"
+                    },
+                    {
+                        "label": "Load Capacity",
+                        "value": "Optimized",
+                        "trend": "up"
+                    }
+                ]
+            },
+            {
+                "id": "noise",
+                "title": "Noise Cancellation",
+                "subtitle": "Signal Processing",
+                "description": "The digital ecosystem is saturated with stimuli that fragment user attention. Information overload and aggressive visual competition create {{w}}'Inattentional Blindness'{{/w}} in the brain. Users filter out and ignore the core message within interfaces that exceed their cognitive limits.",
+                "technical": "We center our approach on {{w}}Signal Detection Theory{{/w}} to maximize the signal-to-noise ratio (SNR) in your interface. We isolate cognitive noise and transform your brand's core value proposition into the purest frequency and visual {{w}}Saliency{{/w}} that the brain can process fastest.",
+                "metrics": [
+                    {
+                        "label": "Clarity",
+                        "value": "High",
+                        "trend": "up"
+                    },
+                    {
+                        "label": "Distraction",
+                        "value": "0%",
+                        "trend": "down"
+                    }
+                ]
+            },
+            {
+                "id": "lock",
+                "title": "Biological Locksmith",
+                "subtitle": "Evolutionary Fit",
+                "description": "The human brain has been programmed to conserve energy throughout hundreds of thousands of years of evolution. Every non-intuitive interface that forces the user to think creates an {{w}}'evolutionary mismatch'{{/w}} in the mind. The brain quickly abandons any system where it has to expend unnecessary effort.",
+                "technical": "We integrate Evolutionary Psychology principles into digital products. By designing decision architecture according to the {{w}}'Path of Least Resistance'{{/w}}, we eliminate micro-frictions that elevate the user's cortisol (stress) levels — locking technology into biological alignment with human nature.",
+                "metrics": [
+                    {
+                        "label": "Friction",
+                        "value": "Minimal",
+                        "trend": "down"
+                    },
+                    {
+                        "label": "Flow State",
+                        "value": "Active",
+                        "trend": "up"
+                    }
+                ]
+            },
+            {
+                "id": "bridge",
+                "title": "Behavioral Catalyst",
+                "subtitle": "Strategic Transition",
+                "description": "The biggest chasm in business is between abstract ideas and technical execution. Most digital projects break free of scientific grounding during the strategy-to-software transition and devolve into unmeasurable, vision-devoid heaps.",
+                "technical": "We close this gap by merging behavioral science with code. We translate the subjective 'make it eye-catching' demand into millisecond-precision {{w}}Heatmap{{/w}} data, and the 'make it user-friendly' expectation into {{w}}Time-on-Task{{/w}} metrics — transforming ideas into measurable engineering output.",
+                "metrics": [
+                    {
+                        "label": "Risk",
+                        "value": "Reduced",
+                        "trend": "down"
+                    },
+                    {
+                        "label": "ROI",
+                        "value": "Maximized",
+                        "trend": "up"
+                    }
+                ]
+            }
+        ]
+    },
+    "services": {
+        "badge": "Our Services",
+        "heading": "Transforming Tech Into",
+        "headingHighlight": "Profit.",
+        "subtitle": "From ideation to automation infrastructure, we propel your business into the future with scientific methods.",
+        "cta": "EXPLORE",
+        "items": [
+            {
+                "id": "perception",
+                "title": "Perception Architecture",
+                "subtitle": "Perception Architecture",
+                "description": "We transform early-stage ideas into profitable brands through scientific validation (PhD-depth) and neuro-design principles.",
+                "features": [
+                    "Scientific Validation",
+                    "Neuro-Design",
+                    "Brand Strategy",
+                    "Profitability Analysis"
+                ],
+                "href": "/services/perception-architecture"
+            },
+            {
+                "id": "audit",
+                "title": "Cognitive Audit",
+                "subtitle": "Cognitive Audit",
+                "description": "We perform cognitive and technical X-rays of your existing digital products (web/mobile), diagnosing bottlenecks that cause user churn and delivering enlightenment.",
+                "features": [
+                    "UX X-Ray",
+                    "Bottleneck Diagnosis",
+                    "Cognitive Load Analysis",
+                    "Conversion Optimization"
+                ],
+                "href": "/services/cognitive-audit"
+            },
+            {
+                "id": "engineering",
+                "title": "Intelligent Engineering",
+                "subtitle": "Intelligent Automation",
+                "description": "We build systems using n8n workflows and custom Python scripts that reduce your operational costs, technologically propelling your business into the future.",
+                "features": [
+                    "n8n Automation",
+                    "Python Scripts",
+                    "Cost Optimization",
+                    "System Integration"
+                ],
+                "href": "/services/intelligent-automation"
+            }
+        ],
+        "modals": [
+            {
+                "id": "bilimsel-validasyon",
+                "title": "Scientific Validation",
+                "subtitle": "RESEARCH & DATA SCIENCE",
+                "description": "Every decision is backed by {{h}}PhD-level research{{/h}} and data science. We eliminate guesswork and validate your product strategy within a {{h}}Statistical Confidence Interval{{/h}}. Through A/B testing, cohort analysis, and experimental design, we ensure scientific justification behind every pixel.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Hypothesis building and market-fit framing",
+                        "output": "HYPOTHESIS MATRIX",
+                        "description": "We transform your idea into a structured scientific hypothesis. We create a multi-dimensional hypothesis matrix based on market size, target audience dynamics, and competitive intensity parameters."
+                    },
+                    {
+                        "step": "Neurocognitive target audience profiling",
+                        "output": "COGNITIVE PROFILE",
+                        "description": "We analyze your target audience's decision-making mechanisms within a neurocognitive framework. We extract in-depth profiles based on cognitive biases, attention thresholds, and motivation triggers."
+                    },
+                    {
+                        "step": "Behavioral A/B test scenario simulation",
+                        "output": "SIMULATION REPORT",
+                        "description": "We design A/B test scenarios that simulate real user behavior. We statistically model conversion, click, and engagement metrics for each variant."
+                    },
+                    {
+                        "step": "Statistical confidence interval calculation and approval",
+                        "output": "VARIANCE ANALYSIS",
+                        "description": "We evaluate collected data using ANOVA and regression analyses. We continue iterations until reaching statistically significant results at a 95% confidence interval."
+                    }
+                ]
+            },
+            {
+                "id": "noro-tasarim",
+                "title": "Neuro-Design",
+                "subtitle": "NEURO-DESIGN ENGINEERING",
+                "description": "We engineer interfaces according to the brain's natural processing patterns. We measure {{h}}Cognitive Load{{/h}} thresholds using eye-tracking data and {{h}}Heatmap{{/h}} analysis, guiding the user's visual journey with microsecond precision through {{h}}Saliency{{/h}} mapping.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Visual hierarchy and foveal perception detection",
+                        "output": "FOVEAL MAP",
+                        "description": "We map foveal (central vision) and peripheral vision areas. We detect what the user sees at first glance and how the visual hierarchy is processed by the brain."
+                    },
+                    {
+                        "step": "Saccadic eye movement and focus simulation",
+                        "output": "ATTENTION FOCUS REPORT",
+                        "description": "We simulate saccadic (rapid eye jump) movements to analyze the user's natural scanning path on screen. We visualize fixation points, fixation durations, and transition patterns."
+                    },
+                    {
+                        "step": "Cognitive load and friction analysis",
+                        "output": "COGNITIVE SCORE",
+                        "description": "We measure the cognitive load each interface element places on the brain. We identify friction points within Miller's Law (7±2) and Hick's Law frameworks, scoring mental overload risks."
+                    },
+                    {
+                        "step": "Interface optimization via Gestalt principles",
+                        "output": "INTERFACE ARCHITECTURE",
+                        "description": "We restructure the interface according to Gestalt perception principles like proximity, similarity, continuity, and closure. We create a visual architecture aligned with the brain's natural grouping mechanisms."
+                    }
+                ]
+            },
+            {
+                "id": "karlilik-analizi",
+                "title": "Profitability Analysis",
+                "subtitle": "ROI & CONVERSION SCIENCE",
+                "description": "We position design as a profit engine, not a cost center. The {{h}}Return on Investment (ROI){{/h}} of every optimization is calculated. We track {{h}}Conversion Rate{{/h}} metrics at every funnel layer, tying design decisions directly to revenue growth.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Conversion funnel drop-off point detection",
+                        "output": "DROP-OFF ANALYSIS",
+                        "description": "We examine every funnel stage in detail from awareness to purchase. We statistically determine at which step and why users abandon the process."
+                    },
+                    {
+                        "step": "Micro-friction to cost/profit ratio conversion",
+                        "output": "COST RATIO",
+                        "description": "We calculate the financial impact of each friction point. We quantify how many customer losses and how much revenue loss a misplaced button or extra form field costs."
+                    },
+                    {
+                        "step": "Time-on-task minimization",
+                        "output": "TIME BUDGET",
+                        "description": "We measure and minimize the time users spend completing target tasks. We model the impact of each second on conversion rates to determine optimal flow duration."
+                    },
+                    {
+                        "step": "ROI-focused restructuring and metric projection",
+                        "output": "ROI PROJECTION",
+                        "description": "We create 3, 6, and 12-month ROI projections for all optimizations. We model the investment-return curve and present the expected profit increase of each improvement with concrete figures."
+                    }
+                ]
+            },
+            {
+                "id": "marka-stratejisi",
+                "title": "Brand Strategy",
+                "subtitle": "BRAND ARCHITECTURE",
+                "description": "We elevate your brand beyond random colors and logos. Using {{h}}Perceptual Consistency{{/h}} principles, we build a {{h}}Brand Architecture{{/h}} that leaves the same cognitive signature at every touchpoint. We create a measurable brand ecosystem connected at the neural network level.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Perceptual blindness and competitive noise analysis",
+                        "output": "NOISE REPORT",
+                        "description": "We map the visual and message noise in your industry. We analyze the color, typography, and messaging patterns used by competitors to identify repetitions that create perceptual blindness."
+                    },
+                    {
+                        "step": "Neurological archetype matching and positioning",
+                        "output": "ARCHETYPE MODEL",
+                        "description": "We determine which category your brand will be associated with by the brain through Jungian archetypes and neurological decision-making models. We create a subconscious association map."
+                    },
+                    {
+                        "step": "Brand recall neural network construction",
+                        "output": "NEURAL MAP",
+                        "description": "We build an association network that ensures your brand leaves lasting traces in memory using neural coding principles. We integrate visual, auditory, and emotional triggers into a unified network structure."
+                    },
+                    {
+                        "step": "Mental visibility and differentiation strategy delivery",
+                        "output": "POSITIONING OUTPUT",
+                        "description": "We deliver a comprehensive positioning strategy that differentiates your brand from competitive noise. We provide an implementation guide covering color, typography, tone of voice, and visual language components."
+                    }
+                ]
+            },
+            {
+                "id": "ux-rontgen",
+                "title": "UX X-Ray",
+                "subtitle": "INTERFACE DIAGNOSTICS",
+                "description": "We scan every screen of your digital product using {{h}}Cognitive Accessibility{{/h}} and {{h}}Eye-Tracking Simulation{{/h}}. We detect exactly where users get stuck subconsciously, which elements they ignore, and attention distribution with microsecond precision.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Behavioral data collection from existing product",
+                        "output": "BEHAVIORAL DATA SET",
+                        "description": "We analyze your existing digital product with real user behaviors. We create a comprehensive behavioral data set from click maps, scroll depths, and session recordings."
+                    },
+                    {
+                        "step": "Heatmap and gaze tracking analysis",
+                        "output": "HEATMAP REPORT",
+                        "description": "We generate heatmaps for each screen using AI-powered eye-tracking simulation. We visualize where users look, what they skip, and how attention density is distributed."
+                    },
+                    {
+                        "step": "Cognitive load and friction report",
+                        "output": "FRICTION ANALYSIS",
+                        "description": "We measure the cognitive cost of each interface element. We score and prioritize friction points caused by complex forms, unclear navigation, and excessive information load."
+                    },
+                    {
+                        "step": "Optimization recommendations and implementation",
+                        "output": "OPTIMIZATION PLAN",
+                        "description": "We provide prioritized solution recommendations for identified issues. Each recommendation comes with an impact score and post-implementation metric comparison."
+                    }
+                ]
+            },
+            {
+                "id": "darbogaz-teshisi",
+                "title": "Bottleneck Diagnosis",
+                "subtitle": "BOTTLENECK ANALYSIS",
+                "description": "We map {{h}}Friction Points{{/h}} in the user flow. By analyzing {{h}}Drop-off Rates{{/h}} and wait times at each step, we scientifically diagnose invisible bottlenecks in your conversion funnel.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Behavioral data collection from existing product",
+                        "output": "BEHAVIORAL DATA SET",
+                        "description": "We record user sessions and statistically analyze transition rates and abandonment points at each funnel stage."
+                    },
+                    {
+                        "step": "Heatmap and gaze tracking analysis",
+                        "output": "HEATMAP REPORT",
+                        "description": "We analyze visual behavior at bottleneck points. We identify which elements attract attention and which remain invisible."
+                    },
+                    {
+                        "step": "Cognitive load and friction report",
+                        "output": "FRICTION ANALYSIS",
+                        "description": "We measure cognitive load and user friction at each bottleneck point. We discover the real causes of blockage by diving into root causes."
+                    },
+                    {
+                        "step": "Optimization recommendations and implementation",
+                        "output": "OPTIMIZATION PLAN",
+                        "description": "We provide specific solutions to eliminate bottlenecks. Each solution is presented with expected impact score and implementation priority."
+                    }
+                ]
+            },
+            {
+                "id": "bilissel-yuk-analizi",
+                "title": "Cognitive Load Analysis",
+                "subtitle": "COGNITIVE LOAD METRICS",
+                "description": "We measure the {{h}}Cognitive Load{{/h}} value of every interface element on the brain. Within the framework of {{h}}Miller's Law{{/h}} and {{h}}Hick's Law{{/h}}, we produce mentally lightweight designs that don't exceed the user's decision-making capacity.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Behavioral data collection from existing product",
+                        "output": "BEHAVIORAL DATA SET",
+                        "description": "We scan every screen of the interface for cognitive complexity. We measure parameters like element count, color variety, text density, and interaction complexity."
+                    },
+                    {
+                        "step": "Heatmap and gaze tracking analysis",
+                        "output": "HEATMAP REPORT",
+                        "description": "We analyze user gaze patterns in high cognitive load areas. We detect hesitations at decision points and unnecessary eye movements."
+                    },
+                    {
+                        "step": "Cognitive load and friction report",
+                        "output": "FRICTION ANALYSIS",
+                        "description": "We calculate a composite cognitive load score for each screen. We report which elements exceed mental capacity within Miller's and Hick's Law frameworks."
+                    },
+                    {
+                        "step": "Optimization recommendations and implementation",
+                        "output": "OPTIMIZATION PLAN",
+                        "description": "We provide specific design recommendations to reduce cognitive load. We simplify the interface using progressive disclosure, chunking, and visual hierarchy techniques."
+                    }
+                ]
+            },
+            {
+                "id": "donusum-optimizasyonu",
+                "title": "Conversion Optimization",
+                "subtitle": "CONVERSION ENGINEERING",
+                "description": "We measure the impact of every design decision on conversion through A/B tests and {{h}}Multivariate Tests{{/h}}. We continue iterations until reaching {{h}}Statistical Significance{{/h}} threshold, delivering proven optimizations.",
+                "processTitle": "Audit Process",
+                "processSteps": [
+                    {
+                        "step": "Behavioral data collection from existing product",
+                        "output": "BEHAVIORAL DATA SET",
+                        "description": "We collect user behaviors and metrics at every stage of the conversion funnel. We establish current conversion rates as benchmarks."
+                    },
+                    {
+                        "step": "Heatmap and gaze tracking analysis",
+                        "output": "HEATMAP REPORT",
+                        "description": "We analyze visual attention distribution at CTA buttons, forms, and critical conversion points. We assess whether users notice conversion elements."
+                    },
+                    {
+                        "step": "Cognitive load and friction report",
+                        "output": "FRICTION ANALYSIS",
+                        "description": "We identify friction points that block conversion. We report conversion barriers such as form complexity, step count, and lack of trust signals."
+                    },
+                    {
+                        "step": "Optimization recommendations and implementation",
+                        "output": "OPTIMIZATION PLAN",
+                        "description": "We deliver conversion optimizations supported by A/B test scenarios. We ensure each recommendation is tested until reaching statistical significance threshold."
+                    }
+                ]
+            },
+            {
+                "id": "n8n-otomasyon",
+                "title": "n8n Automation",
+                "subtitle": "WORKFLOW AUTOMATION",
+                "description": "We automate your repetitive business processes with {{h}}n8n Workflows{{/h}}. By connecting systems like CRM, email, invoicing, and stock management, we build {{h}}Smart Automation Chains{{/h}} that reduce human error to zero.",
+                "processTitle": "Engineering Process",
+                "processSteps": [
+                    {
+                        "step": "Business process mapping",
+                        "output": "PROCESS MAP",
+                        "description": "We analyze your existing workflows end-to-end. We identify manual steps, repetitive tasks, and bottlenecks to create a comprehensive process map."
+                    },
+                    {
+                        "step": "Automation opportunity identification",
+                        "output": "OPPORTUNITY ANALYSIS",
+                        "description": "We evaluate which processes are suitable for automation on an ROI basis. We calculate time savings, error reduction, and cost reduction potentials."
+                    },
+                    {
+                        "step": "System development with n8n + Python",
+                        "output": "AUTOMATION FLOW",
+                        "description": "We build custom automation chains by powering n8n's visual workflow engine with Python scripts. We implement API integrations, data transformations, and conditional logic structures."
+                    },
+                    {
+                        "step": "Testing, launch, and continuous optimization",
+                        "output": "PERFORMANCE REPORT",
+                        "description": "We test automations in controlled environments, deploy to production, and continuously monitor performance. We report error rates, processing times, and cost savings."
+                    }
+                ]
+            },
+            {
+                "id": "python-scriptleri",
+                "title": "Python Scripts",
+                "subtitle": "CUSTOM SCRIPTING",
+                "description": "We develop custom {{h}}Python Scripts{{/h}} for your business. With data scraping, automated reporting, {{h}}API Integration{{/h}}, and machine learning models, we create customized solutions that off-the-shelf tools cannot provide.",
+                "processTitle": "Engineering Process",
+                "processSteps": [
+                    {
+                        "step": "Business process mapping",
+                        "output": "PROCESS MAP",
+                        "description": "We analyze your existing business processes to determine script requirements. We map data sources, transformation requirements, and integration points."
+                    },
+                    {
+                        "step": "Automation opportunity identification",
+                        "output": "OPPORTUNITY ANALYSIS",
+                        "description": "We identify the highest-impact automation opportunities solvable with Python. We assess potential in areas like data scraping, reporting, ML models, and API integration."
+                    },
+                    {
+                        "step": "System development with n8n + Python",
+                        "output": "AUTOMATION FLOW",
+                        "description": "We develop custom Python scripts and integrate them with n8n workflows. We build data processing and analysis pipelines using libraries like Pandas, NumPy, and scikit-learn."
+                    },
+                    {
+                        "step": "Testing, launch, and continuous optimization",
+                        "output": "PERFORMANCE REPORT",
+                        "description": "We thoroughly test developed scripts, deploy to production, and monitor performance. We set up error handling, logging, and automatic alert systems."
+                    }
+                ]
+            },
+            {
+                "id": "maliyet-optimizasyonu",
+                "title": "Cost Optimization",
+                "subtitle": "COST REDUCTION ENGINE",
+                "description": "We detect {{h}}Cost Leaks{{/h}} in your operational processes. By converting manual tasks to automation, we increase your {{h}}Operational Efficiency{{/h}} ratio and minimize total cost of ownership.",
+                "processTitle": "Engineering Process",
+                "processSteps": [
+                    {
+                        "step": "Business process mapping",
+                        "output": "PROCESS MAP",
+                        "description": "We break down your operational costs on a process basis. We identify cost leak points by calculating each step's time, human resource, and software costs."
+                    },
+                    {
+                        "step": "Automation opportunity identification",
+                        "output": "OPPORTUNITY ANALYSIS",
+                        "description": "We evaluate the automation potential of manual processes through cost-benefit analysis. We prioritize processes that will deliver the highest savings."
+                    },
+                    {
+                        "step": "System development with n8n + Python",
+                        "output": "AUTOMATION FLOW",
+                        "description": "We develop automation solutions that drive cost optimization. We build systems that minimize human intervention, reduce error rates, and increase processing speed."
+                    },
+                    {
+                        "step": "Testing, launch, and continuous optimization",
+                        "output": "PERFORMANCE REPORT",
+                        "description": "We continuously monitor the cost impact of automations. We provide monthly savings reports, efficiency metrics, and TCO (Total Cost of Ownership) comparisons."
+                    }
+                ]
+            },
+            {
+                "id": "sistem-entegrasyonu",
+                "title": "System Integration",
+                "subtitle": "API & SYSTEM BRIDGE",
+                "description": "We connect your disconnected systems through {{h}}API Bridges{{/h}}. By unifying ERP, CRM, payment, and logistics platforms under a single {{h}}Integrated Ecosystem{{/h}}, we eliminate data silos.",
+                "processTitle": "Engineering Process",
+                "processSteps": [
+                    {
+                        "step": "Business process mapping",
+                        "output": "PROCESS MAP",
+                        "description": "We map your existing systems and data flows between them. We identify data silos, manual data transfer points, and integration gaps."
+                    },
+                    {
+                        "step": "Automation opportunity identification",
+                        "output": "OPPORTUNITY ANALYSIS",
+                        "description": "We evaluate cross-system integration opportunities in terms of API compatibility, data formats, and security requirements."
+                    },
+                    {
+                        "step": "System development with n8n + Python",
+                        "output": "AUTOMATION FLOW",
+                        "description": "We connect your systems through REST APIs, webhooks, and database bridges. We implement data synchronization, format conversion, and error handling layers."
+                    },
+                    {
+                        "step": "Testing, launch, and continuous optimization",
+                        "output": "PERFORMANCE REPORT",
+                        "description": "We test integrations end-to-end, verify data accuracy, and deploy to production. We monitor API response times, data consistency, and system uptime metrics."
+                    }
+                ]
+            }
+        ]
+    },
+    "process": {
+        "badge": "Kognitect Method",
+        "title": "From Chaos to",
+        "titleHighlight": "Clarity.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Cognitive Diagnosis",
+                "desc": "MRI Scan of the Product",
+                "detail": "We don't guess. Using heatmaps and behavioral data, we find exactly where the brain gets stuck (friction points)."
+            },
+            {
+                "num": "02",
+                "title": "Behavioral Architecture",
+                "desc": "The Blueprint",
+                "detail": "Before pixels, we design decision paths. We map the user's mental model to ensure flow and clarity."
+            },
+            {
+                "num": "03",
+                "title": "Neuro-Prototyping",
+                "desc": "Saliency Optimization",
+                "detail": "We apply 'Attention Engineering'. Adjusting contrast, hierarchy, and layout to scientifically guide the eye."
+            },
+            {
+                "num": "04",
+                "title": "Cognitive Engineering",
+                "desc": "Build",
+                "detail": "We code the ecosystem with Next.js and Python. Ensuring backend logic supports frontend psychology."
+            },
+            {
+                "num": "05",
+                "title": "Continuous Optimization",
+                "desc": "Evolution",
+                "detail": "Launch is just day one. We measure Retention and Error Rates to refine the product with real-world brain data."
+            }
+        ]
+    },
+    "techStack": {
+        "badge": "Core Technologies",
+        "title": "Powered by Evidence.",
+        "subtitle": "The engine powering our perception architecture, combining modern frameworks with scientific rigor.",
+        "techs": [
+            {
+                "title": "Computer Vision",
+                "desc": "Gaze Tracking",
+                "details": "Using OpenCV and custom YOLO models to track gaze and attention in real-time video streams. This allows us to understand exactly where and how long users look."
+            },
+            {
+                "title": "Python AI Core",
+                "desc": "Backend Intelligence",
+                "details": "The brain behind our algorithms. We use Python for all data processing, machine learning model training, and API orchestration."
+            },
+            {
+                "title": "Behavioral Science",
+                "desc": "Evolutionary Psychology",
+                "details": "We apply rigorous scientific principles from psychology and neuroscience. It's not about what people say they like; it's about how their brains unconsciously react."
+            },
+            {
+                "title": "Saliency Map",
+                "desc": "Heatmap Generation",
+                "details": "We generate predictive heatmaps that simulate human vision. This highlights the most 'attention-grabbing' parts of an interface before any user testing."
+            },
+            {
+                "title": "Next.js & React",
+                "desc": "Structural Framework",
+                "details": "Building at the frontier of the web. With server-side rendering (SSR), we guarantee our apps are robust, SEO-friendly, and lightning fast."
+            },
+            {
+                "title": "Flutter & Dart",
+                "desc": "Cross-Platform",
+                "details": "We develop seamless, high-performance mobile apps that run natively on both iOS and Android from a single codebase."
+            }
+        ]
+    },
+    "caseStudies": {
+        "badge": "Case Studies",
+        "title": "Laboratory Outputs",
+        "subtitle": "Scalable digital solutions built on PhD-level research and our proprietary perception engineering framework.",
+        "tabs": {
+            "research": "Research Products",
+            "field": "Field Applications"
+        },
+        "items": [
+            {
+                "id": "kampusyolunda",
+                "category": "research",
+                "status": "UNDER CONSTRUCTION",
+                "title": "Kampusyolunda",
+                "description": "Search engine for university selection designed for Gen-Z. Gamified interface and circadian rhythm friendly design.",
+                "diagnosis": "Traditional preference engines increased cognitive load. List structures incompatible with hippocampal learning caused analysis paralysis.",
+                "solution": "Dopamine-based 'Progressive Disclosure' architecture. <50ms FCP with Next.js SSR. Stress-reducing UI via color psychology.",
+                "cta": "Inspect Architecture",
+                "visualEvidence": {
+                    "image": "/images/kampus-yolunda-hero.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "40%",
+                            "left": "30%",
+                            "title": "Foveal Focus Zone",
+                            "content": "User attention is 40% more intense in this region."
+                        },
+                        {
+                            "id": 2,
+                            "top": "25%",
+                            "left": "65%",
+                            "title": "Negative Space",
+                            "content": "Expanded to reduce cognitive load."
+                        },
+                        {
+                            "id": 3,
+                            "top": "70%",
+                            "left": "50%",
+                            "title": "CTA Hierarchy",
+                            "content": "Color contrast ensures action time < 200ms."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "40%",
+                            "left": "30%",
+                            "size": "140px",
+                            "color": "rgba(255, 100, 0, 0.4)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h2",
+                            "top": "70%",
+                            "left": "50%",
+                            "size": "120px",
+                            "color": "rgba(6, 182, 212, 0.4)",
+                            "intensity": 0.6
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "tiktaktik",
+                "category": "research",
+                "status": "R&D CORE",
+                "title": "TikTaktik",
+                "description": "Micro-learning platform optimizing attention span.",
+                "diagnosis": "Long-format educational content fatigues the prefrontal cortex and reduces retention rates.",
+                "solution": "Dynamic interface increasing foveal focus, integrated with Pomodoro technique. Cross-platform neuro-learning with React Native.",
+                "cta": "View Prototype",
+                "visualEvidence": {
+                    "image": "/images/tiktaktik-visual.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "40%",
+                            "title": "Time Perception",
+                            "content": "Cyclical interface altering user's time perception."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "50%",
+                            "title": "Focus Mode",
+                            "content": "Deep work area hiding distractions."
+                        },
+                        {
+                            "id": 3,
+                            "top": "70%",
+                            "left": "60%",
+                            "title": "Progress Tracking",
+                            "content": "Motivation boost through visualized success charts."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "50%",
+                            "left": "50%",
+                            "size": "150px",
+                            "color": "rgba(255, 107, 107, 0.6)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "30%",
+                            "left": "40%",
+                            "size": "100px",
+                            "color": "rgba(255, 200, 50, 0.5)",
+                            "intensity": 0.6
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "20%",
+                            "left": "40%",
+                            "width": "20%",
+                            "height": "20%",
+                            "label": "Focus Zone",
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "10%",
+                            "left": "80%",
+                            "width": "15%",
+                            "height": "80%",
+                            "label": "Navigation",
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "gorsel-dikkat",
+                "category": "research",
+                "status": "LIVE",
+                "title": "Visual Attention Engine",
+                "description": "AI estimating the 'heatmap' of interfaces without human eyes.",
+                "diagnosis": "User testing was costly and time-consuming. Designers made decisions based on 'gut feelings'.",
+                "solution": "Saliency Prediction model trained with Python OpenCV and Deep Learning. Simulates human gaze with 92% accuracy.",
+                "cta": "View on GitHub",
+                "visualEvidence": {
+                    "image": "/images/visual-attention-analysis.svg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "40%",
+                            "title": "Foveal Concentration",
+                            "content": "The primary focus area where eye gaze remains longest, indicating peak cognitive processing."
+                        },
+                        {
+                            "id": 2,
+                            "top": "60%",
+                            "left": "70%",
+                            "title": "Peripheral Awareness",
+                            "content": "Secondary zone where users perceive movement or contrast changes without direct focus."
+                        },
+                        {
+                            "id": 3,
+                            "top": "15%",
+                            "left": "85%",
+                            "title": "Cognitive Escape",
+                            "content": "High-noise region where user attention tends to drift outside the intended system."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "30%",
+                            "left": "40%",
+                            "size": "180px",
+                            "color": "rgba(255, 50, 50, 0.6)",
+                            "intensity": 0.9
+                        },
+                        {
+                            "id": "h2",
+                            "top": "50%",
+                            "left": "35%",
+                            "size": "140px",
+                            "color": "rgba(255, 120, 0, 0.5)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h3",
+                            "top": "70%",
+                            "left": "60%",
+                            "size": "160px",
+                            "color": "rgba(0, 255, 120, 0.4)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "s1",
+                            "type": "rect",
+                            "top": "25%",
+                            "left": "35%",
+                            "width": "15%",
+                            "height": "20%",
+                            "label": "Critical Action Zone",
+                            "color": "#f43f5e"
+                        },
+                        {
+                            "id": "s2",
+                            "type": "rect",
+                            "top": "10%",
+                            "left": "75%",
+                            "width": "20%",
+                            "height": "15%",
+                            "label": "Navigation Load",
+                            "color": "#3b82f6"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "tumut",
+                "category": "field",
+                "status": "LIVE",
+                "title": "Tumut Technology",
+                "description": "High-performance enterprise technology solutions.",
+                "diagnosis": "Hierarchy clutter and slow load times on corporate sites were damaging brand trust.",
+                "solution": "Minimalist, authoritative design language. Corporate identity building at light speed with Next.js.",
+                "cta": "Visit Site",
+                "visualEvidence": {
+                    "image": "/images/timut-visual.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "30%",
+                            "left": "25%",
+                            "title": "Component Filtering",
+                            "content": "Detailed filtering system on the left sidebar."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "50%",
+                            "title": "Product Cards",
+                            "content": "Trust building through clear, high-res product images."
+                        },
+                        {
+                            "id": 3,
+                            "top": "80%",
+                            "left": "75%",
+                            "title": "Quick Quote",
+                            "content": "Direct call-to-action on every product card."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "50%",
+                            "left": "50%",
+                            "size": "180px",
+                            "color": "rgba(6, 182, 212, 0.4)",
+                            "intensity": 0.7
+                        },
+                        {
+                            "id": "h2",
+                            "top": "30%",
+                            "left": "15%",
+                            "size": "120px",
+                            "color": "rgba(255, 100, 100, 0.4)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "15%",
+                            "left": "26%",
+                            "width": "70%",
+                            "height": "80%",
+                            "label": "Product Grid",
+                            "color": "#10b981"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "25%",
+                            "left": "2%",
+                            "width": "20%",
+                            "height": "60%",
+                            "label": "Filter Area",
+                            "color": "#f59e0b"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "detay-oto",
+                "category": "field",
+                "status": "LIVE",
+                "title": "Detay Auto Brake",
+                "description": "Digital transformation and inventory management for the automotive sector.",
+                "diagnosis": "Manual inventory tracking and order processes caused operational blindness.",
+                "solution": "Custom dashboard design. 'Cognitive Cockpit' interface simplifying complex data.",
+                "cta": "Examine",
+                "visualEvidence": {
+                    "image": "/images/detay-oto-fren.JPG",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "15%",
+                            "left": "15%",
+                            "title": "Corporate Identity",
+                            "content": "Trust-inducing dark theme with contrast highlights."
+                        },
+                        {
+                            "id": 2,
+                            "top": "50%",
+                            "left": "65%",
+                            "title": "Emphasis on Dynamism",
+                            "content": "Visual elements symbolizing speed and performance."
+                        },
+                        {
+                            "id": 3,
+                            "top": "25%",
+                            "left": "85%",
+                            "title": "Rapid Communication",
+                            "content": "Instant response speed through WhatsApp integration."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "25%",
+                            "left": "85%",
+                            "size": "150px",
+                            "color": "rgba(255, 230, 0, 0.4)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "50%",
+                            "left": "65%",
+                            "size": "200px",
+                            "color": "rgba(255, 255, 255, 0.2)",
+                            "intensity": 0.5
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "a1",
+                            "type": "rect",
+                            "top": "5%",
+                            "left": "5%",
+                            "width": "90%",
+                            "height": "10%",
+                            "label": "Navigation Hierarchy",
+                            "color": "#3b82f6"
+                        },
+                        {
+                            "id": "a2",
+                            "type": "rect",
+                            "top": "20%",
+                            "left": "50%",
+                            "width": "45%",
+                            "height": "25%",
+                            "label": "Value Proposition",
+                            "color": "#10b981"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "medistasyon",
+                "category": "field",
+                "status": "UNDER CONSTRUCTION",
+                "title": "Medistasyon",
+                "description": "Next-generation communication network for healthcare professionals.",
+                "diagnosis": "Secure and fast sharing of health data was a critical bottleneck.",
+                "solution": "Sterile interface design with E2E encryption and 'Trust-Inducing' color palette.",
+                "visualEvidence": {
+                    "image": "/images/medistasyon-ui-dashboard.jpg",
+                    "hotspots": [
+                        {
+                            "id": 1,
+                            "top": "25%",
+                            "left": "50%",
+                            "title": "Minimalist Iconography",
+                            "content": "Simple, universally recognized symbols that reduce cognitive load for the user."
+                        },
+                        {
+                            "id": 2,
+                            "top": "55%",
+                            "left": "35%",
+                            "title": "Neuro-Color Palette",
+                            "content": "Soft, pastel tones scientifically selected to lower cortisol levels and induce calm."
+                        },
+                        {
+                            "id": 3,
+                            "top": "75%",
+                            "left": "65%",
+                            "title": "Fluid Navigation",
+                            "content": "Ergonomic layout designed for one-handed use, preventing user frustration."
+                        }
+                    ],
+                    "heatmapSpots": [
+                        {
+                            "id": "h1",
+                            "top": "25%",
+                            "left": "50%",
+                            "size": "140px",
+                            "color": "rgba(0, 200, 255, 0.4)",
+                            "intensity": 0.8
+                        },
+                        {
+                            "id": "h2",
+                            "top": "55%",
+                            "left": "35%",
+                            "size": "160px",
+                            "color": "rgba(255, 180, 160, 0.4)",
+                            "intensity": 0.6
+                        }
+                    ],
+                    "analysisShapes": [
+                        {
+                            "id": "s1",
+                            "type": "rect",
+                            "top": "15%",
+                            "left": "10%",
+                            "width": "80%",
+                            "height": "20%",
+                            "label": "Cognitive Focus Zone",
+                            "color": "#3b82f6"
+                        },
+                        {
+                            "id": "s2",
+                            "type": "circle",
+                            "top": "45%",
+                            "left": "45%",
+                            "r": "40px",
+                            "label": "Interaction Center",
+                            "color": "#10b981"
+                        }
+                    ]
+                },
+                "cta": "Details"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Start Building with Science.",
+        "subtitle": "Ready to build a rational, high-performance digital ecosystem?",
+        "subtitleLine2": "Stop guessing. Consult the Architect."
+    },
+    "consultForm": {
+        "successTitle": "Protocol Initiated.",
+        "successMessage": "The Architect will contact you shortly.",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "e.g., Jane Doe",
+        "emailLabel": "Email",
+        "emailPlaceholder": "e.g., hello@company.com",
+        "companyLabel": "Company / Organization",
+        "companyPlaceholder": "e.g., Acme Corp",
+        "categoryTitle": "Which area of expertise do you need?",
+        "categories": [
+            "Neuro-Design & UX",
+            "AI & Software",
+            "Digital Product from Scratch",
+            "Strategic Consulting"
+        ],
+        "messageLabel": "What is the Main Bottleneck or Success Criterion (KPI) in Your System?",
+        "messagePlaceholder": "Explain the fundamental problem you cannot measure or solve, or the vision you want to achieve...",
+        "submitButton": "Evaluate Project",
+        "submitting": "Processing..."
+    },
+    "footer": {
+        "brand": {
+            "slogan": "AI-Powered Architectural Solutions",
+            "location": "Izmir, Turkiye"
+        },
+        "navigation": {
+            "title": "Navigation",
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "projects": "Case Studies",
+            "contact": "Contact"
+        },
+        "connection": {
+            "title": "Connection",
+            "legal": "Privacy Policy • Terms of Use"
+        },
+        "copyright": "© 2024 Kognitect. All rights reserved."
+    },
+    "seo": {
+        "home": {
+            "title": "Kognitect | AI-Powered Architecture",
+            "description": "Optimizing architectural processes with AI and data science."
+        },
+        "about": {
+            "title": "About Us | Kognitect",
+            "description": "Kognitect vision."
+        },
+        "caseStudies": {
+            "title": "Case Studies | Kognitect",
+            "description": "Kognitect projects."
+        },
+        "contact": {
+            "title": "Contact | Kognitect",
+            "description": "Contact us."
+        }
+    },
+    "protocol": {
+        "title": "COMMUNICATION PROTOCOL INITIATED",
+        "encrypted": "Establish secure connection...",
+        "emailLabel": "SECURE CHANNEL",
+        "location": "COORDINATES",
+        "locationValue": "41.0082° N, 28.9784° E",
+        "successTitle": "Transmission Received.",
+        "successMessage": "The Architect will decode your signal shortly.",
+        "formTitle": "initiate_new_protocol()",
+        "formTrigger": "awaiting_user_input...",
+        "nameLabel": "IDENTITY",
+        "emailInputLabel": "CONTACT_NODE",
+        "projectStageLabel": "GROWTH_PHASE",
+        "projectStages": {
+            "startup": "Seed / Pre-Seed",
+            "scaleup": "Scale-Up / Growth",
+            "corporate": "Enterprise / Corporate",
+            "consulting": "Consulting / Agency"
+        },
+        "messageLabel": "DATA_PACKET",
+        "messagePlaceholder": "Describe the mission parameters...",
+        "submitButton": "EXECUTE_PROTOCOL",
+        "submitting": "ENCRYPTING...",
+        "errorMessage": "Connection terminated. Retry or use secure channel info@kognitect.com.",
+        "freeConsultationNote": "initial_consultation = free_of_charge"
+    },
+    "about": {
+        "hero": {
+            "badge": "Perception Architect & Founder",
+            "title": "Dr. Bektaş",
+            "titleHighlight": "Sarı",
+            "description": "I combine over 10 years of digital strategy experience with my <span class=\"text-white font-medium\">academic AI research</span>. I don't just analyze data; I transform it into living digital products.",
+            "phd": "PhD",
+            "phdSub": "Advertising & AI",
+            "founder": "Kognitect",
+            "founderSub": "Founder & Lead Architect",
+            "thermalScan": "THERMAL SCAN ACTIVE"
+        },
+        "bento": {
+            "badge": "The Hybrid Mind",
+            "title1": "Science + Code +",
+            "titleHighlight": "Strategy",
+            "items": [
+                {
+                    "id": "science",
+                    "title": "PhD Degree",
+                    "subtitle": "Scientific Foundation",
+                    "text": "I completed my PhD on 'AI as a Design Tool' at Ege University. I ground your products not with guesses, but with behavioral science and neuromarketing theses."
+                },
+                {
+                    "id": "engineering",
+                    "title": "Full-Stack Architecture",
+                    "subtitle": "Product Engineering",
+                    "text": "I am a founder who puts theory into practice. Using Python (AI), Next.js, and Flutter; I personally transform strategy into working, scalable code."
+                },
+                {
+                    "id": "strategy",
+                    "title": "10+ Years Digital Strategy",
+                    "subtitle": "Strategic Experience",
+                    "text": "With my leadership background in various advertising agencies, I manage the digital lifecycle of brands through data-driven growth strategies."
+                },
+                {
+                    "id": "vision",
+                    "title": "Cognitive Design",
+                    "subtitle": "Methodology",
+                    "text": "I don't just draw interfaces; I build perceptual systems that manage user decision-making processes."
+                }
+            ]
+        },
+        "timeline": {
+            "badge": "Evolution Strip",
+            "title": "The Journey",
+            "steps": [
+                {
+                    "id": "strateji",
+                    "era": "2015 — 2025",
+                    "title": "Digital Strategy & Brand Management",
+                    "subtitle": "Field Experience",
+                    "detail": "Digital strategy leadership in various advertising agencies. I managed the digital transformation of dozens of brands with data-driven growth plans."
+                },
+                {
+                    "id": "akademi",
+                    "era": "2018 — 2023",
+                    "title": "PhD & Academic Research",
+                    "subtitle": "Deepening — AI & Design",
+                    "detail": "I completed my PhD thesis on 'AI as a Design Tool' at Ege University. I integrated scientific methodology into product development."
+                },
+                {
+                    "id": "kognitect",
+                    "era": "2025 — Present",
+                    "title": "Kognitect",
+                    "subtitle": "Perception Engineering & Technology",
+                    "detail": "Combining my digital strategy experience, academic background, and engineering expertise under one roof to found Kognitect."
+                }
+            ]
+        },
+        "toolkit": {
+            "badge": "Toolkit",
+            "title": "My Toolkit",
+            "items": [
+                {
+                    "name": "Python",
+                    "desc": "For visual attention simulation and data mining."
+                },
+                {
+                    "name": "OpenCV",
+                    "desc": "Saliency maps and image processing pipelines."
+                },
+                {
+                    "name": "Next.js",
+                    "desc": "High-performance, SEO-optimized frontend architecture."
+                },
+                {
+                    "name": "Flutter",
+                    "desc": "Single codebase for cross-platform mobile apps."
+                },
+                {
+                    "name": "Figma",
+                    "desc": "UX/UI prototyping based on cognitive principles."
+                },
+                {
+                    "name": "n8n",
+                    "desc": "Low-code automation flows and data integration."
+                },
+                {
+                    "name": "TensorFlow",
+                    "desc": "Attention modeling and predictive UX analysis."
+                },
+                {
+                    "name": "React",
+                    "desc": "Component-driven, state-of-the-art interface development."
+                }
+            ]
+        },
+        "signature": {
+            "ctaText": "If you don't want an ordinary website, let's meet for a project with an architecture <span class=\"text-white font-medium\">aligned with the mind</span>.",
+            "button": "Arrange a Discovery Meeting"
+        }
+    }
+}

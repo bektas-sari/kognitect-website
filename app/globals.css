@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --background: 16 18 20;
+    /* #101214 */
+    --foreground: 0 0% 100%;
+
+    /* Theme palette — default: thermal (TR) */
+    --accent-primary: #4ECDC4;
+    --accent-secondary: #FF6B6B;
+    --accent-primary-rgb: 78, 205, 196;
+    --accent-secondary-rgb: 255, 107, 107;
+    --accent-glow: rgba(78, 205, 196, 0.6);
+  }
+
+  /* High-Tech palette (EN) — set via JS on <html> */
+  .theme-hightech {
+    --accent-primary: #6366F1;
+    --accent-secondary: #3B82F6;
+    --accent-primary-rgb: 99, 102, 241;
+    --accent-secondary-rgb: 59, 130, 246;
+    --accent-glow: rgba(99, 102, 241, 0.6);
+  }
+}
+
+/* Glassmorphism & Effects */
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 30px var(--accent-glow);
+  }
+
+  .architect-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .thermal-glow {
+    animation: thermal-pulse 3s ease-in-out infinite;
+  }
+
+  .capitalize-first::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+/* Scanning Light Beam — thermal camera effect */
+@keyframes scan-beam {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(300%) skewX(-15deg);
+  }
+}
+
+/* Thermal Breathing Glow — uses CSS variables */
+@keyframes thermal-breathe {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 15px -3px var(--accent-secondary),
+      0 0 30px -6px var(--accent-primary),
+      inset 0 0 10px -5px transparent;
+    border-color: rgba(var(--accent-secondary-rgb), 0.15);
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px -3px var(--accent-primary),
+      0 0 50px -6px var(--accent-secondary),
+      inset 0 0 15px -5px transparent;
+    border-color: rgba(var(--accent-primary-rgb), 0.2);
+  }
+}
+
+/* Thermal Pulse (legacy) */
+@keyframes thermal-pulse {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px -5px rgba(var(--accent-secondary-rgb), 0.2),
+      0 0 40px -10px rgba(var(--accent-primary-rgb), 0.15),
+      0 0 60px -15px rgba(var(--accent-primary-rgb), 0.1);
+  }
+
+  50% {
+    box-shadow:
+      0 0 30px -5px rgba(var(--accent-secondary-rgb), 0.3),
+      0 0 50px -10px rgba(var(--accent-primary-rgb), 0.25),
+      0 0 80px -15px rgba(var(--accent-primary-rgb), 0.2);
+  }
+}
+
+/* CTA Pulse */
+@keyframes cta-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--accent-primary-rgb), 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(var(--accent-primary-rgb), 0);
+  }
+}
+
+body {
+  background-color: #101214;
+  color: white;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar - Premium Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101214;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(var(--accent-primary-rgb), 0.3);
+  color: white;
+}

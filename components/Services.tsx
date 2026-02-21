@@ -46,7 +46,7 @@ const Services = () => {
   const ICONS = [Eye, Search, Zap];
 
   return (
-    <section id="services" className="py-32 px-6 relative overflow-hidden bg-[#101214]">
+    <section id="technologies" className="py-20 md:py-32 px-6 bg-[#101214] relative overflow-hidden border-t border-white/5">
       {/* Modal */}
       <ServiceModal modalId={activeModal} onClose={() => setActiveModal(null)} />
 
@@ -79,7 +79,7 @@ const Services = () => {
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               {content.heading}{' '}
-              <br className="hidden md:block" />
+              <br className="hidden sm:block md:block" />
               <span className="bg-clip-text text-transparent" style={{ backgroundImage: `linear-gradient(to right, ${accent.secondary}, ${accent.primary}, #60A5FA)` }}>
                 {content.headingHighlight}
               </span>
@@ -108,7 +108,7 @@ const Services = () => {
                 whileHover={{ y: -8 }}
                 className={`group relative rounded-2xl transition-all duration-500
                   bg-white/[0.03] backdrop-blur-xl border border-white/[0.08]
-                  ${isCenterCard ? 'p-9 md:-mt-2 md:mb-2' : 'p-8'}
+                  ${isCenterCard ? 'p-7 xs:p-9 md:-mt-2 md:mb-2' : 'p-6 xs:p-8'}
                 `}
                 style={{
                   animation: 'thermal-breathe 4s ease-in-out infinite',

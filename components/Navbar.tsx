@@ -78,7 +78,7 @@ const Navbar = () => {
                             alt="Kognitect | Perception Architecture"
                             width={600}
                             height={200}
-                            className="w-32 md:w-40 h-auto object-contain md:scale-125 origin-left"
+                            className="w-28 sm:w-32 md:w-40 h-auto object-contain md:scale-125 origin-left"
                             priority
                             unoptimized
                         />
@@ -134,42 +134,59 @@ const Navbar = () => {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="fixed inset-0 z-40 bg-[#101214]/95 pt-32 px-6 md:hidden backdrop-blur-2xl"
+                        initial={{ opacity: 0, x: '100%' }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: '100%' }}
+                        transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                        className="fixed inset-0 z-40 bg-[#101214]/98 md:hidden backdrop-blur-3xl overflow-y-auto"
                     >
-                        <div className="flex flex-col gap-8 border-l-2 border-white/10 pl-6">
-                            {nav.items.map((item: { name: string; href: string }) => (
-                                <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    onClick={(e) => handleScrollTo(e, item.href)}
-                                    className="text-4xl font-bold text-gray-500 hover:text-white transition-colors tracking-tighter"
+                        <div className="min-h-screen flex flex-col justify-center px-10 py-20">
+                            <div className="flex flex-col gap-6 border-l border-white/10 pl-8">
+                                {nav.items.map((item: { name: string; href: string }, idx: number) => (
+                                    <motion.div
+                                        key={item.name}
+                                        initial={{ opacity: 0, x: 20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: 0.1 + idx * 0.05 }}
+                                    >
+                                        <Link
+                                            href={item.href}
+                                            onClick={(e) => handleScrollTo(e, item.href)}
+                                            className={`text-4xl xs:text-5xl font-bold tracking-tighter transition-colors ${pathname === item.href ? 'text-white' : 'text-zinc-600'
+                                                } hover:text-white`}
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    </motion.div>
+                                ))}
+
+                                <motion.div
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className="flex flex-col gap-8 mt-4"
                                 >
-                                    {item.name}
-                                </Link>
-                            ))}
+                                    {/* Mobile Language Toggle */}
+                                    <button
+                                        onClick={toggleLocale}
+                                        className="flex items-center gap-3 text-xl font-medium text-zinc-400 hover:text-white transition-colors"
+                                    >
+                                        <Globe className="w-5 h-5" />
+                                        {nav.langToggle}
+                                    </button>
 
-                            {/* Mobile Language Toggle */}
-                            <button
-                                onClick={toggleLocale}
-                                className="flex items-center gap-2 text-xl font-medium text-gray-500 transition-colors"
-                                style={{ '--hover-color': accent.primary } as React.CSSProperties}
-                            >
-                                <Globe className="w-5 h-5" />
-                                {nav.langToggle}
-                            </button>
-
-                            <Link
-                                href="/contact"
-                                className="mt-8 flex items-center gap-3 text-xl font-bold"
-                                style={{ color: accent.primary }}
-                            >
-                                <Sparkles className="w-6 h-6" />
-                                {nav.mobileCta}
-                                <ArrowRight className="w-5 h-5" />
-                            </Link>
+                                    <Link
+                                        href="/contact"
+                                        className="flex items-center gap-3 text-2xl font-bold"
+                                        style={{ color: accent.primary }}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        <Sparkles className="w-6 h-6" />
+                                        {nav.mobileCta}
+                                        <ArrowRight className="w-5 h-5" />
+                                    </Link>
+                                </motion.div>
+                            </div>
                         </div>
                     </motion.div>
                 )}

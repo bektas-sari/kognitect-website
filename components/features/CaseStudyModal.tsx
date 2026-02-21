@@ -66,9 +66,10 @@ export default function CaseStudyModal({ study, onClose, accent }: CaseStudyModa
 
                     <button
                         onClick={onClose}
-                        className="absolute top-6 right-6 z-50 p-2 bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
+                        className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
+                        aria-label="Close modal"
                     >
-                        <X className="w-5 h-5" />
+                        <X className="w-6 h-6 md:w-5 md:h-5" />
                     </button>
 
                     <div className="absolute bottom-4 left-8 z-20 pr-8">
@@ -170,6 +171,16 @@ export default function CaseStudyModal({ study, onClose, accent }: CaseStudyModa
                             <ExternalLink className="w-4 h-4" />
                         </div>
                     </motion.a>
+                </div>
+
+                {/* Mobile Bottom Close Button */}
+                <div className="md:hidden border-t border-white/5 p-4 bg-[#0F0F0F]/80 backdrop-blur-md shrink-0">
+                    <button
+                        onClick={onClose}
+                        className="w-full py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-sm active:bg-white/10 transition-colors"
+                    >
+                        Geri Dön
+                    </button>
                 </div>
             </motion.div>
         </motion.div>

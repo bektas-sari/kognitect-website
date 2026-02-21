@@ -11,11 +11,11 @@ export default function Footer() {
     const f = t.footer;
 
     return (
-        <footer className="bg-[#050505] border-t border-white/5 pt-16 pb-8 text-sm relative overflow-hidden">
+        <footer className="bg-[#050505] border-t border-white/5 py-12 md:pt-16 md:pb-8 text-sm relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* 3-Column Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-16">
 
                     {/* Column 1: Brand Identity */}
                     <div className="space-y-6">

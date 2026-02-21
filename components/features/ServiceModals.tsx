@@ -863,12 +863,13 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                         {/* Top accent */}
                         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent" />
 
-                        {/* Close button */}
+                        {/* Close button (top) */}
                         <button
                             onClick={onClose}
-                            className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-cyan-500/40 transition-all"
+                            className="absolute top-4 right-4 z-50 w-10 h-10 md:w-8 md:h-8 rounded-full bg-black/40 md:bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-cyan-500/40 transition-all active:scale-90"
+                            aria-label="Close modal"
                         >
-                            <X className="w-4 h-4" />
+                            <X className="w-5 h-5 md:w-4 md:h-4" />
                         </button>
 
                         <div className="grid md:grid-cols-2 min-h-[400px]">
@@ -997,6 +998,16 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                                     </motion.div>
                                 </motion.div>
                             </div>
+                        </div>
+
+                        {/* Mobile Bottom Close Button - Fixed-like at the end of content or actually fixed */}
+                        <div className="md:hidden border-t border-white/10 p-4 bg-gray-950/80 backdrop-blur-md">
+                            <button
+                                onClick={onClose}
+                                className="w-full py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-sm active:bg-white/10 transition-colors"
+                            >
+                                {t.navbar.items[0].name === 'Ana Sayfa' ? 'Geri Dön' : 'Close'}
+                            </button>
                         </div>
                     </motion.div>
                 </motion.div>

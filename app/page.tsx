@@ -71,7 +71,7 @@ const HeroSection = () => {
   const hero = t.hero;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 pt-20 bg-[#101214]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20 md:pt-32 bg-[#101214]">
       {/* Grid Layout */}
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
@@ -86,9 +86,9 @@ const HeroSection = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+          <h1 className="text-4xl xs:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
             <span dangerouslySetInnerHTML={{ __html: hero.titleLine1 }} />
-            <br />
+            <br className="hidden xs:block" />
             {hero.titleLine2}
           </h1>
 
@@ -188,7 +188,7 @@ const CognitiveRadar = () => {
   };
 
   return (
-    <section id="radar" className="py-32 px-6 bg-[#101214] relative overflow-hidden">
+    <section id="radar" className="py-20 md:py-32 px-6 bg-[#101214] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-150 h-150 bg-blue-900/5 rounded-full blur-[100px] -z-10" />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-8">
@@ -247,8 +247,8 @@ const CognitiveRadar = () => {
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative flex items-center justify-center">
-          <div className="relative w-87.5 h-87.5 md:w-112.5 md:h-112.5" onMouseLeave={handleLeave}>
+        <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative flex items-center justify-center w-full max-w-[400px] mx-auto lg:max-w-none">
+          <div className="relative w-full aspect-square" onMouseLeave={handleLeave}>
             <svg viewBox="-90 -20 480 340" className="w-full h-full" style={{ filter: `drop-shadow(0 0 50px ${accent.primary}33)` }}>
               {bgPoints.map((points: string, i: number) => (<polygon key={i} points={points} fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />))}
               {metrics.map((_: unknown, i: number) => { const p = getPoint(i, 5, 120); return <line key={i} x1="150" y1="150" x2={p.x} y2={p.y} stroke="rgba(255,255,255,0.1)" strokeWidth="1" />; })}
@@ -322,11 +322,11 @@ const DeepDiveModal = ({ data, onClose }: { data: DeepDiveData, onClose: () => v
     >
       <motion.div
         initial={{ scale: 0.95, y: 50 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, y: 50 }}
-        className="w-full max-w-5xl bg-[#080808] border border-white/10 md:rounded-3xl overflow-hidden relative shadow-2xl min-h-[90vh] md:min-h-0 flex flex-col md:flex-row"
+        className="w-full max-w-5xl bg-[#080808] border border-white/10 md:rounded-3xl overflow-hidden relative shadow-2xl min-h-screen md:min-h-0 flex flex-col md:flex-row"
         onClick={(e) => e.stopPropagation()}
       >
-        <button onClick={onClose} className="absolute top-6 right-6 z-50 p-2 bg-white/10 rounded-full hover:bg-white/20 hover:text-white transition-colors">
-          <X className="w-6 h-6" />
+        <button onClick={onClose} className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-white/10 rounded-full hover:bg-white/20 hover:text-white transition-colors active:scale-90" aria-label="Close modal">
+          <X className="w-7 h-7 md:w-6 md:h-6" />
         </button>
 
         <div className="w-full md:w-5/12 bg-linear-to-br from-blue-900/10 to-purple-900/10 border-b md:border-b-0 md:border-r border-white/5 p-8 flex flex-col justify-between relative overflow-hidden">
@@ -366,7 +366,7 @@ const DeepDiveModal = ({ data, onClose }: { data: DeepDiveData, onClose: () => v
           </div>
         </div>
 
-        <div className="w-full md:w-7/12 p-8 md:p-12 overflow-y-auto max-h-[80vh]">
+        <div className="w-full md:w-7/12 p-6 xs:p-8 md:p-12 overflow-y-auto max-h-[70vh] md:max-h-[80vh]">
           <div className="space-y-10">
             <div>
               <h4 className="flex items-center gap-2 text-sm font-bold text-white uppercase tracking-wider mb-4">
@@ -401,6 +401,16 @@ const DeepDiveModal = ({ data, onClose }: { data: DeepDiveData, onClose: () => v
             </div>
           </div>
         </div>
+
+        {/* Mobile Bottom Close Button */}
+        <div className="md:hidden border-t border-white/10 p-4 bg-[#080808]/80 backdrop-blur-md shrink-0">
+          <button
+            onClick={onClose}
+            className="w-full py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-sm active:bg-white/10 transition-colors"
+          >
+            Geri Dön
+          </button>
+        </div>
       </motion.div>
     </motion.div>
   );
@@ -433,7 +443,7 @@ const PhilosophySection = () => {
   };
 
   return (
-    <section id="methodology" className="py-32 px-6 relative overflow-hidden bg-[#050505]">
+    <section id="methodology" className="py-20 md:py-32 px-6 relative overflow-hidden bg-[#050505]">
       <AnimatePresence>
         {selectedTopic && <DeepDiveModal data={selectedTopic} onClose={() => setSelectedTopic(null)} />}
       </AnimatePresence>

@@ -38,7 +38,7 @@ export default function TechStackSection() {
     };
 
     return (
-        <section id="technologies" className="py-32 px-6 bg-[#101214] relative overflow-hidden border-t border-white/5">
+        <section id="technologies" className="py-20 md:py-32 px-6 bg-[#101214] relative overflow-hidden border-t border-white/5">
             {/* Modal */}
             <AnimatePresence>
                 {activeTech && (
@@ -64,7 +64,7 @@ export default function TechStackSection() {
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
                         {tech.title}
                     </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
                         {tech.subtitle}
                     </p>
                 </motion.div>

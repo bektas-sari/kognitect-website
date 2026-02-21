@@ -77,16 +77,17 @@ export default function TechModal({ tech, onClose, accent }: TechModalProps) {
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 exit={{ scale: 0.95, opacity: 0, y: 20 }}
                 transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                className="w-full max-w-5xl bg-[#0f0f11] border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative"
+                className="w-full max-w-5xl bg-[#0f0f11] border border-white/10 md:rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative max-h-[95vh] md:max-h-none"
                 style={{ boxShadow: `0 0 50px -10px ${accent}22` }} // lower opacity glow
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-white/10 rounded-full text-white/50 hover:text-white transition-colors"
+                    className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
+                    aria-label="Close modal"
                 >
-                    <X className="w-5 h-5" />
+                    <X className="w-6 h-6 md:w-5 md:h-5" />
                 </button>
 
                 {/* LEFT: VISUAL/ANIMATION AREA */}
@@ -97,7 +98,7 @@ export default function TechModal({ tech, onClose, accent }: TechModalProps) {
                 </div>
 
                 {/* RIGHT: CONTENT AREA */}
-                <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative">
+                <div className="w-full md:w-1/2 p-6 xs:p-8 md:p-12 flex flex-col justify-center relative overflow-y-auto">
                     {/* Background Text watermark */}
                     <span className="absolute top-4 right-4 text-8xl font-black text-white/[0.02] pointer-events-none select-none overflow-hidden">
                         {tech.title.split(' ')[0]}
@@ -132,6 +133,16 @@ export default function TechModal({ tech, onClose, accent }: TechModalProps) {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Mobile Bottom Close Button */}
+                <div className="md:hidden border-t border-white/10 p-4 bg-[#080808]/80 backdrop-blur-md">
+                    <button
+                        onClick={onClose}
+                        className="w-full py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-sm active:bg-white/10 transition-colors"
+                    >
+                        Geri Dön
+                    </button>
                 </div>
             </motion.div>
         </motion.div>

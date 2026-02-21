@@ -12,8 +12,7 @@ export async function POST(req: Request) {
       web_sitesi,
       proje_dosyasi,
       kategori,
-      kpi,
-      butce
+      kpi
     } = body;
 
     const { data, error } = await resend.emails.send({
@@ -30,7 +29,6 @@ export async function POST(req: Request) {
             <p><strong>Şirket / Kurum:</strong> ${sirket || 'N/A'}</p>
             <p><strong>Web Sitesi:</strong> ${web_sitesi || 'N/A'}</p>
             <p><strong>Proje Dosyası:</strong> ${proje_dosyasi || 'N/A'}</p>
-            <p><strong>Bütçe:</strong> ${butce || 'Belirtilmedi'}</p>
           </div>
 
           <div style="margin-top: 30px; background-color: #f9fafb; padding: 15px; border-radius: 6px;">

@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     } = body;
 
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'Kognitect Analiz <analiz@kognitect.com>',
       to: ['info@kognitect.com', 'bektas.sari@gmail.com'],
       subject: `KOGNITECT: Yeni Analiz Talebi - ${sirket || 'Belirtilmedi'}`,
       html: `

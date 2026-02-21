@@ -2,7 +2,11 @@
     "navbar": {
         "items": [
             {
-                "name": "Metod",
+                "name": "Algı Mimarı",
+                "href": "/about"
+            },
+            {
+                "name": "Yöntem",
                 "href": "#methodology"
             },
             {
@@ -16,10 +20,6 @@
             {
                 "name": "Projeler",
                 "href": "#case-studies"
-            },
-            {
-                "name": "Algı Mimarı",
-                "href": "/about"
             }
         ],
         "cta": "Projeyi Analiz Et",
@@ -70,7 +70,7 @@
         ]
     },
     "philosophy": {
-        "badge": "Metodolojimiz",
+        "badge": "Yöntemimiz",
         "title": "Algı Mimarisi Katmanları",
         "subtitle": "Sistemin nasıl çalıştığını görmek için katmanları inceleyin.",
         "protocolActive": "Protokol Aktif",
@@ -555,7 +555,7 @@
         ]
     },
     "process": {
-        "badge": "Kognitect Metodu",
+        "badge": "Kognitect Yöntemi",
         "title": "Kaostan",
         "titleHighlight": "Netliğe.",
         "steps": [
@@ -1143,7 +1143,7 @@
     },
     "footer": {
         "brand": {
-            "slogan": "Yapay Zeka Destekli Mimari Çözümler",
+            "slogan": "Yapay Zeka Destekli Algı Mimarisi",
             "location": "İzmir, Türkiye"
         },
         "navigation": {
@@ -1166,8 +1166,8 @@
     },
     "seo": {
         "home": {
-            "title": "Kognitect | Yapay Zeka Destekli Mimari",
-            "description": "Yapay zeka ve veri bilimi ile mimari süreçleri optimize ediyoruz."
+            "title": "Kognitect | Yapay Zeka Destekli Algı Mimarisi",
+            "description": "Yapay zeka ve veri bilimi ile algı mimarisi süreçlerini optimize ediyoruz."
         },
         "about": {
             "title": "Hakkımızda | Kognitect",
@@ -1218,7 +1218,7 @@
             "badge": "Algı Mimarı & Kurucu",
             "title": "Dr. Bektaş",
             "titleHighlight": "Sarı",
-            "description": "10 yılı aşkın dijital strateji deneyimini, <span class=\"text-white font-medium\">akademideki yapay zeka araştırmalarımla</span> birleştiriyorum. Veriyi sadece analiz etmiyor, onu yaşayan dijital ürünlere dönüştürüyorum.",
+            "description": "Bir marka danışmanı olarak asıl odak noktam, markaların dijitaldeki varlığını yeniden tasarlayarak stratejik bir dönüşüm yaratmaktır. 10 yılı aşkın dijital strateji geçmişimi <span class=\"text-white font-medium\">akademideki yapay zekâ uzmanlığımla</span> sentezliyorum. Hedefim veriyi sadece okumak değil; bu veriyi kullanarak markalar için ölçülebilir, algıyı yönetimi sağlamaktır.",
             "phd": "PhD",
             "phdSub": "Advertising & AI",
             "founder": "Kognitect",
@@ -1251,7 +1251,7 @@
                 {
                     "id": "vision",
                     "title": "Bilişsel Tasarım",
-                    "subtitle": "Metodoloji",
+                    "subtitle": "Yöntem",
                     "text": "Sadece arayüz çizmiyorum; kullanıcının karar verme süreçlerini (Decision Making) yöneten algısal sistemler kuruyorum."
                 }
             ]
@@ -1272,7 +1272,7 @@
                     "era": "2018 — 2023",
                     "title": "Doktora & Akademik Araştırma",
                     "subtitle": "Derinleşme — AI & Tasarım",
-                    "detail": "Ege Üniversitesi'nde 'Tasarım Aracı Olarak Yapay Zeka' üzerine doktora tezimi tamamladım. Bilimsel metodolojiyi ürün geliştirmeye entegre ettim."
+                    "detail": "Ege Üniversitesi'nde 'Tasarım Aracı Olarak Yapay Zeka' üzerine doktora tezimi tamamladım. Bilimsel yöntemi ürün geliştirmeye entegre ettim."
                 },
                 {
                     "id": "kognitect",

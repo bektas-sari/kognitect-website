@@ -28,39 +28,43 @@ export default function ConsultForm() {
     setErrorMessage("");
 
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const rawData = Object.fromEntries(formData.entries());
 
-    // Add selected categories to data
-    data.expertise = selectedCategories.join(', ');
+    // Map fields to API expectations
+    const payload = {
+      isim: rawData.name,
+      email: rawData.email,
+      sirket: rawData.company,
+      web_sitesi: rawData.website,
+      proje_dosyasi: rawData.brief,
+      kategori: selectedCategories.join(', '),
+      kpi: rawData.message,
+      butce: "" // Not currently in UI, but handled by API
+    };
 
     try {
-      const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "mpwzeovj";
-      const response = await fetch(`https://formspree.io/f/${formId}`, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(payload)
       });
 
-      // Ensure at least 1s of "loading" for better UX even if it's instant
-      await new Promise(resolve => setTimeout(resolve, 1500));
-
       if (response.ok) {
-        setIsSubmitting(false);
         setIsSuccess(true);
         const formElement = e.target as HTMLFormElement;
         formElement.reset();
         setSelectedCategories([]);
       } else {
-        setIsSubmitting(false);
-        setErrorMessage("İletim sırasında bir hata oluştu. Lütfen tekrar deneyin.");
+        const errorData = await response.json();
+        setErrorMessage(errorData.error?.message || "İletim sırasında bir hata oluştu. Lütfen tekrar deneyin.");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      setIsSubmitting(false);
       setErrorMessage("Bağlantı hatası. Lütfen internet bağlantınızı kontrol edin.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -76,9 +80,9 @@ export default function ConsultForm() {
           <CheckCircle className="w-10 h-10 text-emerald-500" />
         </div>
         <div className="relative z-10">
-          <h3 className="text-3xl font-bold text-white mb-4">{form.successTitle}</h3>
-          <p className="text-zinc-400 max-w-md mx-auto leading-relaxed">
-            {form.successMessage}
+          <h3 className="text-3xl font-bold text-white mb-4">Protokol Başlatıldı.</h3>
+          <p className="text-emerald-400 max-w-md mx-auto leading-relaxed font-medium">
+            Analiz talebiniz başarıyla laboratuvara iletildi. Mimarlarımız yakında sizinle iletişime geçecek.
           </p>
         </div>
         <motion.button
@@ -86,7 +90,7 @@ export default function ConsultForm() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           onClick={() => setIsSuccess(false)}
-          className="relative z-10 text-emerald-400 text-sm font-mono border-b border-emerald-500/30 pb-0.5 hover:text-emerald-300 transition-colors"
+          className="relative z-10 text-zinc-500 text-sm font-mono border-b border-zinc-800 pb-0.5 hover:text-white transition-colors"
         >
           Yeni Bir Analiz Başlat
         </motion.button>

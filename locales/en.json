@@ -2,6 +2,10 @@
     "navbar": {
         "items": [
             {
+                "name": "Perception Architect",
+                "href": "/about"
+            },
+            {
                 "name": "Method",
                 "href": "#methodology"
             },
@@ -16,10 +20,6 @@
             {
                 "name": "Projects",
                 "href": "#case-studies"
-            },
-            {
-                "name": "Perception Architect",
-                "href": "/about"
             }
         ],
         "cta": "Consult Architect",
@@ -1113,7 +1113,7 @@
     },
     "footer": {
         "brand": {
-            "slogan": "AI-Powered Architectural Solutions",
+            "slogan": "AI-Powered Perception Architecture",
             "location": "Izmir, Turkiye"
         },
         "navigation": {
@@ -1136,8 +1136,8 @@
     },
     "seo": {
         "home": {
-            "title": "Kognitect | AI-Powered Architecture",
-            "description": "Optimizing architectural processes with AI and data science."
+            "title": "Kognitect | AI-Powered Perception Architecture",
+            "description": "Optimizing perception architecture processes with AI and data science."
         },
         "about": {
             "title": "About Us | Kognitect",
@@ -1188,7 +1188,7 @@
             "badge": "Perception Architect & Founder",
             "title": "Dr. Bektaş",
             "titleHighlight": "Sarı",
-            "description": "I combine over 10 years of digital strategy experience with my <span class=\"text-white font-medium\">academic AI research</span>. I don't just analyze data; I transform it into living digital products.",
+            "description": "As a brand consultant, my primary focus is to create strategic transformation by redesigning the digital presence of brands. I synthesize my over 10 years of digital strategy background with my <span class=\"text-white font-medium\">academic AI expertise</span>. My goal is not just to read data; it is to use this data to provide measurable perception management for brands.",
             "phd": "PhD",
             "phdSub": "Advertising & AI",
             "founder": "Kognitect",

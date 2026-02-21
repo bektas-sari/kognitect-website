@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 // ─── Styled text parser ────────────────────────────────────────────
@@ -975,22 +976,25 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                                             </div>
                                         </motion.div>
                                     )}
-                                    <motion.a
-                                        href="#contact"
-                                        onClick={onClose}
-                                        className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:gap-3"
-                                        style={{
-                                            backgroundColor: 'rgba(6,182,212,0.1)',
-                                            border: '1px solid rgba(6,182,212,0.3)',
-                                            color: accent.primary,
-                                        }}
+                                    <motion.div
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.5 }}
                                     >
-                                        İletişime Geç
-                                        <span className="text-xs">→</span>
-                                    </motion.a>
+                                        <Link
+                                            href="/contact"
+                                            onClick={onClose}
+                                            className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:gap-3"
+                                            style={{
+                                                backgroundColor: 'rgba(6,182,212,0.1)',
+                                                border: '1px solid rgba(6,182,212,0.3)',
+                                                color: accent.primary,
+                                            }}
+                                        >
+                                            İletişime Geç
+                                            <span className="text-xs">→</span>
+                                        </Link>
+                                    </motion.div>
                                 </motion.div>
                             </div>
                         </div>

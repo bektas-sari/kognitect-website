@@ -99,12 +99,12 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-colors text-center"
             >
               {hero.ctaPrimary}
-            </a>
+            </Link>
             <a
               href="#technologies"
               className="px-8 py-4 border border-white/10 text-white rounded-full font-medium hover:bg-white/5 transition-colors text-center"
@@ -395,9 +395,9 @@ const DeepDiveModal = ({ data, onClose }: { data: DeepDiveData, onClose: () => v
             </div>
 
             <div className="pt-4">
-              <a href="#contact" onClick={onClose} className="inline-flex w-full md:w-auto justify-center items-center gap-2 px-8 py-4 text-[#101214] font-bold rounded-lg hover:opacity-90 transition-colors" style={{ backgroundImage: `linear-gradient(to right, ${accent.primary}, ${accent.primary}CC)` }}>
+              <Link href="/contact" onClick={onClose} className="inline-flex w-full md:w-auto justify-center items-center gap-2 px-8 py-4 text-[#101214] font-bold rounded-lg hover:opacity-90 transition-colors" style={{ backgroundImage: `linear-gradient(to right, ${accent.primary}, ${accent.primary}CC)` }}>
                 {data.title} <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

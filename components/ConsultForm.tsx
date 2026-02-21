@@ -105,7 +105,7 @@ export default function ConsultForm() {
 
       <form
         onSubmit={handleSubmit}
-        className="relative bg-zinc-950/40 border border-zinc-800/50 backdrop-blur-xl p-8 md:p-12 rounded-xl shadow-2xl space-y-10"
+        className="relative bg-[#0a0a0a]/60 border border-white/5 backdrop-blur-2xl p-6 md:p-10 rounded-2xl shadow-2xl space-y-8"
       >
         {errorMessage && (
           <div className="bg-red-500/10 border border-red-500/20 text-red-400 p-4 rounded-xl text-sm font-mono flex items-center gap-3">
@@ -113,70 +113,36 @@ export default function ConsultForm() {
             {errorMessage}
           </div>
         )}
+
         {/* Section 1: Personal & Corporate Info (Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="space-y-3 flex flex-col items-start">
-            <label htmlFor="name" className="text-[15px] font-medium text-zinc-300 ml-1">
-              {form.nameLabel}
-            </label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              required
-              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
-              placeholder={form.namePlaceholder}
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            { id: 'name', label: form.nameLabel, type: 'text', placeholder: form.namePlaceholder, name: 'name' },
+            { id: 'email', label: form.emailLabel, type: 'email', placeholder: form.emailPlaceholder, name: 'email' },
+            { id: 'company', label: form.companyLabel, type: 'text', placeholder: form.companyPlaceholder, name: 'company' },
+            { id: 'website', label: form.websiteLabel, type: 'url', placeholder: form.websitePlaceholder, name: 'website' }
+          ].map((field) => (
+            <div key={field.id} className="space-y-2 flex flex-col items-start">
+              <label htmlFor={field.id} className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">
+                {field.label}
+              </label>
+              <input
+                id={field.id}
+                type={field.type}
+                name={field.name}
+                required
+                className="w-full px-5 py-3.5 rounded-xl bg-white/[0.03] border border-white/10 text-zinc-100 placeholder-zinc-600 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 text-sm"
+                placeholder={field.placeholder}
+              />
+            </div>
+          ))}
 
-          <div className="space-y-3 flex flex-col items-start">
-            <label htmlFor="email" className="text-[15px] font-medium text-zinc-300 ml-1">
-              {form.emailLabel}
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
-              placeholder={form.emailPlaceholder}
-            />
-          </div>
-
-          <div className="space-y-3 flex flex-col items-start">
-            <label htmlFor="company" className="text-[15px] font-medium text-zinc-300 ml-1">
-              {form.companyLabel}
-            </label>
-            <input
-              id="company"
-              type="text"
-              name="company"
-              required
-              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
-              placeholder={form.companyPlaceholder}
-            />
-          </div>
-
-          <div className="space-y-3 flex flex-col items-start">
-            <label htmlFor="website" className="text-[15px] font-medium text-zinc-300 ml-1">
-              {form.websiteLabel}
-            </label>
-            <input
-              id="website"
-              type="url"
-              name="website"
-              required
-              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
-              placeholder={form.websitePlaceholder}
-            />
-          </div>
-
-          <div className="space-y-3 flex flex-col items-start md:col-span-2">
+          <div className="space-y-2 flex flex-col items-start md:col-span-2">
             <div className="flex justify-between items-center w-full px-1">
-              <label htmlFor="brief" className="text-[15px] font-medium text-zinc-300">
+              <label htmlFor="brief" className="text-xs font-bold text-zinc-500 uppercase tracking-widest">
                 {form.briefLabel}
               </label>
-              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest bg-zinc-800/50 px-2 py-0.5 rounded leading-none shrink-0 ml-2">
+              <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest bg-white/[0.03] px-2 py-0.5 rounded leading-none shrink-0 ml-2">
                 {form.optionalLabel}
               </span>
             </div>
@@ -184,24 +150,24 @@ export default function ConsultForm() {
               id="brief"
               type="url"
               name="brief"
-              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
-              placeholder={form.briefPlaceholder + " " + form.optionalLabel}
+              className="w-full px-5 py-3.5 rounded-xl bg-white/[0.03] border border-white/10 text-zinc-100 placeholder-zinc-600 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 text-sm"
+              placeholder={form.briefPlaceholder}
             />
           </div>
         </div>
 
-        {/* Section 2: Expertise Category (Interactive Pills - Multi-select) */}
-        <div className="space-y-6 flex flex-col items-center">
-          <label className="text-[15px] font-medium text-zinc-300 text-center w-full">
+        {/* Section 2: Expertise Category (Interactive Pills) */}
+        <div className="space-y-4">
+          <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest text-center block w-full">
             {form.categoryTitle}
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+          <div className="flex flex-wrap justify-center gap-3">
             {form.categories.map((cat: string) => (
               <label
                 key={cat}
-                className={`group px-6 py-4 rounded-lg border text-sm font-semibold cursor-pointer transition-all duration-300 select-none text-center ${selectedCategories.includes(cat)
-                  ? "bg-emerald-500/10 border-emerald-500/50 text-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
-                  : "bg-zinc-800/20 border-zinc-800/80 text-zinc-500 hover:border-zinc-700 hover:text-zinc-300"
+                className={`group px-4 py-2.5 rounded-full border text-[11px] font-bold tracking-wider cursor-pointer transition-all duration-300 select-none uppercase ${selectedCategories.includes(cat)
+                  ? "bg-emerald-500/10 border-emerald-500/40 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+                  : "bg-white/[0.02] border-white/5 text-zinc-500 hover:border-zinc-700 hover:text-zinc-300"
                   }`}
               >
                 <input
@@ -219,36 +185,36 @@ export default function ConsultForm() {
         </div>
 
         {/* Section 3: Focused Textarea */}
-        <div className="space-y-4 flex flex-col items-center">
-          <label htmlFor="message" className="text-[15px] font-medium text-zinc-300 text-center w-full">
+        <div className="space-y-3">
+          <label htmlFor="message" className="text-xs font-bold text-zinc-500 uppercase tracking-widest text-center block w-full">
             {form.messageLabel}
           </label>
           <textarea
             id="message"
             name="message"
-            rows={5}
+            rows={4}
             required
-            className="w-full px-8 py-6 rounded-xl bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 resize-none min-h-[160px]"
+            className="w-full px-6 py-4 rounded-2xl bg-white/[0.03] border border-white/10 text-zinc-100 placeholder-zinc-600 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 resize-none min-h-[120px] text-sm leading-relaxed"
             placeholder={form.messagePlaceholder}
           />
         </div>
 
         {/* Section 4: Submission CTA */}
-        <div className="pt-4">
+        <div className="pt-2">
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full py-6 rounded-lg bg-emerald-500 text-zinc-950 font-black text-sm uppercase tracking-[0.3em] flex items-center justify-center gap-4 hover:brightness-110 active:scale-[0.98] transition-all disabled:cursor-not-allowed shadow-2xl shadow-emerald-500/20 ${isSubmitting ? 'opacity-70' : ''}`}
+            className={`group w-full py-5 rounded-xl bg-emerald-500 text-zinc-950 font-black text-[11px] uppercase tracking-[0.4em] flex items-center justify-center gap-4 hover:brightness-110 active:scale-[0.99] transition-all disabled:cursor-not-allowed shadow-[0_15px_30px_-5px_rgba(16,185,129,0.2)] ${isSubmitting ? 'opacity-70' : ''}`}
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="w-5 h-5 animate-spin" />
+                <Loader2 className="w-4 h-4 animate-spin" />
                 <span>Analiz Ediliyor...</span>
               </>
             ) : (
               <>
                 {form.submitButton}
-                <Send className="w-5 h-5 ml-1" />
+                <Send className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </>
             )}
           </button>

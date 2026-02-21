@@ -9,52 +9,32 @@ import { Scan, Activity, Terminal, Eye } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 /* ══════════════════════════════════════════════════════════
-   DATA
-   ══════════════════════════════════════════════════════════ */
-
-const RADAR_AXES = [
-    { axis: 'Güven', value: 88, fullMark: 100 },
-    { axis: 'Odak', value: 72, fullMark: 100 },
-    { axis: 'Hız', value: 95, fullMark: 100 },
-    { axis: 'Netlik', value: 91, fullMark: 100 },
-    { axis: 'Estetik', value: 83, fullMark: 100 },
-];
-
-const TERMINAL_LINES = [
-    { text: '> Initializing Cognitive Scan Engine v2.4...', delay: 0 },
-    { text: '> Scanning DOM elements...', delay: 600 },
-    { text: '> Parsing visual hierarchy...', delay: 1100 },
-    { text: '> Detected friction at #hero-cta (Hick\'s Law violation)', delay: 1800 },
-    { text: '> Attention Saliency: Hero → 92% | Nav → 45%', delay: 2500 },
-    { text: '> WARNING: Slider area — 40% attention loss in first 1.2s', delay: 3200 },
-    { text: '> Feature cards follow optimal F-pattern ✓', delay: 3900 },
-    { text: '> Cognitive Load Index: 3.2 / 5.0 (Moderate)', delay: 4500 },
-    { text: '> Footer CTA: Strong closing signal detected ✓', delay: 5100 },
-    { text: '> Generating heatmap overlay...', delay: 5700 },
-    { text: '> Rapport tamamlandı. Genel Skor: 84/100', delay: 6400 },
-];
-
-const HEATMAP_SPOTS = [
-    { id: 'logo', x: '12%', y: '4%', size: 50, color: '#FBBF24', intensity: 0.55, label: 'Logo' },
-    { id: 'cta-hero', x: '50%', y: '22%', size: 80, color: '#FF6B6B', intensity: 0.7, label: 'CTA' },
-    { id: 'nav-center', x: '55%', y: '4%', size: 40, color: '#FBBF24', intensity: 0.35, label: 'Nav' },
-    { id: 'card-1', x: '20%', y: '58%', size: 55, color: '#4ECDC4', intensity: 0.5, label: 'Card 1' },
-    { id: 'card-2', x: '50%', y: '58%', size: 55, color: '#4ECDC4', intensity: 0.5, label: 'Card 2' },
-    { id: 'card-3', x: '80%', y: '58%', size: 45, color: '#60A5FA', intensity: 0.4, label: 'Card 3' },
-    { id: 'footer-cta', x: '50%', y: '88%', size: 65, color: '#FF6B6B', intensity: 0.6, label: 'Footer CTA' },
-];
-
-/* ══════════════════════════════════════════════════════════
    TERMINAL LOG
    ══════════════════════════════════════════════════════════ */
 
 function TerminalLog() {
+    const { t: localeData } = useLanguage();
+    const t = localeData.cognitiveDashboard.terminal;
     const [lines, setLines] = useState<string[]>([]);
     const scrollRef = useRef<HTMLDivElement>(null);
 
+    const terminalLines = [
+        { text: t.line1, delay: 0 },
+        { text: t.line2, delay: 600 },
+        { text: t.line3, delay: 1100 },
+        { text: t.line4, delay: 1800 },
+        { text: t.line5, delay: 2500 },
+        { text: t.line6, delay: 3200 },
+        { text: t.line7, delay: 3900 },
+        { text: t.line8, delay: 4500 },
+        { text: t.line9, delay: 5100 },
+        { text: t.line10, delay: 5700 },
+        { text: t.line11, delay: 6400 },
+    ];
+
     useEffect(() => {
         const timers: NodeJS.Timeout[] = [];
-        TERMINAL_LINES.forEach((line, i) => {
+        terminalLines.forEach((line) => {
             timers.push(setTimeout(() => {
                 setLines(prev => [...prev, line.text]);
             }, line.delay));
@@ -64,7 +44,7 @@ function TerminalLog() {
         const loopTimer = setTimeout(() => {
             setLines([]);
             // Re-trigger
-            TERMINAL_LINES.forEach((line, i) => {
+            terminalLines.forEach((line) => {
                 timers.push(setTimeout(() => {
                     setLines(prev => [...prev, line.text]);
                 }, line.delay));
@@ -73,7 +53,7 @@ function TerminalLog() {
         timers.push(loopTimer);
 
         return () => timers.forEach(clearTimeout);
-    }, []);
+    }, [t]); // Re-run if language changes
 
     useEffect(() => {
         if (scrollRef.current) {
@@ -89,7 +69,9 @@ function TerminalLog() {
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/40" />
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/20" />
                 </div>
-                <span className="text-[10px] text-zinc-500 font-medium uppercase tracking-wider ml-2">Analiz Akışı</span>
+                <span className="text-[10px] text-zinc-500 font-medium uppercase tracking-wider ml-2">
+                    {localeData.cognitiveDashboard.terminalHeader}
+                </span>
             </div>
 
             {/* Lines */}
@@ -101,9 +83,9 @@ function TerminalLog() {
                             initial={{ opacity: 0, x: -4 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.3 }}
-                            className={`text-[11px] leading-relaxed ${line.includes('WARNING') || line.includes('friction')
+                            className={`text-[11px] leading-relaxed ${line.toUpperCase().includes('WARNING') || line.toUpperCase().includes('UYARI') || line.includes('friction') || line.includes('sürtünme')
                                 ? 'text-amber-400/80 font-medium'
-                                : line.includes('✓') || line.includes('tamamlandı')
+                                : line.includes('✓') || line.includes('tamamlandı') || line.includes('completed')
                                     ? 'text-emerald-400/90 font-medium'
                                     : 'text-zinc-400'
                                 }`}
@@ -122,7 +104,18 @@ function TerminalLog() {
    ══════════════════════════════════════════════════════════ */
 
 function MockupWithHeatmap() {
+    const { t: localeData } = useLanguage();
     const [hoveredSpot, setHoveredSpot] = useState<string | null>(null);
+
+    const heatmapSpots = [
+        { id: 'logo', x: '12%', y: '4%', size: 50, color: '#FBBF24', intensity: 0.55, label: 'Logo' },
+        { id: 'cta-hero', x: '50%', y: '22%', size: 80, color: '#FF6B6B', intensity: 0.7, label: 'CTA' },
+        { id: 'nav-center', x: '55%', y: '4%', size: 40, color: '#FBBF24', intensity: 0.35, label: 'Nav' },
+        { id: 'card-1', x: '20%', y: '58%', size: 55, color: '#4ECDC4', intensity: 0.5, label: 'Card 1' },
+        { id: 'card-2', x: '50%', y: '58%', size: 55, color: '#4ECDC4', intensity: 0.5, label: 'Card 2' },
+        { id: 'card-3', x: '80%', y: '58%', size: 45, color: '#60A5FA', intensity: 0.4, label: 'Card 3' },
+        { id: 'footer-cta', x: '50%', y: '88%', size: 65, color: '#FF6B6B', intensity: 0.6, label: 'Footer CTA' },
+    ];
 
     return (
         <div className="relative w-full h-full rounded-xl bg-[#080a0c] border border-cyan-500/20 overflow-hidden">
@@ -181,7 +174,7 @@ function MockupWithHeatmap() {
                 </div>
 
                 {/* Heatmap spots */}
-                {HEATMAP_SPOTS.map((spot) => (
+                {heatmapSpots.map((spot) => (
                     <motion.div
                         key={spot.id}
                         className="absolute rounded-full cursor-pointer"
@@ -206,7 +199,7 @@ function MockupWithHeatmap() {
                 {/* Hover tooltip */}
                 <AnimatePresence>
                     {hoveredSpot && (() => {
-                        const spot = HEATMAP_SPOTS.find(s => s.id === hoveredSpot);
+                        const spot = heatmapSpots.find(s => s.id === hoveredSpot);
                         if (!spot) return null;
                         const score = Math.round(spot.intensity * 130);
                         return (
@@ -223,7 +216,7 @@ function MockupWithHeatmap() {
                             >
                                 <p className="text-[10px] font-mono text-gray-400">{spot.label}</p>
                                 <p className="text-xs font-bold" style={{ color: spot.color }}>
-                                    Attention: %{score}
+                                    {localeData.cognitiveDashboard.attentionLabel}: %{score}
                                 </p>
                             </motion.div>
                         );
@@ -250,19 +243,28 @@ function MockupWithHeatmap() {
    ══════════════════════════════════════════════════════════ */
 
 export default function CognitiveDashboard() {
-    const { accent } = useLanguage();
+    const { t } = useLanguage();
+    const dashboardLocale = t.cognitiveDashboard;
     const [chartReady, setChartReady] = useState(false);
+
+    const radarAxes = [
+        { axis: dashboardLocale.radarAxes.trust, value: 88, fullMark: 100 },
+        { axis: dashboardLocale.radarAxes.focus, value: 72, fullMark: 100 },
+        { axis: dashboardLocale.radarAxes.speed, value: 95, fullMark: 100 },
+        { axis: dashboardLocale.radarAxes.clarity, value: 91, fullMark: 100 },
+        { axis: dashboardLocale.radarAxes.aesthetics, value: 83, fullMark: 100 },
+    ];
 
     useEffect(() => {
         const t = setTimeout(() => setChartReady(true), 500);
         return () => clearTimeout(t);
     }, []);
 
-    const animatedRadar = RADAR_AXES.map(d => ({ ...d, value: chartReady ? d.value : 0 }));
-    const avgScore = Math.round(RADAR_AXES.reduce((s, d) => s + d.value, 0) / RADAR_AXES.length);
+    const animatedRadar = radarAxes.map(d => ({ ...d, value: chartReady ? d.value : 0 }));
+    const avgScore = Math.round(radarAxes.reduce((s, d) => s + d.value, 0) / radarAxes.length);
 
     return (
-        <section className="px-4 py-16 md:py-24 bg-[#101214]">
+        <section id="simulation" className="px-4 py-16 md:py-24 bg-[#101214]">
             <div className="max-w-6xl mx-auto">
                 {/* Section title */}
                 <motion.div
@@ -273,13 +275,13 @@ export default function CognitiveDashboard() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-5">
                         <Scan className="w-4 h-4 text-emerald-400" />
-                        <span className="text-xs tracking-widest text-emerald-400 uppercase font-bold">Bilişsel Muayene</span>
+                        <span className="text-xs tracking-widest text-emerald-400 uppercase font-bold">{dashboardLocale.badge}</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
-                        Canlı Analiz <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">Simülasyonu</span>
+                        {dashboardLocale.title.split('Simülasyonu')[0]} <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">{dashboardLocale.title.includes('Simulation') ? 'Simulation' : 'Simülasyonu'}</span>
                     </h2>
                     <p className="text-gray-500 max-w-xl mx-auto text-sm md:text-base">
-                        Dijital ürününüzün bilişsel MR taraması — gerçek zamanlı dikkat haritası, skor analizi ve AI önerileri.
+                        {dashboardLocale.description}
                     </p>
                 </motion.div>
 
@@ -308,8 +310,8 @@ export default function CognitiveDashboard() {
                             <span className="text-[11px] text-zinc-600">Cognitive Hub Intelligence</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <span className="text-[11px] text-zinc-600">Skor: <span className="text-emerald-400 font-bold">{avgScore}/100</span></span>
-                            <span className="text-[11px] text-zinc-700 font-bold">SIMULATION</span>
+                            <span className="text-[11px] text-zinc-600">{dashboardLocale.scoreLabel}: <span className="text-emerald-400 font-bold">{avgScore}/100</span></span>
+                            <span className="text-[11px] text-zinc-700 font-bold">{dashboardLocale.simulationLabel}</span>
                         </div>
                     </div>
 
@@ -321,7 +323,7 @@ export default function CognitiveDashboard() {
                             <div className="relative rounded-xl bg-[#080a0c]/60 border border-cyan-500/20 p-4 flex-shrink-0">
                                 <div className="flex items-center gap-2 mb-3">
                                     <Activity className="w-4 h-4 text-cyan-400" />
-                                    <span className="text-xs font-mono text-gray-500 uppercase tracking-wider">Bilişsel Profil</span>
+                                    <span className="text-xs font-mono text-gray-500 uppercase tracking-wider">{dashboardLocale.radarTitle}</span>
                                 </div>
 
                                 <div className="w-full aspect-square max-w-[280px] mx-auto">
@@ -334,7 +336,7 @@ export default function CognitiveDashboard() {
                                             />
                                             <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
                                             <Radar
-                                                name="Skor"
+                                                name="Score"
                                                 dataKey="value"
                                                 stroke="#4ECDC4"
                                                 fill="#4ECDC4"
@@ -349,7 +351,7 @@ export default function CognitiveDashboard() {
 
                                 {/* Mini score pills */}
                                 <div className="flex flex-wrap justify-center gap-2 mt-3">
-                                    {RADAR_AXES.map(d => (
+                                    {radarAxes.map(d => (
                                         <span key={d.axis} className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] border border-white/[0.06]"
                                             style={{ color: d.value >= 85 ? '#22C55E' : d.value >= 70 ? '#4ECDC4' : '#FBBF24' }}>
                                             {d.axis}: {d.value}
@@ -368,7 +370,7 @@ export default function CognitiveDashboard() {
                         <div className="p-5 min-h-[500px] lg:min-h-[600px]">
                             <div className="flex items-center gap-2 mb-3">
                                 <Eye className="w-4 h-4 text-cyan-400" />
-                                <span className="text-xs font-mono text-gray-500 uppercase tracking-wider">Dikkat Haritası — Canlı Tarama</span>
+                                <span className="text-xs font-mono text-gray-500 uppercase tracking-wider">{dashboardLocale.heatmapHeader}</span>
                             </div>
                             <div className="h-[calc(100%-32px)]">
                                 <MockupWithHeatmap />
@@ -378,7 +380,7 @@ export default function CognitiveDashboard() {
 
                     {/* Bottom bar */}
                     <div className="flex items-center justify-between px-5 py-3 border-t border-cyan-500/10 bg-white/[0.01]">
-                        <span className="text-[10px] font-mono text-gray-700">Veriler simülasyon amaçlıdır</span>
+                        <span className="text-[10px] font-mono text-gray-700">{dashboardLocale.dataWarning}</span>
                         <span className="text-[10px] font-mono text-gray-700">kognitect.com</span>
                     </div>
                 </motion.div>

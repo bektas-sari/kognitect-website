@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import MetaHead from '@/components/MetaHead';
 import ConsultForm from '@/components/ConsultForm';
+import ContactVisual from '@/components/features/ContactVisual';
 
 export default function ContactPage() {
     const { t, accent } = useLanguage();
@@ -14,28 +15,18 @@ export default function ContactPage() {
             <MetaHead pageKey="contact" />
 
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                     {/* LEFT COLUMN: Brand & Info */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="space-y-12"
-                    >
-                        <div className="space-y-6">
-                            <motion.div
-                                initial={{ opacity: 0, width: 0 }}
-                                animate={{ opacity: 1, width: '3rem' }}
-                                className="h-[2px] bg-emerald-500"
-                            />
-                            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]">
-                                {t.philosophy.title}
-                            </h1>
-                            <p className="text-zinc-400 text-xl leading-relaxed max-w-lg">
-                                {t.manifesto}
-                            </p>
-                        </div>
+                    <div className="space-y-12">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            className="relative"
+                        >
+                            <ContactVisual />
+                        </motion.div>
 
                         <div className="space-y-8">
                             <div className="group">
@@ -49,15 +40,10 @@ export default function ContactPage() {
 
                             <div className="space-y-4 pt-4">
                                 <p className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-4">
-                                    Lokasyon
+                                    {t.protocol.location}
                                 </p>
                                 <div className="space-y-2 text-xl text-zinc-300">
-                                    <p>İstanbul Office</p>
-                                    <p className="text-zinc-500 text-sm">Levent, Beşiktaş</p>
-                                </div>
-                                <div className="space-y-2 pt-4 text-xl text-zinc-300">
-                                    <p>İzmir Lab</p>
-                                    <p className="text-zinc-500 text-sm">Urla, Teknopark</p>
+                                    <p>{t.footer.brand.location}</p>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +54,7 @@ export default function ContactPage() {
                             <a href="https://instagram.com/dr.bektassari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">Instagram</a>
                             <a href="https://github.com/bektas-sari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">GitHub</a>
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* RIGHT COLUMN: Form */}
                     <motion.div

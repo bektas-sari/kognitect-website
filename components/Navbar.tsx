@@ -108,8 +108,7 @@ const Navbar = () => {
                         </button>
 
                         <Link
-                            href="#contact"
-                            onClick={(e) => handleScrollTo(e, '#contact')}
+                            href="/contact"
                             className="group flex items-center gap-2 px-6 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-sm font-bold transition-all duration-300 hover:bg-cyan-900/30 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)]"
                             style={{ '--hover-bg': `${accent.primary}33`, '--hover-border': `${accent.primary}4D` } as React.CSSProperties}
                             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = `${accent.primary}33`; e.currentTarget.style.borderColor = `${accent.primary}4D`; }}
@@ -163,8 +162,7 @@ const Navbar = () => {
                             </button>
 
                             <Link
-                                href="#contact"
-                                onClick={(e) => handleScrollTo(e, '#contact')}
+                                href="/contact"
                                 className="mt-8 flex items-center gap-3 text-xl font-bold"
                                 style={{ color: accent.primary }}
                             >

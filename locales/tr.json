@@ -1218,7 +1218,7 @@
             "badge": "Algı Mimarı & Kurucu",
             "title": "Dr. Bektaş",
             "titleHighlight": "Sarı",
-            "description": "Bir marka danışmanı olarak asıl odak noktam, markaların dijitaldeki varlığını yeniden tasarlayarak stratejik bir dönüşüm yaratmaktır. 10 yılı aşkın dijital strateji geçmişimi <span class=\"text-white font-medium\">akademideki yapay zekâ uzmanlığımla</span> sentezliyorum. Hedefim veriyi sadece okumak değil; bu veriyi kullanarak markalar için ölçülebilir, algıyı yönetimi sağlamaktır.",
+            "description": "10 yılı aşkın dijital strateji geçmişimi <span class=\"text-white font-medium\">akademideki yapay zekâ uzmanlığımla</span> sentezliyorum. Bir <span class=\"text-white font-medium\">marka danışmanı</span> olarak asıl odak noktam, markaların dijitaldeki varlığını yeniden tasarlayarak stratejik bir dönüşüm yaratmaktır. Hedefim veriyi sadece okumak değil; bu veriyi kullanarak markalar için ölçülebilir algı yönetimi sağlamaktır.",
             "phd": "PhD",
             "phdSub": "Advertising & AI",
             "founder": "Kognitect",
@@ -1324,6 +1324,38 @@
         "signature": {
             "ctaText": "Sıradan bir web sitesi istemiyorsanız, mimarisi <span class=\"text-white font-medium\">zihinle uyumlu</span> bir proje için tanışalım.",
             "button": "Keşif Görüşmesi Ayarla"
+        }
+    },
+    "cognitiveDashboard": {
+        "badge": "Bilişsel Muayene",
+        "title": "Canlı Analiz Simülasyonu",
+        "description": "Dijital ürününüzün bilişsel MR taraması — gerçek zamanlı dikkat haritası, skor analizi ve AI önerileri.",
+        "scoreLabel": "Skor",
+        "simulationLabel": "SİMÜLASYON",
+        "radarTitle": "Bilişsel Profil",
+        "attentionLabel": "Dikkat",
+        "terminalHeader": "Analiz Akışı",
+        "heatmapHeader": "Dikkat Haritası — Canlı Tarama",
+        "dataWarning": "Veriler simülasyon amaçlıdır",
+        "radarAxes": {
+            "trust": "Güven",
+            "focus": "Odak",
+            "speed": "Hız",
+            "clarity": "Netlik",
+            "aesthetics": "Estetik"
+        },
+        "terminal": {
+            "line1": "Cognitive Scan Engine v2.4 başlatılıyor...",
+            "line2": "DOM öğeleri taranıyor...",
+            "line3": "Görsel hiyerarşi ayrıştırılıyor...",
+            "line4": "#hero-cta noktasında sürtünme tespit edildi (Hick Yasası ihlali)",
+            "line5": "Dikkat Çekiciliği: Hero → %92 | Nav → %45",
+            "line6": "UYARI: Slider alanı — ilk 1.2 saniyede %40 dikkat kaybı",
+            "line7": "Özellik kartları optimal F-paternini izliyor ✓",
+            "line8": "Bilişsel Yük İndeksi: 3.2 / 5.0 (Orta)",
+            "line9": "Footer CTA: Güçlü kapanış sinyali tespit edildi ✓",
+            "line10": "Isı haritası katmanı oluşturuluyor...",
+            "line11": "Rapor tamamlandı. Genel Skor: 84/100"
         }
     }
 }

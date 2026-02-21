@@ -1188,7 +1188,7 @@
             "badge": "Perception Architect & Founder",
             "title": "Dr. Bektaş",
             "titleHighlight": "Sarı",
-            "description": "As a brand consultant, my primary focus is to create strategic transformation by redesigning the digital presence of brands. I synthesize my over 10 years of digital strategy background with my <span class=\"text-white font-medium\">academic AI expertise</span>. My goal is not just to read data; it is to use this data to provide measurable perception management for brands.",
+            "description": "I synthesize my over 10 years of digital strategy background with my <span class=\"text-white font-medium\">academic AI expertise</span>. As a <span class=\"text-white font-medium\">brand consultant</span>, my primary focus is to create strategic transformation by redesigning the digital presence of brands. My goal is not just to read data; it is to use this data to provide measurable perception management for brands.",
             "phd": "PhD",
             "phdSub": "Advertising & AI",
             "founder": "Kognitect",
@@ -1294,6 +1294,38 @@
         "signature": {
             "ctaText": "If you don't want an ordinary website, let's meet for a project with an architecture <span class=\"text-white font-medium\">aligned with the mind</span>.",
             "button": "Arrange a Discovery Meeting"
+        }
+    },
+    "cognitiveDashboard": {
+        "badge": "Cognitive Audit",
+        "title": "Live Analysis Simulation",
+        "description": "A cognitive MRI scan of your digital product — real-time attention mapping, score analysis, and AI recommendations.",
+        "scoreLabel": "Score",
+        "simulationLabel": "SIMULATION",
+        "radarTitle": "Cognitive Profile",
+        "attentionLabel": "Attention",
+        "terminalHeader": "Analysis Stream",
+        "heatmapHeader": "Attention Mapping — Live Scan",
+        "dataWarning": "Data is for simulation purposes",
+        "radarAxes": {
+            "trust": "Trust",
+            "focus": "Focus",
+            "speed": "Speed",
+            "clarity": "Clarity",
+            "aesthetics": "Aesthetics"
+        },
+        "terminal": {
+            "line1": "Initializing Cognitive Scan Engine v2.4...",
+            "line2": "Scanning DOM elements...",
+            "line3": "Parsing visual hierarchy...",
+            "line4": "Friction detected at #hero-cta (Hick's Law violation)",
+            "line5": "Attention Saliency: Hero → 92% | Nav → 45%",
+            "line6": "WARNING: Slider area — 40% attention loss in first 1.2s",
+            "line7": "Feature cards follow optimal F-pattern ✓",
+            "line8": "Cognitive Load Index: 3.2 / 5.0 (Moderate)",
+            "line9": "Footer CTA: Strong closing signal detected ✓",
+            "line10": "Generating heatmap overlay...",
+            "line11": "Report completed. Overall Score: 84/100"
         }
     }
 }

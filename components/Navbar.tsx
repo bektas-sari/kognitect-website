@@ -44,7 +44,6 @@ const Navbar = () => {
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                 window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
             }
-            setIsMobileMenuOpen(false);
         } else if (href === '/') {
             e.preventDefault();
             if (pathname !== '/') {
@@ -52,8 +51,10 @@ const Navbar = () => {
             } else {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
-            setIsMobileMenuOpen(false);
         }
+
+        // Always close mobile menu on any link click
+        setIsMobileMenuOpen(false);
     };
 
     return (

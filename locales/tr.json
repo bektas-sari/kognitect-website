@@ -28,7 +28,7 @@
         "titleLine2": "Çalışan Ölçülebilir Dijital Ürünlere Dönüştürüyoruz.",
         "subtitle": "Dijital ürünleri, insan zihni ve davranış modelleriyle uyumlu tasarlayan teknoloji laboratuvarı.",
         "subtitleLine2": "",
-        "ctaPrimary": "Mimara Danış",
+        "ctaPrimary": "Analiz Talep Et",
         "ctaSecondary": "Teknolojiyi İncele"
     },
     "radar": {
@@ -1130,7 +1130,12 @@
         "messageLabel": "Sisteminizdeki Ana Darboğaz veya Başarı Kriteriniz (KPI) Nedir?",
         "messagePlaceholder": "Ölçemediğiniz, çözemediğiniz temel sorunu veya ulaşmak istediğiniz vizyonu açıklayın...",
         "submitButton": "Projeyi Değerlendir",
-        "submitting": "İşleniyor..."
+        "submitting": "İşleniyor...",
+        "websiteLabel": "Mevcut Web Sitesi / Uygulama Linki",
+        "websitePlaceholder": "Örn: https://sirketiniz.com",
+        "briefLabel": "Proje Dosyası (Figma, Drive, Pitch Deck vs.)",
+        "briefPlaceholder": "İncelememizi istediğiniz dosyanın linkini buraya yapıştırın",
+        "optionalLabel": "(Opsiyonel)"
     },
     "footer": {
         "brand": {

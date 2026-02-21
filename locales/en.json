@@ -28,7 +28,7 @@
         "titleLine2": "Powered by Science.",
         "subtitle": "A technology lab designing digital products aligned with human mind and behavioral models.",
         "subtitleLine2": "",
-        "ctaPrimary": "Consult Architect",
+        "ctaPrimary": "Request Analysis",
         "ctaSecondary": "Explore Tech"
     },
     "radar": {
@@ -1100,7 +1100,12 @@
         "messageLabel": "What is the Main Bottleneck or Success Criterion (KPI) in Your System?",
         "messagePlaceholder": "Explain the fundamental problem you cannot measure or solve, or the vision you want to achieve...",
         "submitButton": "Evaluate Project",
-        "submitting": "Processing..."
+        "submitting": "Processing...",
+        "websiteLabel": "Existing Website / App Link",
+        "websitePlaceholder": "e.g., https://yourcompany.com",
+        "briefLabel": "Project Brief / File Link (Figma, Drive, Deck etc.)",
+        "briefPlaceholder": "Paste the link to the file you want us to review",
+        "optionalLabel": "(Optional)"
     },
     "footer": {
         "brand": {

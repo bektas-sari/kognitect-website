@@ -92,6 +92,38 @@ export default function ConsultForm() {
               placeholder={form.companyPlaceholder}
             />
           </div>
+
+          <div className="space-y-3 flex flex-col items-start">
+            <label htmlFor="website" className="text-[15px] font-medium text-zinc-300 ml-1">
+              {form.websiteLabel}
+            </label>
+            <input
+              id="website"
+              type="url"
+              name="website"
+              required
+              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
+              placeholder={form.websitePlaceholder}
+            />
+          </div>
+
+          <div className="space-y-3 flex flex-col items-start md:col-span-2">
+            <div className="flex justify-between items-center w-full px-1">
+              <label htmlFor="brief" className="text-[15px] font-medium text-zinc-300">
+                {form.briefLabel}
+              </label>
+              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest bg-zinc-800/50 px-2 py-0.5 rounded leading-none shrink-0 ml-2">
+                {form.optionalLabel}
+              </span>
+            </div>
+            <input
+              id="brief"
+              type="url"
+              name="brief"
+              className="w-full px-6 py-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300"
+              placeholder={form.briefPlaceholder + " " + form.optionalLabel}
+            />
+          </div>
         </div>
 
         {/* Section 2: Expertise Category (Interactive Pills - Multi-select) */}

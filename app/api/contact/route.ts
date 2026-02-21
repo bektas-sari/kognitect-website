@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: ['bektas.sari@gmail.com'], // Note: Only verified emails work without domain verification at resend.com
+      to: ['info@kognitect.com', 'bektas.sari@gmail.com'],
       subject: `KOGNITECT: Yeni Analiz Talebi - ${sirket || 'Belirtilmedi'}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e5e7eb; rounded: 8px;">

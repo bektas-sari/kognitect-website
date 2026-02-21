@@ -46,7 +46,7 @@ const Services = () => {
   const ICONS = [Eye, Search, Zap];
 
   return (
-    <section id="technologies" className="py-20 md:py-32 px-6 bg-[#101214] relative overflow-hidden border-t border-white/5">
+    <section id="services" className="py-20 md:py-32 px-6 relative overflow-hidden bg-[#101214]">
       {/* Modal */}
       <ServiceModal modalId={activeModal} onClose={() => setActiveModal(null)} />
 

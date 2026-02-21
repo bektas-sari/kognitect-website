@@ -1,27 +1,26 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
-    try {
-        const body = await req.json();
-        const {
-            isim,
-            email,
-            sirket,
-            web_sitesi,
-            proje_dosyasi,
-            kategori,
-            kpi,
-            butce
-        } = body;
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  try {
+    const body = await req.json();
+    const {
+      isim,
+      email,
+      sirket,
+      web_sitesi,
+      proje_dosyasi,
+      kategori,
+      kpi,
+      butce
+    } = body;
 
-        const { data, error } = await resend.emails.send({
-            from: 'onboarding@resend.dev',
-            to: ['info@kognitect.com', 'bektas.sari@gmail.com'],
-            subject: `KOGNITECT: Yeni Analiz Talebi - ${sirket || 'Belirtilmedi'}`,
-            html: `
+    const { data, error } = await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: ['info@kognitect.com', 'bektas.sari@gmail.com'],
+      subject: `KOGNITECT: Yeni Analiz Talebi - ${sirket || 'Belirtilmedi'}`,
+      html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e5e7eb; rounded: 8px;">
           <h2 style="color: #10b981; border-bottom: 2px solid #10b981; padding-bottom: 10px;">Yeni Analiz Talebi</h2>
           
@@ -49,15 +48,15 @@ export async function POST(req: Request) {
           </footer>
         </div>
       `,
-        });
+    });
 
-        if (error) {
-            return NextResponse.json({ error }, { status: 400 });
-        }
-
-        return NextResponse.json({ success: true, data });
-    } catch (error) {
-        console.error('Contact API Error:', error);
-        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    if (error) {
+      return NextResponse.json({ error }, { status: 400 });
     }
+
+    return NextResponse.json({ success: true, data });
+  } catch (error) {
+    console.error('Contact API Error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
 }

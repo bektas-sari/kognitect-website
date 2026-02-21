@@ -47,12 +47,21 @@ export default function CaseStudyModal({ study, onClose, accent }: CaseStudyModa
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-10 overflow-hidden"
             onClick={onClose}
         >
+            {/* Truly Fixed Close Button for Mobile Accessibility */}
+            <button
+                onClick={onClose}
+                className="fixed top-6 right-6 z-[120] w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-xl border border-white/20 text-white shadow-2xl active:scale-90 transition-transform md:hidden"
+                aria-label="Close modal"
+            >
+                <X className="w-6 h-6" />
+            </button>
+
             <motion.div
                 initial={{ scale: 0.98, opacity: 0, y: 10 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 exit={{ scale: 0.98, opacity: 0, y: 10 }}
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                className="w-[92vw] max-w-4xl h-[96vh] bg-[#0F0F0F] border border-white/10 rounded-[32px] overflow-hidden relative shadow-2xl flex flex-col isolate"
+                className="w-[92vw] max-w-4xl h-[96vh] bg-[#0F0F0F] border border-white/10 rounded-[32px] overflow-hidden relative shadow-2xl flex flex-col isolate pointer-events-auto"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Header Image Area */}
@@ -64,12 +73,13 @@ export default function CaseStudyModal({ study, onClose, accent }: CaseStudyModa
                         className="w-full h-full object-cover opacity-40 transition-transform duration-700 rounded-t-[32px]"
                     />
 
+                    {/* Desktop Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
+                        className="hidden md:flex absolute top-6 right-6 z-50 p-2 bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
                         aria-label="Close modal"
                     >
-                        <X className="w-6 h-6 md:w-5 md:h-5" />
+                        <X className="w-5 h-5" />
                     </button>
 
                     <div className="absolute bottom-4 left-8 z-20 pr-8">

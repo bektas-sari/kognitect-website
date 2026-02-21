@@ -117,20 +117,27 @@ export default function ConsultForm() {
         {/* Section 1: Personal & Corporate Info (Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
-            { id: 'name', label: form.nameLabel, type: 'text', placeholder: form.namePlaceholder, name: 'name' },
-            { id: 'email', label: form.emailLabel, type: 'email', placeholder: form.emailPlaceholder, name: 'email' },
-            { id: 'company', label: form.companyLabel, type: 'text', placeholder: form.companyPlaceholder, name: 'company' },
-            { id: 'website', label: form.websiteLabel, type: 'url', placeholder: form.websitePlaceholder, name: 'website' }
+            { id: 'name', label: form.nameLabel, type: 'text', placeholder: form.namePlaceholder, name: 'name', required: true },
+            { id: 'email', label: form.emailLabel, type: 'email', placeholder: form.emailPlaceholder, name: 'email', required: true },
+            { id: 'company', label: form.companyLabel, type: 'text', placeholder: form.companyPlaceholder, name: 'company', required: true },
+            { id: 'website', label: form.websiteLabel, type: 'text', placeholder: form.websitePlaceholder, name: 'website', required: false }
           ].map((field) => (
             <div key={field.id} className="space-y-2 flex flex-col items-start">
-              <label htmlFor={field.id} className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">
-                {field.label}
-              </label>
+              <div className="flex justify-between items-center w-full px-1">
+                <label htmlFor={field.id} className="text-xs font-bold text-zinc-500 uppercase tracking-widest">
+                  {field.label}
+                </label>
+                {!field.required && (
+                  <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest bg-white/[0.03] px-2 py-0.5 rounded leading-none shrink-0 ml-2">
+                    {form.optionalLabel}
+                  </span>
+                )}
+              </div>
               <input
                 id={field.id}
                 type={field.type}
                 name={field.name}
-                required
+                required={field.required}
                 className="w-full px-5 py-3.5 rounded-xl bg-white/[0.03] border border-white/10 text-zinc-100 placeholder-zinc-600 focus:border-emerald-500/40 focus:ring-4 focus:ring-emerald-500/5 focus:outline-none transition-all duration-300 text-sm"
                 placeholder={field.placeholder}
               />

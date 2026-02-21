@@ -72,22 +72,31 @@ export default function TechModal({ tech, onClose, accent }: TechModalProps) {
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md"
             onClick={onClose}
         >
+            {/* Truly Fixed Close Button for Mobile Accessibility */}
+            <button
+                onClick={onClose}
+                className="fixed top-6 right-6 z-[120] w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-xl border border-white/20 text-white shadow-2xl active:scale-90 transition-transform md:hidden"
+                aria-label="Close modal"
+            >
+                <X className="w-6 h-6" />
+            </button>
+
             <motion.div
                 initial={{ scale: 0.95, opacity: 0, y: 20 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
                 exit={{ scale: 0.95, opacity: 0, y: 20 }}
                 transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                className="w-full max-w-5xl bg-[#0f0f11] border border-white/10 md:rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative max-h-[95vh] md:max-h-none"
+                className="w-full max-w-5xl bg-[#0f0f11] border border-white/10 md:rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative max-h-[95vh] md:max-h-none pointer-events-auto"
                 style={{ boxShadow: `0 0 50px -10px ${accent}22` }} // lower opacity glow
                 onClick={(e) => e.stopPropagation()}
             >
-                {/* Close Button */}
+                {/* Desktop Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
+                    className="hidden md:flex absolute top-6 right-6 z-50 p-2 bg-black/50 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all border border-white/5 active:scale-90"
                     aria-label="Close modal"
                 >
-                    <X className="w-6 h-6 md:w-5 md:h-5" />
+                    <X className="w-5 h-5" />
                 </button>
 
                 {/* LEFT: VISUAL/ANIMATION AREA */}

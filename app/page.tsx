@@ -317,16 +317,26 @@ const DeepDiveModal = ({ data, onClose }: { data: DeepDiveData, onClose: () => v
   return (
     <motion.div
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-      className="fixed inset-0 z-100 flex items-center justify-center p-0 md:p-6 bg-black/95 backdrop-blur-xl overflow-y-auto"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-0 md:p-6 bg-black/95 backdrop-blur-xl overflow-y-auto"
       onClick={onClose}
     >
+      {/* Truly Fixed Close Button for Mobile Accessibility */}
+      <button
+        onClick={onClose}
+        className="fixed top-6 right-6 z-[120] w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-xl border border-white/20 text-white shadow-2xl active:scale-90 transition-transform md:hidden"
+        aria-label="Close modal"
+      >
+        <X className="w-7 h-7" />
+      </button>
+
       <motion.div
         initial={{ scale: 0.95, y: 50 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, y: 50 }}
-        className="w-full max-w-5xl bg-[#080808] border border-white/10 md:rounded-3xl overflow-hidden relative shadow-2xl min-h-screen md:min-h-0 flex flex-col md:flex-row"
+        className="w-full max-w-5xl bg-[#080808] border border-white/10 md:rounded-3xl overflow-hidden relative shadow-2xl min-h-screen md:min-h-0 flex flex-col md:flex-row pointer-events-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <button onClick={onClose} className="absolute top-6 right-6 z-50 p-3 bg-black/60 md:bg-white/10 rounded-full hover:bg-white/20 hover:text-white transition-colors active:scale-90" aria-label="Close modal">
-          <X className="w-7 h-7 md:w-6 md:h-6" />
+        {/* Desktop Close Button */}
+        <button onClick={onClose} className="hidden md:flex absolute top-6 right-6 z-50 p-3 bg-white/10 rounded-full hover:bg-white/20 hover:text-white transition-colors active:scale-90" aria-label="Close modal">
+          <X className="w-6 h-6" />
         </button>
 
         <div className="w-full md:w-5/12 bg-linear-to-br from-blue-900/10 to-purple-900/10 border-b md:border-b-0 md:border-r border-white/5 p-8 flex flex-col justify-between relative overflow-hidden">

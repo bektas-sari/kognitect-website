@@ -832,7 +832,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
         <AnimatePresence>
             {modalId && (
                 <motion.div
-                    className="fixed inset-0 z-[100] flex items-center justify-center px-4"
+                    className="fixed inset-0 z-[100] flex items-center justify-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -847,9 +847,18 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                         exit={{ opacity: 0 }}
                     />
 
+                    {/* Fixed Close Button for Mobile Accessibility */}
+                    <button
+                        onClick={onClose}
+                        className="fixed top-6 right-6 z-[120] w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-xl border border-white/20 text-white shadow-2xl active:scale-90 transition-transform md:hidden"
+                        aria-label="Close modal"
+                    >
+                        <X className="w-6 h-6" />
+                    </button>
+
                     {/* Modal body */}
                     <motion.div
-                        className="relative w-full max-w-5xl rounded-2xl overflow-hidden"
+                        className="relative w-full max-w-5xl rounded-2xl overflow-hidden pointer-events-auto"
                         style={{
                             backgroundColor: 'rgb(3,7,14)',
                             border: '1px solid rgba(6,182,212,0.2)',
@@ -863,13 +872,13 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                         {/* Top accent */}
                         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent" />
 
-                        {/* Close button (top) */}
+                        {/* Desktop Close Button (absolute inside card) */}
                         <button
                             onClick={onClose}
-                            className="absolute top-4 right-4 z-50 w-10 h-10 md:w-8 md:h-8 rounded-full bg-black/40 md:bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-cyan-500/40 transition-all active:scale-90"
+                            className="hidden md:flex absolute top-4 right-4 z-50 w-8 h-8 rounded-full bg-white/5 border border-white/10 items-center justify-center text-gray-300 hover:text-white hover:border-cyan-500/40 transition-all active:scale-90"
                             aria-label="Close modal"
                         >
-                            <X className="w-5 h-5 md:w-4 md:h-4" />
+                            <X className="w-4 h-4" />
                         </button>
 
                         <div className="grid md:grid-cols-2 min-h-[400px]">

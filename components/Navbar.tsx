@@ -73,6 +73,7 @@ const Navbar = () => {
                         href="/"
                         className="relative z-50 hover:opacity-80 transition-opacity"
                         onClick={(e) => handleScrollTo(e, '/')}
+                        aria-label="Kognitect Home"
                     >
                         <Image
                             src="/logo-white.png"
@@ -102,6 +103,7 @@ const Navbar = () => {
                         {/* Language Toggle */}
                         <button
                             onClick={toggleLocale}
+                            aria-label={`Switch to ${nav.langToggle === 'EN' ? 'English' : 'Turkish'}`}
                             className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                         >
                             <Globe className="w-3.5 h-3.5" />
@@ -124,7 +126,7 @@ const Navbar = () => {
                     <button
                         className="lg:hidden relative z-60 flex items-center justify-center w-10 h-10 text-white bg-white/5 rounded-lg border border-white/10 backdrop-blur-md active:bg-white/20 transition-all"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        aria-label="Toggle Menu"
+                        aria-label={isMobileMenuOpen ? "Close Menu" : "Open Menu"}
                     >
                         {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                     </button>

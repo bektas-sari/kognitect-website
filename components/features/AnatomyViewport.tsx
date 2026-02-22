@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NextImage from 'next/image';
 import { ScanEye, EyeOff, Activity, Crosshair, Layers, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -96,6 +97,7 @@ const AnatomyViewport = ({ imageSrc, hotspots, heatmapSpots, analysisShapes }: A
                     <div className="flex flex-row items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto no-scrollbar py-1">
                         <button
                             onClick={() => toggleMode('xray')}
+                            aria-label="Toggle X-Ray View"
                             className={`flex items-center space-x-2 px-3 py-1.5 rounded-md border text-xs font-semibold transition-all duration-300 ${viewMode === 'xray'
                                 ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.3)]'
                                 : 'bg-gray-900 border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200'
@@ -107,6 +109,7 @@ const AnatomyViewport = ({ imageSrc, hotspots, heatmapSpots, analysisShapes }: A
 
                         <button
                             onClick={() => toggleMode('heatmap')}
+                            aria-label="Toggle Heatmap View"
                             className={`flex items-center space-x-2 px-3 py-1.5 rounded-md border text-xs font-semibold transition-all duration-300 ${viewMode === 'heatmap'
                                 ? 'bg-orange-500/20 border-orange-400 text-orange-300 shadow-[0_0_15px_rgba(249,115,22,0.3)]'
                                 : 'bg-gray-900 border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200'
@@ -118,6 +121,7 @@ const AnatomyViewport = ({ imageSrc, hotspots, heatmapSpots, analysisShapes }: A
 
                         <button
                             onClick={() => toggleMode('analysis')}
+                            aria-label="Toggle Analysis View"
                             className={`flex items-center space-x-2 px-3 py-1.5 rounded-md border text-xs font-semibold transition-all duration-300 ${viewMode === 'analysis'
                                 ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.3)]'
                                 : 'bg-gray-900 border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200'
@@ -142,9 +146,11 @@ const AnatomyViewport = ({ imageSrc, hotspots, heatmapSpots, analysisShapes }: A
 
 
                     {/* --- ANA GÖRSEL VE FİLTRE UYGULAMASI --- */}
-                    <img
+                    <NextImage
                         src={imageSrc}
                         alt="Analiz Edilen Arayüz"
+                        width={1200}
+                        height={800}
                         className={`w-full h-auto object-cover transform transition-all duration-700 ease-in-out will-change-transform ${viewMode === 'xray'
                             ? 'grayscale-[100%] contrast-[150%] brightness-[80%] scale-[0.98]' // X-Ray Aktif
                             : viewMode === 'heatmap'

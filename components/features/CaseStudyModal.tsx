@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import NextImage from 'next/image';
 import { X, Activity, Cpu, ImageIcon, ExternalLink, Globe } from 'lucide-react';
 import AnatomyViewport from './AnatomyViewport';
 
@@ -67,10 +68,12 @@ export default function CaseStudyModal({ study, onClose, accent }: CaseStudyModa
                 {/* Header Image Area */}
                 <div className="h-40 md:h-48 relative overflow-hidden shrink-0 pt-6 px-8 rounded-t-[32px]">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0F0F0F]/50 to-[#0F0F0F] z-10 rounded-t-[32px]" />
-                    <img
+                    <NextImage
                         src="/images/placeholder-project.svg"
                         alt={study.title}
-                        className="w-full h-full object-cover opacity-40 transition-transform duration-700 rounded-t-[32px]"
+                        fill
+                        className="object-cover opacity-40 transition-transform duration-700 rounded-t-[32px]"
+                        unoptimized
                     />
 
                     {/* Desktop Close Button */}

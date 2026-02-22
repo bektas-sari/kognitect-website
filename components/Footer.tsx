@@ -87,15 +87,33 @@ export default function Footer() {
                                 </span>
                             </a>
 
-                            {/* Social Icons */}
-                            <div className="flex items-center gap-4">
-                                <a href="https://www.linkedin.com/in/bektas-sari" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-white/5 text-zinc-500 hover:bg-[#0077b5] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5">
+                            {/* Social Links */}
+                            <div className="flex items-center gap-3">
+                                <a
+                                    href="https://www.linkedin.com/in/bektas-sari"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Kognitect LinkedIn"
+                                    className="p-2.5 rounded-lg bg-white/5 text-zinc-400 hover:bg-[#0077b5] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5"
+                                >
                                     <Linkedin className="w-4 h-4" />
                                 </a>
-                                <a href="https://github.com/bektas-sari" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-white/5 text-zinc-500 hover:bg-[#333] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5">
+                                <a
+                                    href="https://github.com/bektas-sari"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Kognitect GitHub"
+                                    className="p-2.5 rounded-lg bg-white/5 text-zinc-400 hover:bg-[#333] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5"
+                                >
                                     <Github className="w-4 h-4" />
                                 </a>
-                                <a href="https://www.instagram.com/dr.bektassari/" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-white/5 text-zinc-500 hover:bg-[#E1306C] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5">
+                                <a
+                                    href="https://www.instagram.com/bektas_isik_sari"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Kognitect Instagram"
+                                    className="p-2.5 rounded-lg bg-white/5 text-zinc-400 hover:bg-[#e4405f] hover:text-white transition-all transform hover:-translate-y-1 border border-white/5"
+                                >
                                     <Instagram className="w-4 h-4" />
                                 </a>
                             </div>
@@ -104,13 +122,15 @@ export default function Footer() {
                             <div className="flex flex-col gap-2 pt-2 text-[11px] text-zinc-600 font-medium">
                                 <button
                                     onClick={(e) => handleLegalClick(e, 'privacy')}
-                                    className="hover:text-zinc-400 transition-colors w-fit text-left"
+                                    aria-label="View Privacy Policy"
+                                    className="hover:text-zinc-400 transition-colors w-fit text-left text-zinc-400"
                                 >
                                     {f.connection.legal.split(' • ')[0]}
                                 </button>
                                 <button
                                     onClick={(e) => handleLegalClick(e, 'terms')}
-                                    className="hover:text-zinc-400 transition-colors w-fit text-left"
+                                    aria-label="View Terms of Service"
+                                    className="hover:text-zinc-400 transition-colors w-fit text-left text-zinc-400"
                                 >
                                     {f.connection.legal.split(' • ')[1]}
                                 </button>

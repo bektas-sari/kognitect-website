@@ -1150,6 +1150,14 @@
         "contact": {
             "title": "Contact | Kognitect",
             "description": "Contact us."
+        },
+        "privacyPolicy": {
+            "title": "Privacy Policy | Kognitect",
+            "description": "Kognitect Privacy Policy. Learn about how we process and protect your personal data."
+        },
+        "termsOfUse": {
+            "title": "Terms of Use | Kognitect",
+            "description": "Kognitect website terms of use and legal responsibilities."
         }
     },
     "protocol": {
@@ -1292,7 +1300,7 @@
             ]
         },
         "signature": {
-            "ctaText": "If you don't want an ordinary website, let's meet for a project with an architecture <span class=\"text-white font-medium\">aligned with the mind</span>.",
+            "ctaText": "Instead of an ordinary project, let’s connect for something <span class=\"text-white font-medium\">architected in harmony with the mind</span>.",
             "button": "Arrange a Discovery Meeting"
         }
     },
@@ -1326,6 +1334,17 @@
             "line9": "Footer CTA: Strong closing signal detected ✓",
             "line10": "Generating heatmap overlay...",
             "line11": "Report completed. Overall Score: 84/100"
+        }
+    },
+    "legal": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "lastUpdated": "Last Updated: February 22, 2026",
+            "content": "<h2>1. Data Controller</h2><p>At Kognitect, we prioritize your privacy and data security. This Privacy Policy explains how your personal data is collected, used, and protected when you visit kognitect.com or use our services.</p><h2>2. Data We Collect</h2><p>To provide our services and improve your digital experience, we may collect:</p><ul><li><strong>Contact Information:</strong> Name, email address, phone number, and any corporate/personal information provided during communication.</li><li><strong>Technical and Behavioral Data:</strong> IP address, browser type, operating system, behavioral analytics on the site (session duration, click/interaction analysis), and device information.</li><li><strong>Cookies:</strong> We use technical and analytical cookies to measure site performance and personalize user experience.</li></ul><h2>3. Purpose of Processing</h2><p>We process your data for the following purposes:</p><ul><li>To deliver our brand consultancy, AI-driven analytics, and digital product development services.</li><li>To analyze user behavior in order to optimize our perception-focused web experience and service quality.</li><li>To communicate regarding updates, technical support, and service information.</li><li>To comply with legal obligations (including GDPR where applicable).</li></ul><h2>4. Data Sharing</h2><p>Kognitect never sells your personal data. Your data may only be shared:</p><ul><li>With trusted service providers (cloud infrastructure, analytics, email delivery) under strict confidentiality agreements.</li><li>With authorized authorities when required by law.</li></ul><h2>5. Data Security</h2><p>We implement industry-standard security measures (SSL encryption, secure data storage) to protect your data against unauthorized access, alteration, or destruction.</li></ul><h2>6. Your Rights</h2><p>You have the right to access, rectify, restrict processing, or request the deletion of your personal data. To exercise these rights, please contact us at info@kognitect.com.</p>"
+        },
+        "terms": {
+            "title": "Terms of Use",
+            "content": "<h2>1. Acceptance of Terms</h2><p>These Terms of Use govern your access to and use of kognitect.com (the \"Site\"). By accessing the Site or using our services, you agree to be bound by these terms.</p><h2>2. Intellectual Property</h2><p>All designs, code, texts, AI models, algorithmic analysis methods, behavioral design architectures, and digital products on the Site are the exclusive intellectual property of Kognitect. Without explicit written consent, these materials may not be copied, reproduced, reverse-engineered, or used for commercial purposes.</p><h2>3. User Conduct</h2><p>Users agree to use the Site only for lawful purposes. Any actions that compromise the Site's security, damage its infrastructure, or involve unauthorized data extraction (scraping/crawling) are strictly prohibited.</p><h2>4. Disclaimer of Warranties</h2><p>Kognitect provides brand strategy, perception, and AI-based analytics. However, we do not guarantee specific commercial success from the strategies, analyses, or digital products provided. Services are provided \"as is.\" Kognitect shall not be liable for any direct or indirect damages arising from the use of the Site.</p><h2>5. Governing Law and Jurisdiction</h2><p>These terms shall be governed by the laws of the Republic of Turkey. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the courts of Izmir, Turkey.</p>"
         }
     }
 }

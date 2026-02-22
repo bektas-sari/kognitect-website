@@ -1,14 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Linkedin, Github, Instagram } from 'lucide-react';
+import { AnimatePresence } from 'framer-motion';
+import LegalModal from './features/LegalModal';
 
 export default function Footer() {
     const { t } = useLanguage();
     const f = t.footer;
+    const [activeModal, setActiveModal] = useState<'privacy' | 'terms' | null>(null);
+
+    const handleLegalClick = (e: React.MouseEvent, type: 'privacy' | 'terms') => {
+        e.preventDefault();
+        setActiveModal(type);
+    };
 
     return (
         <footer className="bg-[#050505] border-t border-white/5 py-12 md:pt-16 md:pb-8 text-sm relative overflow-hidden">
@@ -94,8 +102,18 @@ export default function Footer() {
 
                             {/* Legal Links */}
                             <div className="flex flex-col gap-2 pt-2 text-[11px] text-zinc-600 font-medium">
-                                <a href="#" className="hover:text-zinc-400 transition-colors w-fit">{f.connection.legal.split(' • ')[0]}</a>
-                                <a href="#" className="hover:text-zinc-400 transition-colors w-fit">{f.connection.legal.split(' • ')[1]}</a>
+                                <button
+                                    onClick={(e) => handleLegalClick(e, 'privacy')}
+                                    className="hover:text-zinc-400 transition-colors w-fit text-left"
+                                >
+                                    {f.connection.legal.split(' • ')[0]}
+                                </button>
+                                <button
+                                    onClick={(e) => handleLegalClick(e, 'terms')}
+                                    className="hover:text-zinc-400 transition-colors w-fit text-left"
+                                >
+                                    {f.connection.legal.split(' • ')[1]}
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -109,6 +127,15 @@ export default function Footer() {
                 </div>
 
             </div>
+
+            <AnimatePresence>
+                {activeModal && (
+                    <LegalModal
+                        type={activeModal}
+                        onClose={() => setActiveModal(null)}
+                    />
+                )}
+            </AnimatePresence>
         </footer>
     );
 }

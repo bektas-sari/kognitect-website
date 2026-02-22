@@ -1180,6 +1180,14 @@
         "contact": {
             "title": "İletişim | Kognitect",
             "description": "Bize ulaşın."
+        },
+        "privacyPolicy": {
+            "title": "Gizlilik Politikası | Kognitect",
+            "description": "Kognitect Gizlilik Politikası. Kişisel verilerinizin nasıl işlendiği ve korunduğu hakkında bilgi edinin."
+        },
+        "termsOfUse": {
+            "title": "Kullanım Şartları | Kognitect",
+            "description": "Kognitect web sitesi kullanım şartları ve yasal sorumluluklar."
         }
     },
     "protocol": {
@@ -1322,7 +1330,7 @@
             ]
         },
         "signature": {
-            "ctaText": "Sıradan bir web sitesi istemiyorsanız, mimarisi <span class=\"text-white font-medium\">zihinle uyumlu</span> bir proje için tanışalım.",
+            "ctaText": "Sıradan bir proje yerine mimarisi <span class=\"text-white font-medium\">zihinle uyumlu</span> bir proje için tanışalım.",
             "button": "Keşif Görüşmesi Ayarla"
         }
     },
@@ -1356,6 +1364,17 @@
             "line9": "Footer CTA: Güçlü kapanış sinyali tespit edildi ✓",
             "line10": "Isı haritası katmanı oluşturuluyor...",
             "line11": "Rapor tamamlandı. Genel Skor: 84/100"
+        }
+    },
+    "legal": {
+        "privacy": {
+            "title": "Gizlilik Politikası",
+            "lastUpdated": "Son Güncelleme: 22 Şubat 2026",
+            "content": "<h2>1. Veri Sorumlusu</h2><p>Kognitect olarak, gizliliğinize ve kişisel verilerinizin güvenliğine en yüksek değeri veriyoruz. Bu Gizlilik Politikası, kognitect.com web sitesini ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p><h2>2. Topladığımız Veriler</h2><p>Hizmetlerimizi sunabilmek ve dijital deneyiminizi iyileştirebilmek amacıyla aşağıdaki verileri toplayabiliriz:</p><ul><li><strong>İletişim Bilgileri:</strong> Adınız, e-posta adresiniz, telefon numaranız ve bizimle iletişime geçerken paylaştığınız diğer kurumsal/bireysel bilgiler.</li><li><strong>Teknik ve Analitik Veriler:</strong> IP adresiniz, tarayıcı türünüz, işletim sisteminiz, site içindeki davranışsal verileriniz (hangi sayfalarda ne kadar süre geçirdiğiniz, tıklama ve etkileşim analizleri) ve cihaz bilgileriniz.</li><li><strong>Çerezler (Cookies):</strong> Site performansını ölçmek ve kullanıcı deneyimini kişiselleştirmek amacıyla teknik ve analitik çerezler kullanılmaktadır.</li></ul><h2>3. Verilerin İşlenme Amaçları</h2><p>Topladığımız verileri aşağıdaki amaçlar doğrultusunda işliyoruz:</p><ul><li>Marka danışmanlığı, yapay zekâ destekli analizler ve dijital ürün geliştirme hizmetlerimizi sunmak ve sözleşmesel yükümlülüklerimizi yerine getirmek.</li><li>Kullanıcı davranışlarını analiz ederek algı odaklı web deneyimini ve hizmet kalitemizi optimize etmek.</li><li>Hizmetlerimizle ilgili güncellemeler, teknik destek ve bilgilendirme amaçlı iletişim kurmak.</li><li>Yasal yükümlülüklere (KVKK ve geçerli olduğu ölçüde GDPR) uyum sağlamak.</li></ul><h2>4. Verilerin Paylaşımı</h2><p>Kognitect, kişisel verilerinizi asla ticari amaçla üçüncü şahıslara satmaz. Verileriniz yalnızca şu durumlarda paylaşılabilir:</p><ul><li>Hizmet sağlayıcılarımızla (bulut altyapısı, analitik araçlar, e-posta gönderim servisleri) gizlilik sözleşmeleri çerçevesinde.</li><li>Yasal bir zorunluluk halinde yetkili kamu kurum ve kuruluşlarıyla.</li></ul><h2>5. Veri Güvenliği</h2><p>Verilerinizin yetkisiz erişime, değiştirilmeye veya imha edilmeye karşı korunması için endüstri standardı güvenlik önlemleri (SSL şifreleme, güvenli veri depolama) almaktayız.</p><h2>6. Kullanıcı Hakları (KVKK ve GDPR Kapsamında)</h2><p>Veri sahibi olarak; kişisel verilerinizin işlenip işlenmediğini öğrenme, detaylarını talep etme, eksik/yanlış verilerin düzeltilmesini isteme ve verilerinizin silinmesini/yok edilmesini talep etme hakkına sahipsiniz. Talepleriniz için info@kognitect.com üzerinden bizimle iletişime geçebilirsiniz.</p>"
+        },
+        "terms": {
+            "title": "Kullanım Şartları",
+            "content": "<h2>1. Taraflar ve Kabul</h2><p>Bu Kullanım Şartları, kognitect.com web sitesinin (\"Site\") kullanımına ilişkin kuralları belirler. Siteye erişerek veya hizmetlerimizden yararlanarak bu şartları kabul etmiş sayılırsınız.</p><h2>2. Fikri Mülkiyet Hakları</h2><p>Sitede yer alan her türlü tasarım, kod, metin, yapay zekâ modeli, algoritmik analiz yöntemi, davranışsal tasarım mimarisi ve dijital ürünlerin fikri mülkiyet hakları Kognitect'e aittir. Kognitect'in yazılı izni olmaksızın bu içerikler kopyalanamaz, çoğaltılamaz, tersine mühendisliğe (reverse engineering) tabi tutulamaz veya ticari amaçla kullanılamaz.</p><h2>3. Hizmetlerin Kullanımı</h2><p>Kullanıcı, Siteyi yalnızca yasal ve meşru amaçlarla kullanmayı taahhüt eder. Sitenin güvenliğini ihlal edecek, altyapısına zarar verecek veya veri kazıma (scraping/crawling) yöntemleriyle sistemden izinsiz veri çekecek her türlü eylem kesinlikle yasaktır.</p><h2>4. Sorumluluk Reddi (Disclaimer)</h2><p>Kognitect, marka stratejisi, algı ve yapay zekâ tabanlı analizler sunar. Ancak sunulan analizlerin, stratejilerin veya geliştirilen dijital ürünlerin kesin ticari başarı getireceğine dair bir garanti verilmez. Hizmetler \"olduğu gibi\" sağlanır. Kognitect, Sitenin kullanımından doğabilecek doğrudan veya dolaylı maddi/manevi zararlardan sorumlu tutulamaz.</p><h2>5. Uygulanacak Hukuk ve Yetki</h2><p>Bu Kullanım Şartlarından doğabilecek her türlü uyuşmazlıkta Türkiye Cumhuriyeti kanunları esastır ve İzmir Mahkemeleri ile İcra Daireleri yetkilidir.</p>"
         }
     }
 }

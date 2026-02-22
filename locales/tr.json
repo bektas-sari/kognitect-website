@@ -1116,6 +1116,7 @@
         "subtitleLine2": "Tahmin etmeyi bırakın. Mimara danışın."
     },
     "consultForm": {
+        "title": "İletişim Formu",
         "successTitle": "Protokol Başlatıldı.",
         "successMessage": "En kısa zamanda sizinle iletişime geçilecektir",
         "nameLabel": "İsim Soyisim",

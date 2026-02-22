@@ -49,7 +49,7 @@ export default function ContactPage() {
                         </div>
 
                         {/* Social Links */}
-                        <div className="flex gap-6 pt-8 border-t border-zinc-900">
+                        <div className="hidden lg:flex gap-6 pt-8 border-t border-zinc-900">
                             <a href="https://linkedin.com/in/bektas-sari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">LinkedIn</a>
                             <a href="https://instagram.com/dr.bektassari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">Instagram</a>
                             <a href="https://github.com/bektas-sari" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">GitHub</a>
@@ -65,6 +65,9 @@ export default function ContactPage() {
                     >
                         <div className="absolute -inset-4 bg-emerald-500/5 blur-3xl rounded-full opacity-50 pointer-events-none" />
                         <div className="relative z-10">
+                            <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-wider block lg:hidden">
+                                {t.consultForm.title}
+                            </h3>
                             <ConsultForm />
                         </div>
                     </motion.div>

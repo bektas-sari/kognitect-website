@@ -1086,6 +1086,7 @@
         "subtitleLine2": "Stop guessing. Consult the Architect."
     },
     "consultForm": {
+        "title": "Contact Form",
         "successTitle": "Protocol Initiated.",
         "successMessage": "We will contact you as soon as possible",
         "nameLabel": "Full Name",

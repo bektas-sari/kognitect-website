@@ -278,7 +278,7 @@ export default function CognitiveDashboard() {
                         <span className="text-xs tracking-widest text-emerald-400 uppercase font-bold">{dashboardLocale.badge}</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
-                        {dashboardLocale.title.split('Simülasyonu')[0]} <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">{dashboardLocale.title.includes('Simulation') ? 'Simulation' : 'Simülasyonu'}</span>
+                        {dashboardLocale.title.substring(0, dashboardLocale.title.lastIndexOf(' '))} <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">{dashboardLocale.title.split(' ').pop()}</span>
                     </h2>
                     <p className="text-gray-500 max-w-xl mx-auto text-sm md:text-base">
                         {dashboardLocale.description}

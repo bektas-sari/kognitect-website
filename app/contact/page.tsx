@@ -23,7 +23,7 @@ export default function ContactPage() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1 }}
-                            className="relative"
+                            className="relative hidden lg:block"
                         >
                             <ContactVisual />
                         </motion.div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
                                 </a>
                             </div>
 
-                            <div className="space-y-4 pt-4">
+                            <div className="space-y-4 pt-4 hidden lg:block">
                                 <p className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-4">
                                     {t.protocol.location}
                                 </p>

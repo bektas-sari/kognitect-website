@@ -832,7 +832,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
         <AnimatePresence>
             {modalId && (
                 <motion.div
-                    className="fixed inset-0 z-[100] flex items-center justify-center"
+                    className="fixed inset-0 z-[100] flex items-start md:items-center justify-center overflow-y-auto p-4 md:p-6"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -858,7 +858,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
 
                     {/* Modal body */}
                     <motion.div
-                        className="relative w-full max-w-5xl rounded-2xl overflow-hidden pointer-events-auto"
+                        className="relative w-full max-w-5xl my-auto rounded-2xl overflow-hidden pointer-events-auto shrink-0"
                         style={{
                             backgroundColor: 'rgb(3,7,14)',
                             border: '1px solid rgba(6,182,212,0.2)',
@@ -883,7 +883,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
 
                         <div className="grid md:grid-cols-2 min-h-[400px]">
                             {/* Left: Animation Panel */}
-                            <div className="relative bg-gray-950/50 border-r border-white/5 min-h-[300px] md:min-h-[400px]">
+                            <div className="relative bg-gray-950/50 border-b md:border-b-0 md:border-r border-white/5 min-h-[260px] md:min-h-[400px]">
                                 {/* Grid pattern */}
                                 <div className="absolute inset-0 opacity-[0.04]" style={{
                                     backgroundImage: 'linear-gradient(rgba(6,182,212,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(6,182,212,0.3) 1px, transparent 1px)',
@@ -893,7 +893,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ modalId, onClose }) => {
                             </div>
 
                             {/* Right: Text Panel */}
-                            <div className="p-8 md:p-10 flex flex-col justify-start overflow-y-auto max-h-[80vh]">
+                            <div className="p-8 md:p-10 flex flex-col justify-start md:overflow-y-auto md:max-h-[80vh]">
                                 <motion.div
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}

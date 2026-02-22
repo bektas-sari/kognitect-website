@@ -79,20 +79,20 @@ const Navbar = () => {
                             alt="Kognitect | Perception Architecture"
                             width={600}
                             height={200}
-                            className="w-28 sm:w-32 md:w-40 h-auto object-contain md:scale-125 origin-left"
+                            className="w-28 sm:w-32 md:w-40 h-auto object-contain lg:scale-125 origin-left"
                             priority
                             unoptimized
                         />
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-10">
+                    <nav className="hidden lg:flex items-center gap-5 xl:gap-10">
                         {nav.items.map((item: { name: string; href: string }) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 onClick={(e) => handleScrollTo(e, item.href)}
-                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-widest relative group"
+                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors uppercase tracking-wider relative group"
                             >
                                 {item.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full" style={{ backgroundColor: accent.primary }} />
@@ -122,7 +122,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden relative z-60 flex items-center justify-center w-10 h-10 text-white bg-white/5 rounded-lg border border-white/10 backdrop-blur-md active:bg-white/20 transition-all"
+                        className="lg:hidden relative z-60 flex items-center justify-center w-10 h-10 text-white bg-white/5 rounded-lg border border-white/10 backdrop-blur-md active:bg-white/20 transition-all"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         aria-label="Toggle Menu"
                     >
@@ -139,7 +139,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 z-40 bg-[#101214]/98 md:hidden backdrop-blur-3xl overflow-y-auto"
+                        className="fixed inset-0 z-40 bg-[#101214]/98 lg:hidden backdrop-blur-3xl overflow-y-auto"
                     >
                         <div className="min-h-screen flex flex-col justify-center px-10 py-20">
                             <div className="flex flex-col gap-6 border-l border-white/10 pl-8">
